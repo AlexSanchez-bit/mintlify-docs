@@ -1,0 +1,88 @@
+# Detection Rules
+
+UTMStack includes a comprehensive library of **622 built-in detection rules** that continuously monitor your environment for threats, suspicious activity, and policy violations. These rules are powered by the UTMStack correlation engine and map directly to the **MITRE ATT&CK** framework.
+
+## What Are Detection Rules?
+
+Detection rules are YAML-based definitions that describe specific patterns of malicious or suspicious activity across your log sources. When incoming events match a rule's conditions, UTMStack generates an alert with the appropriate severity, MITRE ATT&CK classification, and recommended next steps.
+
+Each rule includes:
+
+- **Name** — A human-readable title describing what the rule detects.
+- **Description** — An explanation of the threat scenario and why it matters.
+- **Category** — The MITRE ATT&CK tactic (e.g., Credential Access, Lateral Movement, Persistence).
+- **Technique** — The specific MITRE ATT&CK technique ID and name.
+- **Impact** — A Confidentiality / Integrity / Availability score (1-3 scale).
+- **Detection Logic** — The conditions and event patterns that trigger the rule.
+- **References** — Links to MITRE ATT&CK entries and other resources.
+
+## Supported Data Sources
+
+Rules are organized by the data source or integration they apply to. UTMStack provides detection rules for the following categories:
+
+**Endpoint and Operating Systems**
+
+- **Windows** — Active Directory attacks, credential theft, ransomware, lateral movement, and more.
+- **Linux** — Brute force attacks, kernel module manipulation, reverse shells, privilege escalation (General, Debian, and RHEL families).
+- **macOS** — Persistence mechanisms, privilege escalation, keychain access, malware indicators.
+
+**Network Security**
+
+- **Cisco** — ASA, Firepower, Meraki, and Switch rules for firewall events, intrusion detection, and network anomalies.
+- **Fortinet** — FortiGate and FortiWeb rules for firewall and web application firewall events.
+- **Palo Alto** — PA Firewall rules for threat detection and traffic anomalies.
+- **SonicWall** — Firewall rules for intrusion and access control events.
+- **pfSense** — Firewall rules for open-source firewall deployments.
+- **MikroTik** — Firewall rules for RouterOS-based network devices.
+
+**Cloud Platforms**
+
+- **AWS** — 73 rules covering IAM, S3, EC2, CloudTrail, GuardDuty, and more.
+- **Azure** — 46 rules covering identity, storage, compute, and security center events.
+- **Google Cloud** — 34 rules covering IAM, compute, storage, and audit logs.
+
+**SaaS and Productivity**
+
+- **Office 365** — 54 rules covering Exchange, SharePoint, Teams, and Azure AD events.
+- **GitHub** — Repository security, workflow injection, secret scanning, and access control.
+
+**Antivirus and EDR**
+
+- **Bitdefender GravityZone**, **ESMC/ESET**, **Kaspersky**, **SentinelOne**, **Deceptive Bytes** — Threat detection, agent tampering, policy violations.
+- **CrowdStrike** — Falcon EPP and XDR detection alerts, credential dumping, defense evasion.
+
+**Network Monitoring**
+
+- **Netflow** — Traffic analysis, beaconing detection, cryptomining, DDoS, and data exfiltration.
+- **NIDS / Suricata** — Network intrusion detection signatures and alerts.
+
+**Infrastructure**
+
+- **VMware ESXi** — Hypervisor security events and virtual machine anomalies.
+- **IBM AIX and AS/400** — Mainframe and midrange system security events.
+- **Sophos** — Central and XG Firewall events.
+
+**Log Formats**
+
+- **Syslog / CEF** — Common Event Format log analysis.
+- **JSON Input** — Generic JSON-based log source rules.
+
+## How Rules Work
+
+1. **Log Ingestion** — UTMStack collects logs from your configured data sources.
+2. **Normalization** — Logs are parsed and normalized into the UTMStack standard event schema.
+3. **Correlation** — The correlation engine evaluates each event against all active rules.
+4. **Alert Generation** — When a rule's conditions are met, an alert is created with full context.
+5. **Response** — Alerts can trigger automated response actions via the SOAR module.
+
+## Rule Source Code
+
+All detection rules are open source and available in the UTMStack GitHub repository:
+
+**[github.com/utmstack/UTMStack/tree/v11/rules](https://github.com/utmstack/UTMStack/tree/v11/rules)**
+
+Browse the pages in this section to see every rule organized by category, with descriptions, MITRE ATT&CK mappings, impact scores, and links to the source YAML files.
+
+## Creating Custom Rules
+
+UTMStack supports custom detection rules. For guidance on writing your own rules, see the **SIEM** section under **Configuration and Implementation** for the rule authoring guide, CEL overloads reference, and real-world examples.
