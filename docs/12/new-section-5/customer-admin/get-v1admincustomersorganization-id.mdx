@@ -1,0 +1,57 @@
+<Endpoint method="GET" path="/v1/admin/customers/{organization_id}" />
+
+## Authentication
+
+**API Key** (`BearerAuth`)
+- Header: `Authorization`
+
+## Path Parameters
+
+<ParamField path="organization_id" type="string" required>
+  Organization ID
+</ParamField>
+
+## Responses
+
+<Response status="200">
+  OK
+</Response>
+
+**Response Fields:**
+
+- `created_at` (string)
+- `documentations` (object[])
+- `organization_id` (string)
+- `organization_name` (string)
+- `owner_email` (string)
+- `owner_joined_at` (string)
+- `owner_name` (string)
+- `owner_user_id` (string)
+
+**Example:**
+
+```json
+{
+  "created_at": "string",
+  "documentations": [
+    {
+      "audience": "string",
+      "created_at": "string",
+      "entry_count": 0,
+      "id": "string",
+      "name": "string",
+      "resource_count": 0,
+      "section_count": 0,
+      "status": "string",
+      "updated_at": "string",
+      "version_count": 0
+    }
+  ],
+  "organization_id": "string",
+  "organization_name": "string",
+  "owner_email": "string",
+  "owner_joined_at": "string",
+  "owner_name": "string",
+  "owner_user_id": "string"
+}
+```

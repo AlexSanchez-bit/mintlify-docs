@@ -1,0 +1,104 @@
+Read-only view consumed by the content editor source sidebar.
+
+<Endpoint method="GET" path="/v1/documentation/{organization_id}/{documentation_id}/version/{version_id}/section/{section_id}/source" />
+
+## Authentication
+
+**API Key** (`BearerAuth`)
+- Header: `Authorization`
+
+## Path Parameters
+
+<ParamField path="organization_id" type="string" required>
+  Organization ID
+</ParamField>
+
+<ParamField path="documentation_id" type="string" required>
+  Documentation ID
+</ParamField>
+
+<ParamField path="version_id" type="string" required>
+  Version ID
+</ParamField>
+
+<ParamField path="section_id" type="string" required>
+  Section ID
+</ParamField>
+
+## Responses
+
+<Response status="200">
+  OK
+</Response>
+
+**Response Fields:**
+
+- `files` (object[])
+- `kind` (string)
+- `last_sync_at` (string)
+- `openapi` (object)
+- `repository` (object)
+- `section_id` (string)
+- `website` (object)
+
+**Example:**
+
+```json
+{
+  "files": [
+    {
+      "content_hash": "string",
+      "name": "string",
+      "resource_id": "string",
+      "size": 0,
+      "uploaded_at": "string"
+    }
+  ],
+  "kind": "repository",
+  "last_sync_at": "string",
+  "openapi": {
+    "branch": "string",
+    "commit_message": "string",
+    "commit_sha": "string",
+    "content_hash": "string",
+    "endpoint_count": 0,
+    "file_path": "string",
+    "filename": "string",
+    "has_pending_changes": true,
+    "last_checked_at": "string",
+    "remote_commit_message": "string"
+  },
+  "repository": {
+    "branch": "string",
+    "commit_message": "string",
+    "commit_sha": "string",
+    "commits_ahead": 0,
+    "files_ingested": 0,
+    "has_pending_changes": true,
+    "last_checked_at": "string",
+    "path": "string",
+    "remote_commit_message": "string",
+    "remote_commit_sha": "string"
+  },
+  "section_id": "string",
+  "website": {
+    "crawl_depth": 0,
+    "last_checked_at": "string",
+    "pages_crawled": 0,
+    "resource_id": "string",
+    "url": "string"
+  }
+}
+```
+
+<Response status="404">
+  Not Found
+</Response>
+
+**Example:**
+
+```json
+{
+  "key": "value"
+}
+```

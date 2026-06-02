@@ -1,0 +1,121 @@
+<Endpoint method="POST" path="/v1/organization/{organization_id}/user/invite" />
+
+## Authentication
+
+**API Key** (`BearerAuth`)
+- Header: `Authorization`
+
+## Path Parameters
+
+<ParamField path="organization_id" type="string" required>
+  Organization ID
+</ParamField>
+
+## Request Body
+
+Invite user input
+
+**Required**
+
+<ParamField path="documentation_ids" type="string[]">
+</ParamField>
+
+<ParamField path="email" type="string" required>
+</ParamField>
+
+<ParamField path="role" type="string">
+</ParamField>
+
+**Example:**
+
+```json
+{
+  "documentation_ids": [
+    "string"
+  ],
+  "email": "string",
+  "role": "string"
+}
+```
+
+## Responses
+
+<Response status="201">
+  Created
+</Response>
+
+**Response Fields:**
+
+- `created_at` (string)
+- `documentation_ids` (string[])
+- `email` (string)
+- `id` (string)
+- `invited_at` (string)
+- `invited_by` (string)
+- `joined_at` (string)
+- `name` (string)
+- `organization_id` (string)
+- `profile_picture_url` (string)
+- `role` (string)
+- `status` (string)
+- `updated_at` (string)
+- `user_id` (string)
+
+**Example:**
+
+```json
+{
+  "created_at": "string",
+  "documentation_ids": [
+    "string"
+  ],
+  "email": "string",
+  "id": "string",
+  "invited_at": "string",
+  "invited_by": "string",
+  "joined_at": "string",
+  "name": "string",
+  "organization_id": "string",
+  "profile_picture_url": "string",
+  "role": "admin",
+  "status": "pending",
+  "updated_at": "string",
+  "user_id": "string"
+}
+```
+
+<Response status="400">
+  Bad Request
+</Response>
+
+**Example:**
+
+```json
+{
+  "key": "value"
+}
+```
+
+<Response status="401">
+  Unauthorized
+</Response>
+
+**Example:**
+
+```json
+{
+  "key": "value"
+}
+```
+
+<Response status="500">
+  Internal Server Error
+</Response>
+
+**Example:**
+
+```json
+{
+  "key": "value"
+}
+```

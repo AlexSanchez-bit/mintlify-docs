@@ -1,0 +1,67 @@
+<Endpoint method="PATCH" path="/v1/organization/{organization_id}/users/{user_id}/documentations" />
+
+## Authentication
+
+**API Key** (`BearerAuth`)
+- Header: `Authorization`
+
+## Path Parameters
+
+<ParamField path="organization_id" type="string" required>
+  Organization ID
+</ParamField>
+
+<ParamField path="user_id" type="string" required>
+  Organization User ID (the org_users row id)
+</ParamField>
+
+## Request Body
+
+Docs to add/remove
+
+**Required**
+
+<ParamField path="add" type="string[]">
+</ParamField>
+
+<ParamField path="remove" type="string[]">
+</ParamField>
+
+**Example:**
+
+```json
+{
+  "add": [
+    "string"
+  ],
+  "remove": [
+    "string"
+  ]
+}
+```
+
+## Responses
+
+<Response status="200">
+  OK
+</Response>
+
+**Example:**
+
+```json
+{
+  "key": "value"
+}
+```
+
+<Response status="400">
+  Bad Request
+</Response>
+
+**Example:**
+
+```json
+{
+  "key": "value"
+}
+```

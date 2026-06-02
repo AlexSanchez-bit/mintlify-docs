@@ -1,0 +1,95 @@
+<Endpoint method="GET" path="/v1/documentation/{organization_id}/{documentation_id}/version/{version_id}" />
+
+## Authentication
+
+**API Key** (`BearerAuth`)
+- Header: `Authorization`
+
+## Path Parameters
+
+<ParamField path="organization_id" type="string" required>
+  Organization ID
+</ParamField>
+
+<ParamField path="documentation_id" type="string" required>
+  Documentation ID
+</ParamField>
+
+<ParamField path="version_id" type="string" required>
+  Version ID
+</ParamField>
+
+## Responses
+
+<Response status="200">
+  OK
+</Response>
+
+**Response Fields:**
+
+- `created_at` (string)
+- `documentation_id` (string)
+- `id` (string)
+- `is_default` (boolean)
+- `is_deprecated` (boolean)
+- `is_latest` (boolean)
+- `name` (string)
+- `released_at` (string)
+- `sections` (object[])
+- `slug` (string)
+- `updated_at` (string)
+
+**Example:**
+
+```json
+{
+  "created_at": "string",
+  "documentation_id": "string",
+  "id": "string",
+  "is_default": true,
+  "is_deprecated": true,
+  "is_latest": true,
+  "name": "string",
+  "released_at": "string",
+  "sections": [
+    {
+      "created_at": "string",
+      "icon": "string",
+      "id": "string",
+      "name": "string",
+      "order": 0,
+      "prompt": "string",
+      "slug": "string",
+      "type": "product_documentation",
+      "updated_at": "string",
+      "version_id": "string"
+    }
+  ],
+  "slug": "string",
+  "updated_at": "string"
+}
+```
+
+<Response status="400">
+  Bad Request
+</Response>
+
+**Example:**
+
+```json
+{
+  "key": "value"
+}
+```
+
+<Response status="404">
+  Not Found
+</Response>
+
+**Example:**
+
+```json
+{
+  "key": "value"
+}
+```

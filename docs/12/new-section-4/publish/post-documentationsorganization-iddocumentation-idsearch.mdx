@@ -1,0 +1,79 @@
+<Endpoint method="POST" path="/documentations/{organization_id}/{documentation_id}/search" />
+
+## Authentication
+
+**API Key** (`BearerAuth`)
+- Header: `Authorization`
+
+## Path Parameters
+
+<ParamField path="organization_id" type="string" required>
+  Organization ID
+</ParamField>
+
+<ParamField path="documentation_id" type="string" required>
+  Documentation ID
+</ParamField>
+
+## Request Body
+
+Search query
+
+**Required**
+
+<ParamField path="limit" type="integer">
+</ParamField>
+
+<ParamField path="query" type="string" required>
+</ParamField>
+
+<ParamField path="version_id" type="string">
+</ParamField>
+
+**Example:**
+
+```json
+{
+  "limit": 0,
+  "query": "string",
+  "version_id": "string"
+}
+```
+
+## Responses
+
+<Response status="200">
+  Ranked results
+</Response>
+
+**Example:**
+
+```json
+{
+  "key": "value"
+}
+```
+
+<Response status="400">
+  Bad request
+</Response>
+
+**Example:**
+
+```json
+{
+  "key": "value"
+}
+```
+
+<Response status="500">
+  Internal server error
+</Response>
+
+**Example:**
+
+```json
+{
+  "key": "value"
+}
+```

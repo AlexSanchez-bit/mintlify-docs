@@ -1,0 +1,85 @@
+Returns the paginated list of publish events for a documentation
+
+<Endpoint method="GET" path="/documentations/{documentation_id}/publish/history" />
+
+## Authentication
+
+**API Key** (`BearerAuth`)
+- Header: `Authorization`
+
+## Path Parameters
+
+<ParamField path="documentation_id" type="string" required>
+  Documentation ID
+</ParamField>
+
+## Query Parameters
+
+<ParamField path="page" type="integer">
+  Page number (default 1)
+</ParamField>
+
+<ParamField path="page_size" type="integer">
+  Page size (default 20, max 100)
+</ParamField>
+
+## Responses
+
+<Response status="200">
+  Publish history
+</Response>
+
+**Response Fields:**
+
+- `items` (object[])
+- `page` (integer)
+- `page_size` (integer)
+- `total` (integer)
+- `total_pages` (integer)
+
+**Example:**
+
+```json
+{
+  "items": [
+    {
+      "entries_count": 0,
+      "id": "string",
+      "message": "string",
+      "published_at": "string",
+      "published_by": "string",
+      "published_by_name": "string",
+      "sections_count": 0,
+      "versions_count": 0
+    }
+  ],
+  "page": 0,
+  "page_size": 0,
+  "total": 0,
+  "total_pages": 0
+}
+```
+
+<Response status="400">
+  Bad request
+</Response>
+
+**Example:**
+
+```json
+{
+  "key": "value"
+}
+```
+
+<Response status="500">
+  Internal server error
+</Response>
+
+**Example:**
+
+```json
+{
+  "key": "value"
+}
+```

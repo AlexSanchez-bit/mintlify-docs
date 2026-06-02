@@ -1,0 +1,101 @@
+<Endpoint method="POST" path="/v1/organization" />
+
+## Authentication
+
+**API Key** (`BearerAuth`)
+- Header: `Authorization`
+
+## Request Body
+
+Organization input
+
+**Required**
+
+<ParamField path="created_at" type="string">
+</ParamField>
+
+<ParamField path="delete_at" type="string">
+</ParamField>
+
+<ParamField path="id" type="string">
+</ParamField>
+
+<ParamField path="logoPath" type="string">
+</ParamField>
+
+<ParamField path="logoUrl" type="string">
+</ParamField>
+
+<ParamField path="name" type="string">
+</ParamField>
+
+<ParamField path="onboardingComplete" type="boolean">
+</ParamField>
+
+<ParamField path="updated_at" type="string">
+</ParamField>
+
+**Example:**
+
+```json
+{
+  "created_at": "string",
+  "delete_at": "string",
+  "id": "string",
+  "logoPath": "string",
+  "logoUrl": "string",
+  "name": "string",
+  "onboardingComplete": true,
+  "updated_at": "string"
+}
+```
+
+## Responses
+
+<Response status="201">
+  Created
+</Response>
+
+**Example:**
+
+```json
+{
+  "key": "value"
+}
+```
+
+<Response status="400">
+  Bad Request
+</Response>
+
+**Example:**
+
+```json
+{
+  "key": "value"
+}
+```
+
+<Response status="401">
+  Unauthorized
+</Response>
+
+**Example:**
+
+```json
+{
+  "key": "value"
+}
+```
+
+<Response status="500">
+  Internal Server Error
+</Response>
+
+**Example:**
+
+```json
+{
+  "key": "value"
+}
+```

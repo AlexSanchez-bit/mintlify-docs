@@ -1,0 +1,44 @@
+<Endpoint method="GET" path="/v1/organizations/{organization_id}/git-provider/install-url" />
+
+## Authentication
+
+**API Key** (`BearerAuth`)
+- Header: `Authorization`
+
+## Path Parameters
+
+<ParamField path="organization_id" type="string" required>
+  Organization ID
+</ParamField>
+
+## Query Parameters
+
+<ParamField path="provider" type="string" required>
+  Provider
+</ParamField>
+
+## Responses
+
+<Response status="200">
+  OK
+</Response>
+
+**Example:**
+
+```json
+{
+  "key": "value"
+}
+```
+
+<Response status="400">
+  Bad Request
+</Response>
+
+**Example:**
+
+```json
+{
+  "key": "value"
+}
+```

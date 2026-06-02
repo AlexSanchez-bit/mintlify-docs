@@ -1,0 +1,59 @@
+Returns every pending organization invitation for the authenticated user's email.
+
+<Endpoint method="GET" path="/v1/invitations" />
+
+## Authentication
+
+**API Key** (`BearerAuth`)
+- Header: `Authorization`
+
+## Responses
+
+<Response status="200">
+  OK
+</Response>
+
+**Example:**
+
+```json
+[
+  {
+    "created_at": "string",
+    "documentation_ids": [
+      "string"
+    ],
+    "email": "string",
+    "id": "string",
+    "invited_at": "string",
+    "invited_by": "string",
+    "joined_at": "string",
+    "name": "string",
+    "organization_id": "string",
+    "profile_picture_url": "string"
+  }
+]
+```
+
+<Response status="401">
+  Unauthorized
+</Response>
+
+**Example:**
+
+```json
+{
+  "key": "value"
+}
+```
+
+<Response status="500">
+  Internal Server Error
+</Response>
+
+**Example:**
+
+```json
+{
+  "key": "value"
+}
+```

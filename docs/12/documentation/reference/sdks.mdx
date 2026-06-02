@@ -1,0 +1,124 @@
+# SDKs
+
+The official SDKs are thin wrappers around the REST API with a few extras: automatic batching, retries with jitter, offline buffering for mobile, and typed event helpers.
+
+## Quick reference
+
+| Language | Package | Source |
+|---|---|---|
+| Node.js | `@polaris/sdk` | github.com/polaris-io/polaris-node |
+| Python | `polaris-sdk` | github.com/polaris-io/polaris-python |
+| Go | `github.com/polaris-io/polaris-go` | github.com/polaris-io/polaris-go |
+| Ruby | `polaris` | github.com/polaris-io/polaris-ruby |
+| Java | `dev.polaris:sdk` | github.com/polaris-io/polaris-java |
+| Swift | `PolarisSDK` | github.com/polaris-io/polaris-swift |
+
+## Sending an event
+
+<Tabs>
+  <Tab title="Node.js" icon="pi pi-microsoft">
+    ```js index.js
+    import { Polaris } from "@polaris/sdk";
+
+    const polaris = new Polaris({ token: process.env.POLARIS_TOKEN });
+
+    await polaris.track({
+      type: "checkout.completed",
+      actor: { id: "user_842", tenant: "acme" },
+      properties: { order_id: "ord_19f0", total_usd: 142.50 },
+    });
+    ```
+  </Tab>
+  <Tab title="Python" icon="pi pi-code">
+    ```python main.py
+    from polaris import Polaris
+
+    polaris = Polaris(token=os.environ["POLARIS_TOKEN"])
+
+    polaris.track(
+        type="checkout.completed",
+        actor={"id": "user_842", "tenant": "acme"},
+        properties={"order_id": "ord_19f0", "total_usd": 142.50},
+    )
+    ```
+  </Tab>
+  <Tab title="Go" icon="pi pi-google">
+    ```go main.go
+    client := polaris.New(os.Getenv("POLARIS_TOKEN"))
+
+    err := client.Track(ctx, polaris.Event{
+        Type:  "checkout.completed",
+        Actor: polaris.Actor{ID: "user_842", Tenant: "acme"},
+        Properties: map[string]any{
+            "order_id":  "ord_19f0",
+            "total_usd": 142.50,
+        },
+    })
+    ```
+  </Tab>
+  <Tab title="Ruby" icon="pi pi-circle">
+    ```ruby main.rb
+    polaris = Polaris.new(token: ENV["POLARIS_TOKEN"])
+
+    polaris.track(
+      type: "checkout.completed",
+      actor: { id: "user_842", tenant: "acme" },
+      properties: { order_id: "ord_19f0", total_usd: 142.50 }
+    )
+    ```
+  </Tab>
+</Tabs>
+
+## Batching
+
+All server-side SDKs batch events in the background. The default policy is to flush every 250 ms or when the queue reaches 200 events, whichever comes first.
+
+<Accordion>
+  <AccordionTab title="Tuning the batch policy" icon="pi pi-sliders-h">
+
+    Both knobs are configurable. Lower latency, smaller batches:
+
+    ```js
+    new Polaris({
+      token: process.env.POLARIS_TOKEN,
+      batch: { maxLatencyMs: 100, maxSize: 50 },
+    });
+    ```
+
+    Higher throughput, larger batches:
+
+    ```js
+    new Polaris({
+      token: process.env.POLARIS_TOKEN,
+      batch: { maxLatencyMs: 1000, maxSize: 500 },
+    });
+    ```
+
+  </AccordionTab>
+
+  <AccordionTab title="Flushing manually" icon="pi pi-refresh">
+
+    Call `flush()` before exiting a short-lived process to ensure buffered events are sent.
+
+    ```js
+    process.on("beforeExit", async () => {
+      await polaris.flush();
+    });
+    ```
+
+  </AccordionTab>
+</Accordion>
+
+## Mobile SDKs
+
+Mobile SDKs (Swift, Kotlin) include an offline event queue backed by the device's filesystem. Events captured offline are persisted and retried on next launch, with a configurable cap to prevent runaway disk usage.
+
+> [!NOTE]
+> The Swift SDK uses Core Data; the Kotlin SDK uses Room. Both default to a 5 MB cap and FIFO eviction.
+
+## Versioning
+
+SDKs follow semver. Major versions are released roughly every 18 months and are supported for two majors back. Minor versions are non-breaking. Patch versions are bug fixes only.
+
+> [!WARNING]
+> Pin the SDK version in your lockfile. The Polaris API itself is versioned by the URL path (`/v1`), but client-side defaults — batching, retry intervals — can change between SDK minors.

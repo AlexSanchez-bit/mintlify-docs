@@ -1,0 +1,52 @@
+![Polaris hero](https://storage.googleapis.com/gitdocai-public/demos/jade-hero.png)
+
+# Welcome to Polaris
+
+Polaris is a streaming event platform that captures every interaction across your product and turns it into a queryable, real-time source of truth. Instrument once, query everywhere — dashboards, alerts, machine learning features, and customer-facing analytics all read from the same pipeline.
+
+> [!TIP]
+> The fastest way to get a feel for Polaris is the [Quickstart](/docs-new/quickstart) — under ten minutes from a fresh account to your first event landing in the live stream.
+
+## Pick a starting point
+
+<Card title="Quickstart" icon="fa fa-rocket" href="/docs-new/quickstart">
+  Install the SDK, send your first event, and watch it appear in the live stream.
+</Card>
+
+<Card title="Core Concepts" icon="pi pi-compass" href="/docs-new/core-concepts">
+  Events, streams, projections, and how the pieces fit together.
+</Card>
+
+<Card title="REST API" icon="pi pi-code" href="/docs-new/reference/rest-api">
+  Send events, query projections, and manage destinations over HTTP.
+</Card>
+
+## What you can build
+
+| Use case | What Polaris gives you |
+|---|---|
+| Product analytics | Funnel, retention, and cohort projections refreshed in seconds. |
+| Customer dashboards | Multi-tenant queries with per-tenant rate limits and row-level filters. |
+| Realtime alerting | Sub-second triggers when an event stream crosses a threshold. |
+| Feature stores | Stable, versioned features computed from the same event log your dashboards use. |
+| Audit logs | Append-only, tamper-evident storage with configurable retention. |
+
+## How it fits in your stack
+
+<Steps>
+  <Step title="Capture">
+    Your services, mobile apps, and frontends send events to Polaris using one of the SDKs or the REST API. Events are batched and compressed on the client.
+  </Step>
+  <Step title="Stream">
+    Events land in a durable, ordered stream. Downstream consumers — projections, webhooks, exports — read from the same log.
+  </Step>
+  <Step title="Project">
+    SQL-like projections turn raw events into tables you can query from your application or BI tool with single-digit-millisecond latency.
+  </Step>
+  <Step title="Distribute">
+    Push results back into your product, warehouse, or third-party tools via webhooks, sinks, or the query API.
+  </Step>
+</Steps>
+
+> [!NOTE]
+> Polaris is **stream-first**: there is no batch ingestion path. Even a one-off CSV import is converted into events and replayed through the same pipeline your live traffic uses. This is what keeps projections and history consistent.

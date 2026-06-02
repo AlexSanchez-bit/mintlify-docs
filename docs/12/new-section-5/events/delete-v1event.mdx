@@ -1,0 +1,66 @@
+<Endpoint method="DELETE" path="/v1/event" />
+
+## Authentication
+
+**API Key** (`BearerAuth`)
+- Header: `Authorization`
+
+## Query Parameters
+
+<ParamField path="project-id" type="string" required>
+  Project ID
+</ParamField>
+
+<ParamField path="id" type="string">
+  Event ID (if not provided, deletes all events for project)
+</ParamField>
+
+## Responses
+
+<Response status="200">
+  OK
+</Response>
+
+**Example:**
+
+```json
+{
+  "key": "value"
+}
+```
+
+<Response status="400">
+  Bad Request
+</Response>
+
+**Example:**
+
+```json
+{
+  "key": "value"
+}
+```
+
+<Response status="401">
+  Unauthorized
+</Response>
+
+**Example:**
+
+```json
+{
+  "key": "value"
+}
+```
+
+<Response status="500">
+  Internal Server Error
+</Response>
+
+**Example:**
+
+```json
+{
+  "key": "value"
+}
+```

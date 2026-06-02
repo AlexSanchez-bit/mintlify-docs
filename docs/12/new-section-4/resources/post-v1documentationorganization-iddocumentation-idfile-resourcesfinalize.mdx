@@ -1,0 +1,87 @@
+<Endpoint method="POST" path="/v1/documentation/{organization_id}/{documentation_id}/file-resources/finalize" />
+
+## Path Parameters
+
+<ParamField path="organization_id" type="string" required>
+  Organization ID
+</ParamField>
+
+<ParamField path="documentation_id" type="string" required>
+  Documentation ID
+</ParamField>
+
+## Request Body
+
+Upload identifiers
+
+**Required**
+
+<ParamField path="filename" type="string" required>
+</ParamField>
+
+<ParamField path="resource_id" type="string" required>
+</ParamField>
+
+**Example:**
+
+```json
+{
+  "filename": "string",
+  "resource_id": "string"
+}
+```
+
+## Responses
+
+<Response status="200">
+  OK
+</Response>
+
+**Example:**
+
+```json
+{
+  "created_at": "string",
+  "documentation_id": "string",
+  "error_message": "string",
+  "file": {
+    "content_hash": "string",
+    "ignored_content_hash": "string",
+    "path": "string",
+    "size": 0
+  },
+  "id": "string",
+  "ingest_current_item": "string",
+  "ingest_items_processed": 0,
+  "ingest_total_items": 0,
+  "last_sync_at": "string",
+  "name": "string",
+  "openapi": {
+    "branch": "string",
+    "content_hash": "string",
+    "endpoint_count": 0,
+    "file_path": "string",
+    "filename": "string",
+    "ignored_commit_sha": "string",
+    "ignored_content_hash": "string",
+    "installation_id": "string",
+    "last_checked_at": "string",
+    "last_commit_message": "string"
+  },
+  "organization_id": "string",
+  "repository": {
+    "branch": "string",
+    "commits_ahead": 0,
+    "content_source": "content",
+    "files_ingested_count": 0,
+    "ignored_commit_sha": "string",
+    "installation_id": "string",
+    "last_checked_at": "string",
+    "last_commit_message": "string",
+    "last_commit_sha": "string",
+    "path": "string"
+  },
+  "status": "pending",
+  "type": "repository"
+}
+```

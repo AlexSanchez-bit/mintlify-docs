@@ -1,0 +1,133 @@
+Checks the images_generated limit, generates an image from the
+prompt, saves it as a documentation asset, and returns the asset.
+
+<Endpoint method="POST" path="/documentation/{organization_id}/{documentation_id}/ai/generate-image" />
+
+## Path Parameters
+
+<ParamField path="organization_id" type="string" required>
+  Organization ID
+</ParamField>
+
+<ParamField path="documentation_id" type="string" required>
+  Documentation ID
+</ParamField>
+
+## Request Body
+
+Image prompt
+
+**Required**
+
+<ParamField path="alt" type="string">
+</ParamField>
+
+<ParamField path="height" type="integer">
+</ParamField>
+
+<ParamField path="prompt" type="string" required>
+</ParamField>
+
+<ParamField path="width" type="integer">
+</ParamField>
+
+**Example:**
+
+```json
+{
+  "alt": "string",
+  "height": 0,
+  "prompt": "string",
+  "width": 0
+}
+```
+
+## Responses
+
+<Response status="200">
+  OK
+</Response>
+
+**Response Fields:**
+
+- `alt` (string)
+- `created_at` (string)
+- `documentation_id` (string)
+- `height` (integer)
+- `id` (string)
+- `mime_type` (string)
+- `name` (string)
+- `original_name` (string)
+- `size` (integer)
+- `type` (string)
+- `updated_at` (string)
+- `url` (string)
+- `width` (integer)
+
+**Example:**
+
+```json
+{
+  "alt": "string",
+  "created_at": "string",
+  "documentation_id": "string",
+  "height": 0,
+  "id": "string",
+  "mime_type": "string",
+  "name": "string",
+  "original_name": "string",
+  "size": 0,
+  "type": "image",
+  "updated_at": "string",
+  "url": "string",
+  "width": 0
+}
+```
+
+<Response status="400">
+  Bad Request
+</Response>
+
+**Example:**
+
+```json
+{
+  "key": "value"
+}
+```
+
+<Response status="402">
+  Payment Required
+</Response>
+
+**Example:**
+
+```json
+{
+  "key": "value"
+}
+```
+
+<Response status="500">
+  Internal Server Error
+</Response>
+
+**Example:**
+
+```json
+{
+  "key": "value"
+}
+```
+
+<Response status="503">
+  Service Unavailable
+</Response>
+
+**Example:**
+
+```json
+{
+  "key": "value"
+}
+```

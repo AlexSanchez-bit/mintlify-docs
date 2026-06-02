@@ -1,0 +1,111 @@
+Takes markdown content and a prompt, returns modified content with diff
+
+<Endpoint method="POST" path="/documentation/{organization_id}/{documentation_id}/ai/edit" />
+
+## Path Parameters
+
+<ParamField path="organization_id" type="string" required>
+  Organization ID
+</ParamField>
+
+<ParamField path="documentation_id" type="string" required>
+  Documentation ID
+</ParamField>
+
+## Request Body
+
+Edit request
+
+**Required**
+
+<ParamField path="content" type="string">
+</ParamField>
+
+<ParamField path="prompt" type="string" required>
+</ParamField>
+
+**Example:**
+
+```json
+{
+  "content": "string",
+  "prompt": "string"
+}
+```
+
+## Responses
+
+<Response status="200">
+  OK
+</Response>
+
+**Response Fields:**
+
+- `changes` (object[])
+- `content` (string)
+- `error` (string)
+- `valid` (boolean)
+
+**Example:**
+
+```json
+{
+  "changes": [
+    {
+      "type": "string",
+      "value": "string"
+    }
+  ],
+  "content": "string",
+  "error": "string",
+  "valid": true
+}
+```
+
+<Response status="400">
+  Bad Request
+</Response>
+
+**Example:**
+
+```json
+{
+  "key": "value"
+}
+```
+
+<Response status="402">
+  Payment Required
+</Response>
+
+**Example:**
+
+```json
+{
+  "key": "value"
+}
+```
+
+<Response status="500">
+  Internal Server Error
+</Response>
+
+**Example:**
+
+```json
+{
+  "key": "value"
+}
+```
+
+<Response status="503">
+  Service Unavailable
+</Response>
+
+**Example:**
+
+```json
+{
+  "key": "value"
+}
+```

@@ -1,0 +1,73 @@
+# Data Model
+
+Every event in Polaris is a JSON document that conforms to a small, strict envelope. The fields below are the same across every SDK and the REST API.
+
+## The envelope
+
+```json
+{
+  "type": "checkout.completed",
+  "actor": {
+    "id": "user_842",
+    "tenant": "acme",
+    "anonymous": false
+  },
+  "occurred_at": "2026-05-27T14:02:09.413Z",
+  "received_at": "2026-05-27T14:02:09.512Z",
+  "context": {
+    "ip": "203.0.113.42",
+    "user_agent": "Polaris-Node/2.4.0",
+    "source": "checkout-service",
+    "trace_id": "a7c1ef..."
+  },
+  "properties": {
+    "order_id": "ord_19f0",
+    "total_usd": 142.50,
+    "items": 3,
+    "currency": "USD"
+  }
+}
+```
+
+## Field reference
+
+| Field | Type | Required | Notes |
+|---|---|---|---|
+| `type` | string | yes | Dot-separated, lowercase. Used to route events into projections. |
+| `actor.id` | string | yes | Stable identifier for the entity producing the event. Ordering is per-actor. |
+| `actor.tenant` | string | conditional | Required for multi-tenant workspaces. Powers row-level isolation. |
+| `actor.anonymous` | boolean | no | Marks pre-login events. Polaris can stitch them to a user on login. |
+| `occurred_at` | RFC3339 string | no | Defaults to server receive time. |
+| `received_at` | RFC3339 string | server-assigned | Always set by Polaris. Cannot be overridden. |
+| `context` | object | no | Free-form metadata. Reserved keys like `ip` and `trace_id` enable extra features. |
+| `properties` | object | no | Event-specific payload. No schema enforced by default. |
+
+## Schema rules
+
+<Accordion>
+  <AccordionTab title="Type names" icon="pi pi-tag">
+
+    - Lowercase ASCII letters, digits, dots, and underscores only.
+    - Dots create natural namespaces — `checkout.completed`, `checkout.cancelled`.
+    - Once a type is in use, renaming it splits history. Prefer aliasing in a projection.
+
+  </AccordionTab>
+
+  <AccordionTab title="Properties evolution" icon="pi pi-arrow-up">
+
+    Properties are schemaless by default — adding a new field never breaks ingestion. To enforce structure, attach a **schema contract** to a type from the dashboard. Contracts can reject, warn, or coerce fields that don't match.
+
+  </AccordionTab>
+
+  <AccordionTab title="Identifying users vs anonymous traffic" icon="pi pi-users">
+
+    Set `actor.anonymous = true` for events from logged-out sessions, then emit an `identify` event when the user signs in. Polaris automatically rewrites the anonymous actor's recent history onto the resolved user ID — projections see one continuous timeline.
+
+  </AccordionTab>
+</Accordion>
+
+> [!TIP]
+> Treat `type` as the contract. Treat `properties` as the payload. When you reach for "should this be a new type or a new property?" — if a downstream consumer would route on it, it's a new type.
+
+> [!DANGER]
+> Personally identifiable information should not be stored in `properties` unless your workspace has PII handling enabled. Polaris will detect common PII shapes (email, phone, credit card) and emit a violation warning, but it will not block ingestion by default.

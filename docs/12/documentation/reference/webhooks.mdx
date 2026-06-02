@@ -1,0 +1,102 @@
+# Webhooks
+
+Subscribe to events as they land. Webhooks are the lowest-latency way to react to ingestion outside of Polaris — typically sub-second from event arrival to your endpoint receiving the payload.
+
+## Setting up an endpoint
+
+<Steps>
+  <Step title="Create the endpoint">
+    From the dashboard, open **Sinks → Webhooks** and add a new destination. You'll supply a URL, choose which event types to subscribe to, and pick a signing secret.
+  </Step>
+  <Step title="Verify the signature">
+    Polaris signs every payload with HMAC-SHA256 using the secret you set. Reject any request whose signature doesn't match.
+
+    ```js webhook.js
+    import crypto from "crypto";
+
+    const expected = crypto
+      .createHmac("sha256", process.env.POLARIS_WEBHOOK_SECRET)
+      .update(req.rawBody)
+      .digest("hex");
+
+    if (req.headers["x-polaris-signature"] !== expected) {
+      return res.status(401).send("invalid signature");
+    }
+    ```
+  </Step>
+  <Step title="Acknowledge fast">
+    Return a 2xx within five seconds. If processing takes longer, queue the payload and return 202 immediately — Polaris will treat anything slower than five seconds as a failure and retry.
+  </Step>
+</Steps>
+
+## Payload
+
+```json
+{
+  "id": "evt_01HF4...",
+  "type": "checkout.completed",
+  "delivery_id": "del_01HF4...",
+  "attempt": 1,
+  "occurred_at": "2026-05-27T14:02:09.413Z",
+  "actor": { "id": "user_842", "tenant": "acme" },
+  "properties": { "order_id": "ord_19f0", "total_usd": 142.50 }
+}
+```
+
+`delivery_id` is unique per attempt — use it to de-duplicate if your handler is not idempotent.
+
+## Retries
+
+| Attempt | Delay | Status |
+|---|---|---|
+| 1 | immediate | initial delivery |
+| 2 | 30s | first retry |
+| 3 | 2m | exponential backoff |
+| 4 | 15m | |
+| 5 | 2h | |
+| 6 | 12h | last retry |
+
+After the sixth failure the delivery is marked **failed** and surfaced in the dashboard's delivery feed. You can manually replay any failed delivery for up to 30 days.
+
+## Event filtering
+
+<Accordion>
+  <AccordionTab title="Subscribe to a single type">
+
+    Configure the webhook to only receive `checkout.completed` events:
+
+    ```json
+    { "types": ["checkout.completed"] }
+    ```
+
+  </AccordionTab>
+
+  <AccordionTab title="Subscribe to a namespace">
+
+    Wildcards work at the dot boundary — `checkout.*` receives every `checkout.X` event:
+
+    ```json
+    { "types": ["checkout.*"] }
+    ```
+
+  </AccordionTab>
+
+  <AccordionTab title="Filter by properties">
+
+    For finer-grained control, attach a JSON-path filter:
+
+    ```json
+    {
+      "types": ["checkout.completed"],
+      "filter": "$.properties.total_usd >= 100"
+    }
+    ```
+
+  </AccordionTab>
+</Accordion>
+
+> [!WARNING]
+> Webhook destinations that fail for more than 24 consecutive hours are automatically paused to protect your endpoint from a thundering-herd retry storm. You'll get an email when this happens.
+
+> [!TIP]
+> If your endpoint is behind a load balancer that strips headers, allow-list `X-Polaris-Signature`, `X-Polaris-Delivery-Id`, and `X-Polaris-Attempt`.

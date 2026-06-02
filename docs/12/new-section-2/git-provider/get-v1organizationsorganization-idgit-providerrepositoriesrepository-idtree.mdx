@@ -1,0 +1,83 @@
+<Endpoint method="GET" path="/v1/organizations/{organization_id}/git-provider/repositories/{repository_id}/tree" />
+
+## Authentication
+
+**API Key** (`BearerAuth`)
+- Header: `Authorization`
+
+## Path Parameters
+
+<ParamField path="organization_id" type="string" required>
+  Organization ID
+</ParamField>
+
+<ParamField path="repository_id" type="string" required>
+  Repository ID
+</ParamField>
+
+## Query Parameters
+
+<ParamField path="branch" type="string">
+  Branch name (defaults to default branch)
+</ParamField>
+
+<ParamField path="path" type="string">
+  Path within repository (defaults to root)
+</ParamField>
+
+## Responses
+
+<Response status="200">
+  OK
+</Response>
+
+**Example:**
+
+```json
+[
+  {
+    "download_url": "string",
+    "name": "string",
+    "path": "string",
+    "sha": "string",
+    "size": 0,
+    "type": "string"
+  }
+]
+```
+
+<Response status="400">
+  Bad Request
+</Response>
+
+**Example:**
+
+```json
+{
+  "key": "value"
+}
+```
+
+<Response status="401">
+  Unauthorized
+</Response>
+
+**Example:**
+
+```json
+{
+  "key": "value"
+}
+```
+
+<Response status="404">
+  Not Found
+</Response>
+
+**Example:**
+
+```json
+{
+  "key": "value"
+}
+```

@@ -1,0 +1,91 @@
+<Endpoint method="POST" path="/v1/organizations/{organization_id}/projects/{project_id}/events" />
+
+## Authentication
+
+**API Key** (`BearerAuth`)
+- Header: `Authorization`
+
+## Path Parameters
+
+<ParamField path="organization_id" type="string" required>
+  Organization ID
+</ParamField>
+
+<ParamField path="project_id" type="string" required>
+  Project ID
+</ParamField>
+
+## Request Body
+
+Event data
+
+**Required**
+
+<ParamField path="level" type="string">
+</ParamField>
+
+<ParamField path="message" type="string">
+</ParamField>
+
+<ParamField path="source" type="string">
+</ParamField>
+
+**Example:**
+
+```json
+{
+  "level": "string",
+  "message": "string",
+  "source": "string"
+}
+```
+
+## Responses
+
+<Response status="201">
+  Created
+</Response>
+
+**Example:**
+
+```json
+{
+  "key": "value"
+}
+```
+
+<Response status="400">
+  Bad Request
+</Response>
+
+**Example:**
+
+```json
+{
+  "key": "value"
+}
+```
+
+<Response status="401">
+  Unauthorized
+</Response>
+
+**Example:**
+
+```json
+{
+  "key": "value"
+}
+```
+
+<Response status="500">
+  Internal Server Error
+</Response>
+
+**Example:**
+
+```json
+{
+  "key": "value"
+}
+```

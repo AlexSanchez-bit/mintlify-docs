@@ -1,0 +1,193 @@
+<Endpoint method="PUT" path="/v1/documentation/{organization_id}/{documentation_id}" />
+
+## Authentication
+
+**API Key** (`BearerAuth`)
+- Header: `Authorization`
+
+## Path Parameters
+
+<ParamField path="organization_id" type="string" required>
+  Organization ID
+</ParamField>
+
+<ParamField path="documentation_id" type="string" required>
+  Documentation ID
+</ParamField>
+
+## Request Body
+
+Documentation update input
+
+**Required**
+
+<ParamField path="audience" type="string">
+</ParamField>
+
+<ParamField path="description" type="string">
+</ParamField>
+
+<ParamField path="name" type="string">
+</ParamField>
+
+<ParamField path="status" type="string">
+</ParamField>
+
+<ParamField path="version_selector_enabled" type="boolean">
+</ParamField>
+
+<ParamField path="version_selector_position" type="string">
+</ParamField>
+
+**Example:**
+
+```json
+{
+  "audience": "public",
+  "description": "string",
+  "name": "string",
+  "status": "pending",
+  "version_selector_enabled": true,
+  "version_selector_position": "navbar_right"
+}
+```
+
+## Responses
+
+<Response status="200">
+  OK
+</Response>
+
+**Response Fields:**
+
+- `audience` (string)
+- `config` (object)
+- `created_at` (string)
+- `description` (string)
+- `has_pending_changes` (boolean)
+- `id` (string)
+- `name` (string)
+- `organization_id` (string)
+- `published_at` (string)
+- `slug` (string)
+- `status` (string)
+- `updated_at` (string)
+- `version_selector_enabled` (boolean)
+- `version_selector_position` (string)
+
+**Example:**
+
+```json
+{
+  "audience": "public",
+  "config": {
+    "assistant": {
+      "enabled": true,
+      "floating": true
+    },
+    "favicon_url": "string",
+    "footer": {
+      "copyright": "string",
+      "enabled": true,
+      "links": [
+        {
+          "icon": "...",
+          "label": "...",
+          "style": "...",
+          "url": "..."
+        }
+      ],
+      "powered_by_gitdocai": true
+    },
+    "kb": {
+      "enabled": true,
+      "hero_description": "string",
+      "hero_placeholder": "string",
+      "hero_title": "string",
+      "icon": "string",
+      "name": "string",
+      "popular_articles": [
+        "string"
+      ],
+      "popular_title": "string",
+      "search_suggestions": [
+        "string"
+      ],
+      "show_categories": true
+    },
+    "navbar": [
+      {
+        "icon": "string",
+        "label": "string",
+        "style": "string",
+        "url": "string"
+      }
+    ],
+    "seo": {
+      "default_description": "string",
+      "default_og_image": "string",
+      "google_analytics_id": "string",
+      "site_title": "string",
+      "title_template": "string"
+    },
+    "theme": {
+      "dark": {
+        "accent_color": "string",
+        "bg_color": "string",
+        "logo_url": "string",
+        "text_color": "string"
+      },
+      "default": {},
+      "font_family": "string",
+      "heading_font": "string",
+      "light": {
+        "accent_color": "string",
+        "bg_color": "string",
+        "logo_url": "string",
+        "text_color": "string"
+      },
+      "modes": [
+        "dark"
+      ],
+      "preset": {},
+      "show_name": true
+    }
+  },
+  "created_at": "string",
+  "description": "string",
+  "has_pending_changes": true,
+  "id": "string",
+  "name": "string",
+  "organization_id": "string",
+  "published_at": "string",
+  "slug": "string",
+  "status": "pending",
+  "updated_at": "string",
+  "version_selector_enabled": true,
+  "version_selector_position": "navbar_right"
+}
+```
+
+<Response status="400">
+  Bad Request
+</Response>
+
+**Example:**
+
+```json
+{
+  "key": "value"
+}
+```
+
+<Response status="500">
+  Internal Server Error
+</Response>
+
+**Example:**
+
+```json
+{
+  "key": "value"
+}
+```

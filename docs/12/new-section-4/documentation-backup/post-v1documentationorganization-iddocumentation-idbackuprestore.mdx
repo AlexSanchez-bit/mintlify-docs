@@ -1,0 +1,59 @@
+Pulls the saved backup at the given branch/path (or the saved config defaults) and applies it to the documentation. Mode "replace" wipes the doc before applying, "merge" upserts on top.
+
+<Endpoint method="POST" path="/v1/documentation/{organization_id}/{documentation_id}/backup/restore" />
+
+## Authentication
+
+**API Key** (`BearerAuth`)
+- Header: `Authorization`
+
+## Path Parameters
+
+<ParamField path="organization_id" type="string" required>
+  Organization ID
+</ParamField>
+
+<ParamField path="documentation_id" type="string" required>
+  Documentation ID
+</ParamField>
+
+## Request Body
+
+Restore options
+
+<ParamField path="backup_id" type="string" required>
+</ParamField>
+
+<ParamField path="mode" type="string">
+</ParamField>
+
+**Example:**
+
+```json
+{
+  "backup_id": "string",
+  "mode": "string"
+}
+```
+
+## Responses
+
+<Response status="200">
+  OK
+</Response>
+
+**Response Fields:**
+
+- `branch` (string)
+- `file_count` (integer)
+- `path` (string)
+
+**Example:**
+
+```json
+{
+  "branch": "string",
+  "file_count": 0,
+  "path": "string"
+}
+```

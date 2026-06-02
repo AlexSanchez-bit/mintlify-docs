@@ -1,0 +1,117 @@
+<Endpoint method="POST" path="/v1/organization/{organization_id}/wizard-progress/{documentation_id}" />
+
+## Authentication
+
+**API Key** (`BearerAuth`)
+- Header: `Authorization`
+
+## Path Parameters
+
+<ParamField path="documentation_id" type="string" required>
+  Documentation ID
+</ParamField>
+
+## Request Body
+
+Wizard progress input
+
+**Required**
+
+<ParamField path="current_step" type="string" required>
+</ParamField>
+
+<ParamField path="documentation_id" type="string">
+</ParamField>
+
+<ParamField path="section_id" type="string">
+</ParamField>
+
+<ParamField path="section_name" type="string">
+</ParamField>
+
+<ParamField path="section_type" type="string">
+</ParamField>
+
+**Example:**
+
+```json
+{
+  "current_step": "string",
+  "documentation_id": "string",
+  "section_id": "string",
+  "section_name": "string",
+  "section_type": "string"
+}
+```
+
+## Responses
+
+<Response status="200">
+  OK
+</Response>
+
+**Response Fields:**
+
+- `created_at` (string)
+- `current_step` (string)
+- `documentation_id` (string)
+- `documentation_name` (string)
+- `id` (string)
+- `organization_id` (string)
+- `section_id` (string)
+- `section_name` (string)
+- `section_type` (string)
+- `updated_at` (string)
+
+**Example:**
+
+```json
+{
+  "created_at": "string",
+  "current_step": "string",
+  "documentation_id": "string",
+  "documentation_name": "string",
+  "id": "string",
+  "organization_id": "string",
+  "section_id": "string",
+  "section_name": "string",
+  "section_type": "string",
+  "updated_at": "string"
+}
+```
+
+<Response status="400">
+  Bad Request
+</Response>
+
+**Example:**
+
+```json
+{
+  "key": "value"
+}
+```
+
+<Response status="401">
+  Unauthorized
+</Response>
+
+**Example:**
+
+```json
+{
+  "key": "value"
+}
+```
+
+<Response status="500">
+  Internal Server Error
+</Response>
+
+**Example:**
+
+```json
+{
+  "key": "value"
+}
+```

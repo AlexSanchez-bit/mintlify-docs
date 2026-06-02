@@ -1,0 +1,74 @@
+When publishing your documentation with GitDocAI, you can choose to make it publicly available to anyone on the internet or restrict access to specific authorized users. This guide explains the differences between public and private documentation, how authentication works, and the roles available for your team.
+
+## Public Documentation
+
+Public documentation is accessible to anyone without requiring an account or login. 
+
+When a user requests a public page, the system bypasses the authentication flow (no `Authorization` header is required) and simply verifies that the resource's audience is set to `public`. 
+
+> [!TIP]
+> **When to use public docs:** Public visibility is ideal for open-source projects, public API references, and general customer support guides where you want maximum discoverability.
+
+## Private Documentation
+
+Private documentation is securely hidden from the public and requires users to authenticate before they can view the content. All authentication for private documentation is managed entirely through GitDocAI's Identity and Access Management (IAM) system.
+
+### Authentication Methods
+
+Depending on your organization's needs, users can access private documentation using two main methods:
+
+<Card title="Standard GitDocAI Accounts" icon="pi pi-user">
+Users log in using a traditional Email/Password combination or via social OAuth (Google or GitHub). The user owns their account, and anyone can create one to be invited to your private docs.
+</Card>
+
+<Card title="Enterprise SAML / SSO" icon="pi pi-building">
+Access is restricted to employees of your corporate domain using providers like Google Workspace, Microsoft Entra, or Okta. The organization retains full control over who can access the documentation.
+</Card>
+
+> [!NOTE]
+> SAML/SSO configuration is available for Enterprise plans and is configured once per organization. 
+
+### Example: SAML Configuration
+
+If you are setting up SAML for your organization, your IAM configuration will require specific details from your Identity Provider (IdP). Here is an example of what that configuration looks like behind the scenes:
+
+```json
+{
+  "organization": "Acme Corp",
+  "saml_config": {
+    "provider": "google",
+    "idp_url": "https://accounts.google.com/o/saml2/idp?idpid=...",
+    "certificate": "-----BEGIN CERTIFICATE-----\nMIIDdDCCAlygAwIBAgIG...\n-----END CERTIFICATE-----"
+  }
+}
+```
+
+## User Roles and Permissions
+
+When inviting users to your organization to manage or view private documentation, you will assign them a role. These roles dictate what they can do within the GitDocAI dashboard and whether they can read private content.
+
+| Role | Dashboard Access (Edit) | Private Docs (Read) | Org Configuration | User Management |
+| :--- | :--- | :--- | :--- | :--- |
+| **Admin** | ✅ Yes | ✅ Yes | ✅ Yes | ✅ Yes |
+| **Editor** | ✅ Yes | ✅ Yes | ❌ No | ❌ No |
+| **Reader** | ❌ No | ✅ Yes | ❌ No | ❌ No |
+
+> [!INFO]
+> The **Reader** role is specifically designed for end-users or employees who only need to consume your private documentation. They cannot access the GitDocAI dashboard or edit content.
+
+## Access Flow Architecture
+
+Here is a visual representation of how GitDocAI determines if a user can view a specific documentation page:
+
+```mermaid
+flowchart TD
+    Request([User requests a document]) --> CheckVisibility{Is doc public?}
+    
+    CheckVisibility -- Yes --> GrantAccess[Grant Access]
+    CheckVisibility -- No --> CheckAuth{Is user logged in?}
+    
+    CheckAuth -- No --> RedirectLogin[Redirect to Login]
+    CheckAuth -- Yes --> CheckRole{Has Reader role or higher?}
+    
+    CheckRole -- Yes --> GrantAccess
+    CheckRole -- No --> DenyAccess[Access Denied 403]

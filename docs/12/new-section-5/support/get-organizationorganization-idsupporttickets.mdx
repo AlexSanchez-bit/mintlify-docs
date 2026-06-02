@@ -1,0 +1,83 @@
+<Endpoint method="GET" path="/organization/{organization_id}/support/tickets" />
+
+## Authentication
+
+**API Key** (`BearerAuth`)
+- Header: `Authorization`
+
+## Path Parameters
+
+<ParamField path="organization_id" type="string" required>
+  Organization ID
+</ParamField>
+
+## Query Parameters
+
+<ParamField path="page" type="integer">
+  Page number (default: 1)
+</ParamField>
+
+<ParamField path="page_size" type="integer">
+  Page size (default: 20)
+</ParamField>
+
+## Responses
+
+<Response status="200">
+  OK
+</Response>
+
+**Response Fields:**
+
+- `data` (object[])
+- `page_info` (object)
+
+**Example:**
+
+```json
+{
+  "data": [
+    {
+      "closed_at": "string",
+      "created_at": "string",
+      "id": "string",
+      "message_count": 0,
+      "messages": [
+        {
+          "content": "...",
+          "created_at": "...",
+          "id": "...",
+          "sender_id": "...",
+          "sender_name": "...",
+          "sender_type": "...",
+          "ticket_id": "..."
+        }
+      ],
+      "priority": "string",
+      "status": "string",
+      "subject": "string",
+      "updated_at": "string"
+    }
+  ],
+  "page_info": {
+    "has_next": true,
+    "has_prev": true,
+    "page": 0,
+    "page_size": 0,
+    "total_items": 0,
+    "total_pages": 0
+  }
+}
+```
+
+<Response status="403">
+  Forbidden
+</Response>
+
+**Example:**
+
+```json
+{
+  "key": "value"
+}
+```

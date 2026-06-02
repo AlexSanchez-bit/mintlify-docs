@@ -1,0 +1,27 @@
+<Endpoint method="GET" path="/tasks/statuses" />
+
+## Authentication
+
+**API Key** (`BearerAuth`)
+- Header: `Authorization`
+
+## Responses
+
+<Response status="200">
+  OK
+</Response>
+
+**Example:**
+
+```json
+[
+  {
+    "color": "string",
+    "id": "string",
+    "is_default": true,
+    "name": "string",
+    "position": 0,
+    "public": true
+  }
+]
+```

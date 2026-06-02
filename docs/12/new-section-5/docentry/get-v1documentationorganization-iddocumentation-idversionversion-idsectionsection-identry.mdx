@@ -1,0 +1,95 @@
+<Endpoint method="GET" path="/v1/documentation/{organization_id}/{documentation_id}/version/{version_id}/section/{section_id}/entry" />
+
+## Authentication
+
+**API Key** (`BearerAuth`)
+- Header: `Authorization`
+
+## Path Parameters
+
+<ParamField path="organization_id" type="string" required>
+  Organization ID
+</ParamField>
+
+<ParamField path="documentation_id" type="string" required>
+  Documentation ID
+</ParamField>
+
+<ParamField path="version_id" type="string" required>
+  Version ID
+</ParamField>
+
+<ParamField path="section_id" type="string" required>
+  Section ID
+</ParamField>
+
+## Responses
+
+<Response status="200">
+  OK
+</Response>
+
+**Example:**
+
+```json
+[
+  {
+    "content": "string",
+    "created_at": "string",
+    "endpoint": "string",
+    "icon": "string",
+    "id": "string",
+    "metadata": {
+      "author": "string",
+      "author_avatar": "string",
+      "description": "string",
+      "last_edited_by": "string",
+      "published_at": "string",
+      "reading_time": 0,
+      "release": {
+        "html_url": "string",
+        "is_prerelease": true,
+        "release_id": 0,
+        "tag_name": "string"
+      },
+      "tags": [
+        "string"
+      ]
+    },
+    "metadata_visibility": {
+      "show_author": true,
+      "show_publish_date": true,
+      "show_reading_time": true,
+      "show_tags": true,
+      "show_update_date": true
+    },
+    "method": "GET",
+    "order": 0,
+    "parent_id": "string"
+  }
+]
+```
+
+<Response status="400">
+  Bad Request
+</Response>
+
+**Example:**
+
+```json
+{
+  "key": "value"
+}
+```
+
+<Response status="500">
+  Internal Server Error
+</Response>
+
+**Example:**
+
+```json
+{
+  "key": "value"
+}
+```

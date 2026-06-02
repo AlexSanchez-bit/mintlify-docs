@@ -1,0 +1,56 @@
+Accepts a pending organization invitation targeted at the authenticated user's email.
+
+<Endpoint method="POST" path="/v1/invitations/{invitation_id}/accept" />
+
+## Authentication
+
+**API Key** (`BearerAuth`)
+- Header: `Authorization`
+
+## Path Parameters
+
+<ParamField path="invitation_id" type="string" required>
+  Invitation ID
+</ParamField>
+
+## Responses
+
+<Response status="204">
+  No Content
+</Response>
+
+<Response status="400">
+  Bad Request
+</Response>
+
+**Example:**
+
+```json
+{
+  "key": "value"
+}
+```
+
+<Response status="401">
+  Unauthorized
+</Response>
+
+**Example:**
+
+```json
+{
+  "key": "value"
+}
+```
+
+<Response status="404">
+  Not Found
+</Response>
+
+**Example:**
+
+```json
+{
+  "key": "value"
+}
+```

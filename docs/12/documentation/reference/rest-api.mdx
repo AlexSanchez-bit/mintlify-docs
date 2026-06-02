@@ -1,0 +1,75 @@
+# REST API
+
+The REST API is the lowest-common-denominator way to talk to Polaris. Everything the SDKs do — sending events, querying projections, managing tokens — is available as an HTTPS call.
+
+<Card title="Base URL" icon="pi pi-link">
+  `https://api.polaris.dev/v1` — all endpoints share this prefix. Region-pinned workspaces transparently route to their region edge.
+</Card>
+
+## Sending an event
+
+```bash
+curl https://api.polaris.dev/v1/events \
+  -H "Authorization: Bearer $POLARIS_TOKEN" \
+  -H "Content-Type: application/json" \
+  -d '{
+    "type": "checkout.completed",
+    "actor": { "id": "user_842", "tenant": "acme" },
+    "properties": { "order_id": "ord_19f0", "total_usd": 142.50 }
+  }'
+```
+
+A successful write returns the assigned sequence and the canonical timestamp:
+
+```json
+{
+  "id": "evt_01HF4...",
+  "sequence": 4827193,
+  "received_at": "2026-05-27T14:02:09.512Z"
+}
+```
+
+## Endpoints
+
+| Method | Path | Purpose |
+|---|---|---|
+| `POST` | `/events` | Send a single event. |
+| `POST` | `/events/batch` | Send up to 1,000 events in one request. |
+| `GET` | `/projections/:name` | Query a projection. Supports filtering, ordering, pagination. |
+| `POST` | `/projections/:name/sql` | Execute a parameterized SQL query against a projection. |
+| `GET` | `/streams/:id/cursor` | Read raw events from a stream cursor. |
+| `POST` | `/sinks` | Create or update a sink destination. |
+| `GET` | `/usage` | Return the current period's ingestion and projection costs. |
+
+## Errors
+
+Polaris uses standard HTTP status codes and a machine-readable error envelope.
+
+```json
+{
+  "error": {
+    "code": "invalid_event_type",
+    "message": "Event type must be lowercase ASCII.",
+    "doc_url": "https://docs.polaris.dev/errors/invalid_event_type",
+    "request_id": "req_01HF4..."
+  }
+}
+```
+
+<Accordion>
+  <AccordionTab title="Common status codes">
+
+    | Code | Meaning | Retry? |
+    |---|---|---|
+    | 200 / 201 | Success. | — |
+    | 400 | Payload validation failed. Check `error.code`. | No, fix the request. |
+    | 401 | Token missing or expired. | No, re-issue. |
+    | 403 | Token lacks the required scope. | No, widen the scope. |
+    | 429 | Rate limit hit. See [Rate Limits](/docs-new/reference/rate-limits). | Yes, after `Retry-After`. |
+    | 5xx | Polaris-side issue. | Yes, with exponential backoff. |
+
+  </AccordionTab>
+</Accordion>
+
+> [!TIP]
+> Always log `request_id` from error responses. It uniquely identifies the request in our edge logs and is the fastest way for support to find your issue.

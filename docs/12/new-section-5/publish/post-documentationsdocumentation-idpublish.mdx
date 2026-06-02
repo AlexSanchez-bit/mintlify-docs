@@ -1,0 +1,113 @@
+Starts an asynchronous publish. Returns 202 immediately with the job state; poll `/publish/status` to see when it finishes.
+
+<Endpoint method="POST" path="/documentations/{documentation_id}/publish" />
+
+## Authentication
+
+**API Key** (`BearerAuth`)
+- Header: `Authorization`
+
+## Path Parameters
+
+<ParamField path="documentation_id" type="string" required>
+  Documentation ID
+</ParamField>
+
+## Request Body
+
+Publish request with message
+
+**Required**
+
+<ParamField path="message" type="string">
+</ParamField>
+
+**Example:**
+
+```json
+{
+  "message": "string"
+}
+```
+
+## Responses
+
+<Response status="202">
+  Job accepted
+</Response>
+
+**Response Fields:**
+
+- `message` (string)
+- `started_at` (string)
+- `state` (string): "in_progress"
+
+**Example:**
+
+```json
+{
+  "message": "string",
+  "started_at": "string",
+  "state": "string"
+}
+```
+
+<Response status="400">
+  Bad request
+</Response>
+
+**Example:**
+
+```json
+{
+  "key": "value"
+}
+```
+
+<Response status="403">
+  Forbidden - insufficient permissions
+</Response>
+
+**Example:**
+
+```json
+{
+  "key": "value"
+}
+```
+
+<Response status="404">
+  Documentation not found
+</Response>
+
+**Example:**
+
+```json
+{
+  "key": "value"
+}
+```
+
+<Response status="409">
+  A publish is already in progress
+</Response>
+
+**Example:**
+
+```json
+{
+  "key": "value"
+}
+```
+
+<Response status="500">
+  Internal server error
+</Response>
+
+**Example:**
+
+```json
+{
+  "key": "value"
+}
+```

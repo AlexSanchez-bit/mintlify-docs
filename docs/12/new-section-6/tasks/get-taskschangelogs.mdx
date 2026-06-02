@@ -1,0 +1,58 @@
+<Endpoint method="GET" path="/tasks/changelogs" />
+
+## Authentication
+
+**API Key** (`BearerAuth`)
+- Header: `Authorization`
+
+## Query Parameters
+
+<ParamField path="page" type="integer">
+  Page number (default: 1)
+</ParamField>
+
+<ParamField path="page_size" type="integer">
+  Page size (default: 20)
+</ParamField>
+
+## Responses
+
+<Response status="200">
+  OK
+</Response>
+
+**Response Fields:**
+
+- `data` (object[])
+- `page_info` (object)
+
+**Example:**
+
+```json
+{
+  "data": [
+    {
+      "content": "string",
+      "created_at": "string",
+      "id": "string",
+      "updated_at": "string",
+      "version": {
+        "due_date": "string",
+        "id": "string",
+        "name": "string",
+        "start_date": "string",
+        "state": "string"
+      },
+      "version_id": "string"
+    }
+  ],
+  "page_info": {
+    "has_next": true,
+    "has_prev": true,
+    "page": 0,
+    "page_size": 0,
+    "total_items": 0,
+    "total_pages": 0
+  }
+}
+```

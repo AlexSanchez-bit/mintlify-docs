@@ -1,0 +1,88 @@
+<Endpoint method="POST" path="/tasks/ideas" />
+
+## Authentication
+
+**API Key** (`BearerAuth`)
+- Header: `Authorization`
+
+## Request Body
+
+Idea input
+
+**Required**
+
+<ParamField path="description" type="string">
+</ParamField>
+
+<ParamField path="title" type="string" required>
+</ParamField>
+
+**Example:**
+
+```json
+{
+  "description": "string",
+  "title": "string"
+}
+```
+
+## Responses
+
+<Response status="201">
+  Created
+</Response>
+
+**Response Fields:**
+
+- `assignee_ids` (string[])
+- `created_at` (string)
+- `description` (string)
+- `due_date` (string)
+- `has_voted` (boolean)
+- `id` (string)
+- `position` (integer)
+- `priority` (string)
+- `public` (boolean)
+- `start_date` (string)
+- `status` (object)
+- `title` (string)
+- `updated_at` (string)
+- `version` (object)
+- `vote_count` (integer)
+
+**Example:**
+
+```json
+{
+  "assignee_ids": [
+    "string"
+  ],
+  "created_at": "string",
+  "description": "string",
+  "due_date": "string",
+  "has_voted": true,
+  "id": "string",
+  "position": 0,
+  "priority": "string",
+  "public": true,
+  "start_date": "string",
+  "status": {
+    "color": "string",
+    "id": "string",
+    "is_default": true,
+    "name": "string",
+    "position": 0,
+    "public": true
+  },
+  "title": "string",
+  "updated_at": "string",
+  "version": {
+    "due_date": "string",
+    "id": "string",
+    "name": "string",
+    "start_date": "string",
+    "state": "string"
+  },
+  "vote_count": 0
+}
+```

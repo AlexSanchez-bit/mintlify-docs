@@ -1,0 +1,88 @@
+<Endpoint method="GET" path="/v1/organizations/{organization_id}/git-provider/installations/{installation_id}" />
+
+## Authentication
+
+**API Key** (`BearerAuth`)
+- Header: `Authorization`
+
+## Path Parameters
+
+<ParamField path="organization_id" type="string" required>
+  Organization ID
+</ParamField>
+
+<ParamField path="installation_id" type="string" required>
+  Installation ID
+</ParamField>
+
+## Responses
+
+<Response status="200">
+  OK
+</Response>
+
+**Response Fields:**
+
+- `account_name` (string)
+- `account_type` (string)
+- `auth_method` (string)
+- `avatar_url` (string)
+- `created_at` (string)
+- `external_id` (string)
+- `id` (string)
+- `organization_id` (string)
+- `provider` (string)
+- `status` (string)
+
+**Example:**
+
+```json
+{
+  "account_name": "string",
+  "account_type": "string",
+  "auth_method": "string",
+  "avatar_url": "string",
+  "created_at": "string",
+  "external_id": "string",
+  "id": "string",
+  "organization_id": "string",
+  "provider": "string",
+  "status": "string"
+}
+```
+
+<Response status="400">
+  Bad Request
+</Response>
+
+**Example:**
+
+```json
+{
+  "key": "value"
+}
+```
+
+<Response status="401">
+  Unauthorized
+</Response>
+
+**Example:**
+
+```json
+{
+  "key": "value"
+}
+```
+
+<Response status="404">
+  Not Found
+</Response>
+
+**Example:**
+
+```json
+{
+  "key": "value"
+}
+```

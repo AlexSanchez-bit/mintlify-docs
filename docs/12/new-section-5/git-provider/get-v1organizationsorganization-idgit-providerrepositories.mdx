@@ -1,0 +1,89 @@
+<Endpoint method="GET" path="/v1/organizations/{organization_id}/git-provider/repositories" />
+
+## Authentication
+
+**API Key** (`BearerAuth`)
+- Header: `Authorization`
+
+## Path Parameters
+
+<ParamField path="organization_id" type="string" required>
+  Organization ID
+</ParamField>
+
+## Query Parameters
+
+<ParamField path="installation_id" type="string">
+  Filter by installation ID
+</ParamField>
+
+<ParamField path="provider" type="string">
+  Filter by provider
+</ParamField>
+
+<ParamField path="search" type="string">
+  Search by name
+</ParamField>
+
+## Responses
+
+<Response status="200">
+  OK
+</Response>
+
+**Example:**
+
+```json
+[
+  {
+    "branches": [
+      "string"
+    ],
+    "created_at": "string",
+    "default_branch": "string",
+    "description": "string",
+    "external_id": "string",
+    "full_name": "string",
+    "id": "string",
+    "installation_id": "string",
+    "is_archived": true,
+    "is_fork": true
+  }
+]
+```
+
+<Response status="400">
+  Bad Request
+</Response>
+
+**Example:**
+
+```json
+{
+  "key": "value"
+}
+```
+
+<Response status="401">
+  Unauthorized
+</Response>
+
+**Example:**
+
+```json
+{
+  "key": "value"
+}
+```
+
+<Response status="500">
+  Internal Server Error
+</Response>
+
+**Example:**
+
+```json
+{
+  "key": "value"
+}
+```

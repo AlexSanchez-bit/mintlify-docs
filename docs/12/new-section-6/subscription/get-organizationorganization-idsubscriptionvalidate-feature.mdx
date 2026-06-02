@@ -1,0 +1,53 @@
+Validates if a feature is enabled for the user's organization
+
+<Endpoint method="GET" path="/organization/{organization_id}/subscription/validate-feature" />
+
+## Path Parameters
+
+<ParamField path="organization_id" type="string" required>
+  Organization ID
+</ParamField>
+
+## Query Parameters
+
+<ParamField path="feature" type="string" required>
+  Feature key to validate
+</ParamField>
+
+## Responses
+
+<Response status="200">
+  OK
+</Response>
+
+**Example:**
+
+```json
+{
+  "key": "value"
+}
+```
+
+<Response status="400">
+  Bad Request
+</Response>
+
+**Example:**
+
+```json
+{
+  "key": "value"
+}
+```
+
+<Response status="500">
+  Internal Server Error
+</Response>
+
+**Example:**
+
+```json
+{
+  "key": "value"
+}
+```

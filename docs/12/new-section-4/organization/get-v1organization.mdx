@@ -1,0 +1,102 @@
+<Endpoint method="GET" path="/v1/organization" />
+
+## Authentication
+
+**API Key** (`BearerAuth`)
+- Header: `Authorization`
+
+## Responses
+
+<Response status="200">
+  OK
+</Response>
+
+**Example:**
+
+```json
+[
+  {
+    "created_at": "string",
+    "documentations": [
+      {
+        "audience": "public",
+        "config": {
+          "assistant": "...",
+          "favicon_url": "...",
+          "footer": "...",
+          "kb": "...",
+          "navbar": "...",
+          "seo": "...",
+          "theme": "..."
+        },
+        "created_at": "string",
+        "delete_at": "string",
+        "description": "string",
+        "id": "string",
+        "name": "string",
+        "organizationID": "string",
+        "publishCompletedAt": "string",
+        "publishError": "string"
+      }
+    ],
+    "id": "string",
+    "installations": [
+      {
+        "accessToken": "string",
+        "accountName": "string",
+        "accountType": "string",
+        "authMethod": "oauth",
+        "avatarURL": "string",
+        "created_at": "string",
+        "delete_at": "string",
+        "externalAccountID": "string",
+        "externalID": "string",
+        "id": "string"
+      }
+    ],
+    "logo_url": "string",
+    "my_role": "string",
+    "name": "string",
+    "onboarding_complete": true,
+    "repositories": [
+      {
+        "branches": "string",
+        "cloneURL": "string",
+        "created_at": "string",
+        "defaultBranch": "string",
+        "delete_at": "string",
+        "description": "string",
+        "externalID": "string",
+        "fullName": "string",
+        "id": "string",
+        "installationID": "string"
+      }
+    ],
+    "updated_at": "string"
+  }
+]
+```
+
+<Response status="401">
+  Unauthorized
+</Response>
+
+**Example:**
+
+```json
+{
+  "key": "value"
+}
+```
+
+<Response status="500">
+  Internal Server Error
+</Response>
+
+**Example:**
+
+```json
+{
+  "key": "value"
+}
+```

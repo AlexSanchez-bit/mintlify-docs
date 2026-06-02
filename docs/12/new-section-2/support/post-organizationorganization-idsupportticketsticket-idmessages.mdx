@@ -1,0 +1,75 @@
+<Endpoint method="POST" path="/organization/{organization_id}/support/tickets/{ticket_id}/messages" />
+
+## Authentication
+
+**API Key** (`BearerAuth`)
+- Header: `Authorization`
+
+## Path Parameters
+
+<ParamField path="organization_id" type="string" required>
+  Organization ID
+</ParamField>
+
+<ParamField path="ticket_id" type="string" required>
+  Ticket ID
+</ParamField>
+
+## Request Body
+
+Message input
+
+**Required**
+
+<ParamField path="content" type="string" required>
+</ParamField>
+
+**Example:**
+
+```json
+{
+  "content": "string"
+}
+```
+
+## Responses
+
+<Response status="201">
+  Created
+</Response>
+
+**Response Fields:**
+
+- `content` (string)
+- `created_at` (string)
+- `id` (string)
+- `sender_id` (string)
+- `sender_name` (string)
+- `sender_type` (string)
+- `ticket_id` (string)
+
+**Example:**
+
+```json
+{
+  "content": "string",
+  "created_at": "string",
+  "id": "string",
+  "sender_id": "string",
+  "sender_name": "string",
+  "sender_type": "string",
+  "ticket_id": "string"
+}
+```
+
+<Response status="403">
+  Forbidden
+</Response>
+
+**Example:**
+
+```json
+{
+  "key": "value"
+}
+```

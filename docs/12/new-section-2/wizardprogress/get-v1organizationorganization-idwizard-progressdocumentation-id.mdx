@@ -1,0 +1,61 @@
+<Endpoint method="GET" path="/v1/organization/{organization_id}/wizard-progress/{documentation_id}" />
+
+## Authentication
+
+**API Key** (`BearerAuth`)
+- Header: `Authorization`
+
+## Path Parameters
+
+<ParamField path="documentation_id" type="string" required>
+  Documentation ID
+</ParamField>
+
+## Responses
+
+<Response status="200">
+  OK
+</Response>
+
+**Example:**
+
+```json
+[
+  {
+    "created_at": "string",
+    "current_step": "string",
+    "documentation_id": "string",
+    "documentation_name": "string",
+    "id": "string",
+    "organization_id": "string",
+    "section_id": "string",
+    "section_name": "string",
+    "section_type": "string",
+    "updated_at": "string"
+  }
+]
+```
+
+<Response status="401">
+  Unauthorized
+</Response>
+
+**Example:**
+
+```json
+{
+  "key": "value"
+}
+```
+
+<Response status="500">
+  Internal Server Error
+</Response>
+
+**Example:**
+
+```json
+{
+  "key": "value"
+}
+```

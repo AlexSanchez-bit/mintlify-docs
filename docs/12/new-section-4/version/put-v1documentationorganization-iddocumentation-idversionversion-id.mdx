@@ -1,0 +1,117 @@
+<Endpoint method="PUT" path="/v1/documentation/{organization_id}/{documentation_id}/version/{version_id}" />
+
+## Authentication
+
+**API Key** (`BearerAuth`)
+- Header: `Authorization`
+
+## Path Parameters
+
+<ParamField path="organization_id" type="string" required>
+  Organization ID
+</ParamField>
+
+<ParamField path="documentation_id" type="string" required>
+  Documentation ID
+</ParamField>
+
+<ParamField path="version_id" type="string" required>
+  Version ID
+</ParamField>
+
+## Request Body
+
+Version update input
+
+**Required**
+
+<ParamField path="is_default" type="boolean">
+</ParamField>
+
+<ParamField path="is_deprecated" type="boolean">
+</ParamField>
+
+<ParamField path="is_latest" type="boolean">
+</ParamField>
+
+<ParamField path="name" type="string">
+</ParamField>
+
+<ParamField path="released_at" type="string">
+</ParamField>
+
+<ParamField path="slug" type="string">
+</ParamField>
+
+**Example:**
+
+```json
+{
+  "is_default": true,
+  "is_deprecated": true,
+  "is_latest": true,
+  "name": "string",
+  "released_at": "string",
+  "slug": "string"
+}
+```
+
+## Responses
+
+<Response status="200">
+  OK
+</Response>
+
+**Response Fields:**
+
+- `created_at` (string)
+- `documentation_id` (string)
+- `id` (string)
+- `is_default` (boolean)
+- `is_deprecated` (boolean)
+- `is_latest` (boolean)
+- `name` (string)
+- `released_at` (string)
+- `slug` (string)
+- `updated_at` (string)
+
+**Example:**
+
+```json
+{
+  "created_at": "string",
+  "documentation_id": "string",
+  "id": "string",
+  "is_default": true,
+  "is_deprecated": true,
+  "is_latest": true,
+  "name": "string",
+  "released_at": "string",
+  "slug": "string",
+  "updated_at": "string"
+}
+```
+
+<Response status="400">
+  Bad Request
+</Response>
+
+**Example:**
+
+```json
+{
+  "key": "value"
+}
+```
+
+<Response status="500">
+  Internal Server Error
+</Response>
+
+**Example:**
+
+```json
+{
+  "key": "value"
+}
+```

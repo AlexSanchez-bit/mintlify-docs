@@ -1,0 +1,89 @@
+# Authentication
+
+Polaris supports three authentication modes. Pick the one that matches who's making the call.
+
+| Mode | Use case |
+|---|---|
+| **API key** | Server-to-Polaris calls from your own infrastructure. |
+| **OAuth 2.1** | Third-party apps that act on behalf of a Polaris user. |
+| **Service tokens** | Machine-to-machine calls inside your own stack. Short-lived, signed JWTs. |
+
+## API keys
+
+The simplest mode. Create a key from the dashboard, scope it to the actions you need, and pass it as a bearer token.
+
+<Tabs>
+  <Tab title="Header" icon="pi pi-key">
+    ```http
+    Authorization: Bearer pk_live_4827193abc...
+    ```
+  </Tab>
+  <Tab title="Node.js" icon="pi pi-microsoft">
+    ```js
+    new Polaris({ token: process.env.POLARIS_TOKEN });
+    ```
+  </Tab>
+  <Tab title="Python" icon="pi pi-code">
+    ```python
+    Polaris(token=os.environ["POLARIS_TOKEN"])
+    ```
+  </Tab>
+</Tabs>
+
+### Scopes
+
+API keys are scoped at creation. The principle of least privilege applies — narrow scopes mean a leaked key has a smaller blast radius.
+
+| Scope | Grants |
+|---|---|
+| `events:write` | Send events. Cannot read anything. |
+| `events:read` | Read raw events from the stream. |
+| `projections:read` | Query projections. |
+| `projections:write` | Create, update, replay projections. |
+| `sinks:manage` | Create, update, replay sinks. |
+| `tokens:manage` | Mint new tokens. Treat this scope as root-equivalent. |
+
+> [!DANGER]
+> A key with `tokens:manage` can mint any other key. Use it only for break-glass automation, and rotate the moment a known holder leaves the team.
+
+## OAuth 2.1
+
+For third-party apps that act on a Polaris user's behalf — for example, an external dashboard tool that lets a customer connect their Polaris workspace.
+
+<Steps>
+  <Step title="Register the app">
+    From the dashboard, open **Settings → OAuth Apps**. You'll get a `client_id` and `client_secret`. Configure your redirect URIs.
+  </Step>
+  <Step title="Redirect the user">
+    Send the user to `https://auth.polaris.dev/oauth/authorize` with `response_type=code`, `client_id`, `redirect_uri`, `scope`, and a PKCE `code_challenge`.
+  </Step>
+  <Step title="Exchange the code">
+    Polaris redirects back with `code`. POST it to `/oauth/token` along with the PKCE `code_verifier` to receive an access token + refresh token pair.
+  </Step>
+  <Step title="Refresh">
+    Access tokens expire after one hour. Use the refresh token to mint a new pair before the old one expires. Refresh tokens are rotated on every use.
+  </Step>
+</Steps>
+
+> [!NOTE]
+> Polaris implements OAuth 2.1 — PKCE is required, even for confidential clients. Implicit flow is not supported.
+
+## Service tokens
+
+For internal machine-to-machine calls, use service tokens. They are short-lived JWTs signed by a key you control, exchanged for an access token at the Polaris edge.
+
+```http
+POST /v1/auth/service
+Authorization: Bearer <signed-jwt>
+
+200 OK
+{
+  "access_token": "ak_short_...",
+  "expires_in": 900
+}
+```
+
+This pattern eliminates long-lived secrets in your services — the only credential they hold is the signing key, and the access token's blast radius is bounded by `expires_in`.
+
+> [!TIP]
+> Rotate API keys at least every 90 days, and revoke any key whose holder rotates off the team or whose machine is decommissioned. The dashboard surfaces every key's last-used timestamp.

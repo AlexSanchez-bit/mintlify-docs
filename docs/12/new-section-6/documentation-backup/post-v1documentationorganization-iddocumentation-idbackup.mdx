@@ -1,0 +1,73 @@
+Backs up the documentation to the configured backup repository. If a body is supplied, it overrides the saved configuration; otherwise the saved backup repository is used.
+
+<Endpoint method="POST" path="/v1/documentation/{organization_id}/{documentation_id}/backup" />
+
+## Authentication
+
+**API Key** (`BearerAuth`)
+- Header: `Authorization`
+
+## Path Parameters
+
+<ParamField path="organization_id" type="string" required>
+  Organization ID
+</ParamField>
+
+<ParamField path="documentation_id" type="string" required>
+  Documentation ID
+</ParamField>
+
+## Request Body
+
+Backup request (optional)
+
+<ParamField path="branch" type="string">
+</ParamField>
+
+<ParamField path="commit_message" type="string">
+</ParamField>
+
+<ParamField path="path" type="string">
+</ParamField>
+
+<ParamField path="repository_id" type="string" required>
+</ParamField>
+
+<ParamField path="resource_id" type="string" required>
+</ParamField>
+
+**Example:**
+
+```json
+{
+  "branch": "string",
+  "commit_message": "string",
+  "path": "string",
+  "repository_id": "string",
+  "resource_id": "string"
+}
+```
+
+## Responses
+
+<Response status="200">
+  OK
+</Response>
+
+**Response Fields:**
+
+- `branch` (string)
+- `commit_sha` (string)
+- `file_count` (integer)
+- `path` (string)
+
+**Example:**
+
+```json
+{
+  "branch": "string",
+  "commit_sha": "string",
+  "file_count": 0,
+  "path": "string"
+}
+```

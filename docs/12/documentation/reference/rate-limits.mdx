@@ -1,0 +1,100 @@
+# Rate Limits
+
+Polaris enforces rate limits per workspace, per endpoint class, and per token. The limits are generous on every paid tier and exist primarily to protect downstream projections from runaway producers.
+
+## Per-plan limits
+
+| Endpoint class | Free | Team | Enterprise |
+|---|---|---|---|
+| Event ingestion (events/sec) | 100 | 5,000 | negotiable |
+| Event burst (events in a 10s window) | 2,000 | 100,000 | negotiable |
+| Projection queries (req/sec) | 20 | 500 | negotiable |
+| Sink replay (events/sec per sink) | 200 | 5,000 | 50,000 |
+| Token mints (per hour) | 10 | 100 | 1,000 |
+
+> [!INFO]
+> Burst allowances are designed to absorb traffic spikes from end-of-month batch jobs or product launches. If you regularly exceed your steady-state limit, contact support — sustained overage typically means you've outgrown your plan.
+
+## The response
+
+When a request is rate-limited, Polaris returns `429 Too Many Requests` with a `Retry-After` header (in seconds) and a structured error body:
+
+```json
+{
+  "error": {
+    "code": "rate_limited",
+    "message": "Workspace exceeded 5000 events/sec on plan team.",
+    "retry_after_seconds": 1.4,
+    "doc_url": "https://docs.polaris.dev/errors/rate_limited"
+  }
+}
+```
+
+## Handling 429 gracefully
+
+The official SDKs do this for you. If you're calling the REST API directly, implement the pattern below.
+
+<Tabs>
+  <Tab title="Node.js" icon="pi pi-microsoft">
+    ```js
+    async function sendWithBackoff(payload, attempt = 0) {
+      const res = await fetch("https://api.polaris.dev/v1/events", {
+        method: "POST",
+        headers: { Authorization: `Bearer ${TOKEN}` },
+        body: JSON.stringify(payload),
+      });
+
+      if (res.status === 429 && attempt < 5) {
+        const delay = (res.headers.get("retry-after") ?? 2 ** attempt) * 1000;
+        await new Promise((r) => setTimeout(r, delay));
+        return sendWithBackoff(payload, attempt + 1);
+      }
+
+      return res;
+    }
+    ```
+  </Tab>
+  <Tab title="Python" icon="pi pi-code">
+    ```python
+    def send_with_backoff(payload, attempt=0):
+        r = requests.post(
+            "https://api.polaris.dev/v1/events",
+            headers={"Authorization": f"Bearer {TOKEN}"},
+            json=payload,
+        )
+        if r.status_code == 429 and attempt < 5:
+            delay = float(r.headers.get("retry-after", 2 ** attempt))
+            time.sleep(delay)
+            return send_with_backoff(payload, attempt + 1)
+        return r
+    ```
+  </Tab>
+</Tabs>
+
+## Diagnosing repeated 429s
+
+<Accordion>
+  <AccordionTab title="Check the right axis" icon="pi pi-search">
+
+    Rate limits are enforced per **workspace**, not per token. If five services share a workspace and one of them is hot, the others will see 429s too. The dashboard's **Usage** view breaks down recent throttling by token and endpoint.
+
+  </AccordionTab>
+
+  <AccordionTab title="Smooth out producer spikes" icon="pi pi-chart-line">
+
+    The SDKs batch events. A producer sending one event per call into the REST API instead of through the SDK is the most common cause of avoidable 429s. Switching to the SDK typically reduces request volume by 100×.
+
+  </AccordionTab>
+
+  <AccordionTab title="Ask for a quota lift" icon="pi pi-arrow-up">
+
+    For predictable bursts — launches, migrations, replays — support can grant a temporary quota lift, usually within a business day. Open a ticket with a one-line description of the window and the expected peak.
+
+  </AccordionTab>
+</Accordion>
+
+> [!WARNING]
+> Workspaces that sustain `>10×` their plan's steady-state limit for more than five minutes are automatically throttled to plan steady-state, not the burst. This protects projection lag from runaway producers. The dashboard will surface this on the workspace overview.
+
+> [!TIP]
+> The `X-Polaris-RateLimit-Remaining` and `X-Polaris-RateLimit-Reset` response headers are always set, on success and on 429 alike. Read them proactively rather than only reacting to 429s.

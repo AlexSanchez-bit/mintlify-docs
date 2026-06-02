@@ -1,0 +1,127 @@
+<Endpoint method="PUT" path="/v1/documentation/{organization_id}/{documentation_id}/version/{version_id}/section/{section_id}" />
+
+## Authentication
+
+**API Key** (`BearerAuth`)
+- Header: `Authorization`
+
+## Path Parameters
+
+<ParamField path="organization_id" type="string" required>
+  Organization ID
+</ParamField>
+
+<ParamField path="documentation_id" type="string" required>
+  Documentation ID
+</ParamField>
+
+<ParamField path="version_id" type="string" required>
+  Version ID
+</ParamField>
+
+<ParamField path="section_id" type="string" required>
+  Section ID
+</ParamField>
+
+## Request Body
+
+Section update input
+
+**Required**
+
+<ParamField path="icon" type="string">
+</ParamField>
+
+<ParamField path="name" type="string">
+</ParamField>
+
+<ParamField path="order" type="integer">
+</ParamField>
+
+<ParamField path="prompt" type="string">
+</ParamField>
+
+<ParamField path="slug" type="string">
+</ParamField>
+
+<ParamField path="type" type="string">
+</ParamField>
+
+<ParamField path="visible" type="boolean">
+</ParamField>
+
+**Example:**
+
+```json
+{
+  "icon": "string",
+  "name": "string",
+  "order": 0,
+  "prompt": "string",
+  "slug": "string",
+  "type": "product_documentation",
+  "visible": true
+}
+```
+
+## Responses
+
+<Response status="200">
+  OK
+</Response>
+
+**Response Fields:**
+
+- `created_at` (string)
+- `icon` (string)
+- `id` (string)
+- `name` (string)
+- `order` (integer)
+- `prompt` (string)
+- `slug` (string)
+- `type` (string)
+- `updated_at` (string)
+- `version_id` (string)
+- `visible` (boolean)
+
+**Example:**
+
+```json
+{
+  "created_at": "string",
+  "icon": "string",
+  "id": "string",
+  "name": "string",
+  "order": 0,
+  "prompt": "string",
+  "slug": "string",
+  "type": "product_documentation",
+  "updated_at": "string",
+  "version_id": "string",
+  "visible": true
+}
+```
+
+<Response status="400">
+  Bad Request
+</Response>
+
+**Example:**
+
+```json
+{
+  "key": "value"
+}
+```
+
+<Response status="500">
+  Internal Server Error
+</Response>
+
+**Example:**
+
+```json
+{
+  "key": "value"
+}
+```

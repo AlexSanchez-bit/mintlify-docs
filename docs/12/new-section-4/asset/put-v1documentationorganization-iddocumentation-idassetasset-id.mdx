@@ -1,0 +1,107 @@
+<Endpoint method="PUT" path="/v1/documentation/{organization_id}/{documentation_id}/asset/{asset_id}" />
+
+## Authentication
+
+**API Key** (`BearerAuth`)
+- Header: `Authorization`
+
+## Path Parameters
+
+<ParamField path="organization_id" type="string" required>
+  Organization ID
+</ParamField>
+
+<ParamField path="documentation_id" type="string" required>
+  Documentation ID
+</ParamField>
+
+<ParamField path="asset_id" type="string" required>
+  Asset ID
+</ParamField>
+
+## Request Body
+
+Asset update input
+
+**Required**
+
+<ParamField path="alt" type="string">
+</ParamField>
+
+<ParamField path="name" type="string">
+</ParamField>
+
+**Example:**
+
+```json
+{
+  "alt": "string",
+  "name": "string"
+}
+```
+
+## Responses
+
+<Response status="200">
+  OK
+</Response>
+
+**Response Fields:**
+
+- `alt` (string)
+- `created_at` (string)
+- `documentation_id` (string)
+- `height` (integer)
+- `id` (string)
+- `mime_type` (string)
+- `name` (string)
+- `original_name` (string)
+- `size` (integer)
+- `type` (string)
+- `updated_at` (string)
+- `url` (string)
+- `width` (integer)
+
+**Example:**
+
+```json
+{
+  "alt": "string",
+  "created_at": "string",
+  "documentation_id": "string",
+  "height": 0,
+  "id": "string",
+  "mime_type": "string",
+  "name": "string",
+  "original_name": "string",
+  "size": 0,
+  "type": "image",
+  "updated_at": "string",
+  "url": "string",
+  "width": 0
+}
+```
+
+<Response status="400">
+  Bad Request
+</Response>
+
+**Example:**
+
+```json
+{
+  "key": "value"
+}
+```
+
+<Response status="500">
+  Internal Server Error
+</Response>
+
+**Example:**
+
+```json
+{
+  "key": "value"
+}
+```

@@ -1,0 +1,33 @@
+<Endpoint method="GET" path="/preference" />
+
+## Query Parameters
+
+<ParamField path="key" type="string" required>
+  Preference key
+</ParamField>
+
+<ParamField path="component" type="string" required>
+  Component name
+</ParamField>
+
+## Responses
+
+<Response status="200">
+  OK
+</Response>
+
+**Response Fields:**
+
+- `component` (string)
+- `key` (string)
+- `value` (string)
+
+**Example:**
+
+```json
+{
+  "component": "string",
+  "key": "string",
+  "value": "string"
+}
+```

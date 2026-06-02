@@ -1,0 +1,89 @@
+<Endpoint method="POST" path="/v1/organizations/{organization_id}/git-provider/repositories/sync" />
+
+## Authentication
+
+**API Key** (`BearerAuth`)
+- Header: `Authorization`
+
+## Path Parameters
+
+<ParamField path="organization_id" type="string" required>
+  Organization ID
+</ParamField>
+
+## Request Body
+
+Sync request
+
+**Required**
+
+<ParamField path="installation_id" type="string" required>
+</ParamField>
+
+**Example:**
+
+```json
+{
+  "installation_id": "string"
+}
+```
+
+## Responses
+
+<Response status="200">
+  OK
+</Response>
+
+**Response Fields:**
+
+- `added` (integer)
+- `removed` (integer)
+- `synced` (integer)
+- `updated` (integer)
+
+**Example:**
+
+```json
+{
+  "added": 0,
+  "removed": 0,
+  "synced": 0,
+  "updated": 0
+}
+```
+
+<Response status="400">
+  Bad Request
+</Response>
+
+**Example:**
+
+```json
+{
+  "key": "value"
+}
+```
+
+<Response status="401">
+  Unauthorized
+</Response>
+
+**Example:**
+
+```json
+{
+  "key": "value"
+}
+```
+
+<Response status="500">
+  Internal Server Error
+</Response>
+
+**Example:**
+
+```json
+{
+  "key": "value"
+}
+```

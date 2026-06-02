@@ -1,0 +1,100 @@
+# CLI
+
+The Polaris CLI is the way to manage workspaces, projections, and tokens from your terminal or a CI pipeline. Anything you can do in the dashboard, you can do from `polaris`.
+
+## Install
+
+<Tabs>
+  <Tab title="macOS" icon="pi pi-apple">
+    ```bash
+    brew install polaris-io/tap/polaris
+    ```
+  </Tab>
+  <Tab title="Linux" icon="pi pi-server">
+    ```bash
+    curl -sSL https://polaris.dev/install.sh | sh
+    ```
+  </Tab>
+  <Tab title="Windows" icon="pi pi-microsoft">
+    ```powershell
+    scoop bucket add polaris https://github.com/polaris-io/scoop-polaris
+    scoop install polaris
+    ```
+  </Tab>
+</Tabs>
+
+## Authenticate
+
+```bash
+polaris auth login
+```
+
+Opens a browser to your dashboard. The token is stored in your OS keychain — never in a plaintext config file.
+
+## Command reference
+
+<Accordion multiple={true}>
+  <AccordionTab title="Workspace management" icon="pi pi-folder">
+
+    | Command | Description |
+    |---|---|
+    | `polaris workspace list` | Show every workspace your token has access to. |
+    | `polaris workspace use <id>` | Set the default workspace for subsequent commands. |
+    | `polaris workspace info` | Print quotas, region, and certifications for the current workspace. |
+
+  </AccordionTab>
+
+  <AccordionTab title="Projections" icon="pi pi-table">
+
+    | Command | Description |
+    |---|---|
+    | `polaris projection apply <file>` | Create or update a projection from a SQL file. |
+    | `polaris projection list` | Show all projections, their freshness, and row count. |
+    | `polaris projection logs <name>` | Tail the projection's execution log. |
+    | `polaris projection replay <name>` | Drop and rebuild from the start of retention. |
+
+  </AccordionTab>
+
+  <AccordionTab title="Events" icon="pi pi-bolt">
+
+    | Command | Description |
+    |---|---|
+    | `polaris events tail` | Stream raw events as they land. Supports `--type` and `--actor` filters. |
+    | `polaris events send <file>` | Send a single event from a JSON file. |
+    | `polaris events export --since 24h` | Dump events to JSONL on disk. |
+
+  </AccordionTab>
+
+  <AccordionTab title="Sinks &amp; webhooks" icon="pi pi-send">
+
+    | Command | Description |
+    |---|---|
+    | `polaris sink list` | Show every configured sink. |
+    | `polaris sink replay <id> --from <ts>` | Replay events to a sink from a specific timestamp. |
+    | `polaris webhook deliveries <id>` | Inspect recent webhook deliveries and their status. |
+
+  </AccordionTab>
+</Accordion>
+
+## Keyboard shortcuts in the live event tail
+
+- **`/`**: Filter by event type. Supports the same wildcard syntax as webhook subscriptions.
+- **`p`**: Pause / resume streaming.
+- **`c`**: Clear the visible buffer (does not affect the underlying stream).
+- **`?`**: Show the full shortcut list.
+- **`q`** or **`Ctrl+C`**: Exit.
+
+> [!TIP]
+> Run `polaris events tail --output json | jq` for ad-hoc filtering and reshaping. The CLI emits a stable JSON line per event when stdout is not a TTY.
+
+## CI usage
+
+For non-interactive environments, pass `POLARIS_TOKEN` directly and skip the browser flow:
+
+```bash
+export POLARIS_TOKEN=...
+polaris projection apply ./projections/*.sql --workspace prod
+```
+
+> [!WARNING]
+> Use a token scoped to the minimum permissions the CI job needs — typically `projections:write`. Never use a personal token from CI.

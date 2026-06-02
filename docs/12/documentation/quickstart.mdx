@@ -1,0 +1,110 @@
+# Quickstart
+
+Get from a blank account to your first projection in under ten minutes. You'll create a workspace, send a handful of events, and write a SQL projection that updates in real time.
+
+> [!TIP]
+> You can do everything on this page with the free tier — no credit card, no quota limits for the first 100K events.
+
+## 1. Install the SDK
+
+Pick your language. Each SDK ships with a typed event client, automatic retries with exponential backoff, and offline buffering for mobile clients.
+
+<Tabs>
+  <Tab title="Node.js" icon="pi pi-microsoft">
+    ```bash
+    npm install @polaris/sdk
+    ```
+  </Tab>
+  <Tab title="Python" icon="pi pi-code">
+    ```bash
+    pip install polaris-sdk
+    ```
+  </Tab>
+  <Tab title="Go" icon="pi pi-google">
+    ```bash
+    go get github.com/polaris-io/polaris-go
+    ```
+  </Tab>
+  <Tab title="Ruby" icon="pi pi-circle">
+    ```bash
+    gem install polaris
+    ```
+  </Tab>
+</Tabs>
+
+## 2. Send your first event
+
+<Steps>
+  <Step title="Create a workspace token">
+    From the dashboard, open **Settings → Tokens** and create a token scoped to `events:write`. Copy it once — it won't be shown again.
+  </Step>
+  <Step title="Initialize the client">
+    Set `POLARIS_TOKEN` in your environment and instantiate the client. The token determines which workspace the event belongs to.
+
+    ```js index.js
+    import { Polaris } from "@polaris/sdk";
+
+    const polaris = new Polaris({ token: process.env.POLARIS_TOKEN });
+    ```
+  </Step>
+  <Step title="Send the event">
+    Every event needs a `type`, an `actor`, and optional `properties`. Polaris timestamps events on the server unless you pass `occurred_at` explicitly.
+
+    ```js index.js
+    await polaris.track({
+      type: "checkout.completed",
+      actor: { id: "user_842", tenant: "acme" },
+      properties: {
+        order_id: "ord_19f0",
+        total_usd: 142.50,
+        items: 3,
+      },
+    });
+    ```
+  </Step>
+</Steps>
+
+## 3. Watch it land
+
+Open the **Live Stream** view in the dashboard. Your event should appear within a second. The stream shows the raw payload, the inferred schema, and which projections will pick it up.
+
+> [!WARNING]
+> Events older than the retention window for your plan (30 days on free, 365 days on team, configurable on enterprise) are pruned automatically. If you need indefinite history, set up a **Sink** to your warehouse before retention kicks in.
+
+## 4. Write a projection
+
+Projections are SQL-like definitions that turn raw events into queryable tables. The example below maintains a running revenue total per tenant.
+
+```sql revenue_by_tenant.sql
+PROJECTION revenue_by_tenant AS
+SELECT
+  actor.tenant            AS tenant,
+  SUM(properties.total_usd) AS total_usd,
+  COUNT(*)                AS orders
+FROM events
+WHERE type = 'checkout.completed'
+GROUP BY actor.tenant;
+```
+
+Save it from the dashboard or push it via the CLI:
+
+```bash
+polaris projection apply ./revenue_by_tenant.sql
+```
+
+Query it from your app a few seconds later:
+
+```bash
+curl https://api.polaris.dev/v1/projections/revenue_by_tenant \
+  -H "Authorization: Bearer $POLARIS_TOKEN"
+```
+
+## Where to go next
+
+<Card title="Core Concepts" icon="pi pi-compass" href="/docs-new/core-concepts">
+  Understand events, streams, and projections in depth before you scale up instrumentation.
+</Card>
+
+<Card title="SDKs" icon="pi pi-box" href="/docs-new/reference/sdks">
+  Language-specific patterns: batching, offline queues, server-side enrichment.
+</Card>

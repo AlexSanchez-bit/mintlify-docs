@@ -1,0 +1,82 @@
+Returns the most recent publish event for a documentation
+
+<Endpoint method="GET" path="/documentations/{documentation_id}/publish/latest" />
+
+## Authentication
+
+**API Key** (`BearerAuth`)
+- Header: `Authorization`
+
+## Path Parameters
+
+<ParamField path="documentation_id" type="string" required>
+  Documentation ID
+</ParamField>
+
+## Responses
+
+<Response status="200">
+  Latest publish
+</Response>
+
+**Response Fields:**
+
+- `entries_count` (integer)
+- `id` (string)
+- `message` (string)
+- `published_at` (string)
+- `published_by` (string)
+- `published_by_name` (string)
+- `sections_count` (integer)
+- `versions_count` (integer)
+
+**Example:**
+
+```json
+{
+  "entries_count": 0,
+  "id": "string",
+  "message": "string",
+  "published_at": "string",
+  "published_by": "string",
+  "published_by_name": "string",
+  "sections_count": 0,
+  "versions_count": 0
+}
+```
+
+<Response status="400">
+  Bad request
+</Response>
+
+**Example:**
+
+```json
+{
+  "key": "value"
+}
+```
+
+<Response status="404">
+  No publish history found
+</Response>
+
+**Example:**
+
+```json
+{
+  "key": "value"
+}
+```
+
+<Response status="500">
+  Internal server error
+</Response>
+
+**Example:**
+
+```json
+{
+  "key": "value"
+}
+```

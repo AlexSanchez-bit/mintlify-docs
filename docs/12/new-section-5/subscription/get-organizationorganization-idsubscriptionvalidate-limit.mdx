@@ -1,0 +1,57 @@
+Validates if the organization can use more of a feature based on current usage and plan limits
+
+<Endpoint method="GET" path="/organization/{organization_id}/subscription/validate-limit" />
+
+## Path Parameters
+
+<ParamField path="organization_id" type="string" required>
+  Organization ID
+</ParamField>
+
+## Query Parameters
+
+<ParamField path="feature" type="string" required>
+  Feature key to validate (documentations, ai_requests, resources)
+</ParamField>
+
+<ParamField path="documentation_id" type="string">
+  Documentation ID (required for ai_requests and resources features)
+</ParamField>
+
+## Responses
+
+<Response status="200">
+  OK
+</Response>
+
+**Example:**
+
+```json
+{
+  "key": "value"
+}
+```
+
+<Response status="400">
+  Bad Request
+</Response>
+
+**Example:**
+
+```json
+{
+  "key": "value"
+}
+```
+
+<Response status="500">
+  Internal Server Error
+</Response>
+
+**Example:**
+
+```json
+{
+  "key": "value"
+}
+```

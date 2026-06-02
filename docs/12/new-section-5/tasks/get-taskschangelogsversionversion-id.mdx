@@ -1,0 +1,46 @@
+<Endpoint method="GET" path="/tasks/changelogs/version/{version_id}" />
+
+## Authentication
+
+**API Key** (`BearerAuth`)
+- Header: `Authorization`
+
+## Path Parameters
+
+<ParamField path="version_id" type="string" required>
+  Version ID
+</ParamField>
+
+## Responses
+
+<Response status="200">
+  OK
+</Response>
+
+**Response Fields:**
+
+- `content` (string)
+- `created_at` (string)
+- `id` (string)
+- `updated_at` (string)
+- `version` (object)
+- `version_id` (string)
+
+**Example:**
+
+```json
+{
+  "content": "string",
+  "created_at": "string",
+  "id": "string",
+  "updated_at": "string",
+  "version": {
+    "due_date": "string",
+    "id": "string",
+    "name": "string",
+    "start_date": "string",
+    "state": "string"
+  },
+  "version_id": "string"
+}
+```

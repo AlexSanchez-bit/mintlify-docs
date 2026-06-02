@@ -1,0 +1,71 @@
+# Security & Compliance
+
+Polaris is designed for workloads where the data is sensitive and the controls have to be auditable. This page covers the certifications we hold, how customer data is isolated, and the knobs you have to tighten the defaults.
+
+## Region pinning
+
+Pick where data lives. Once a workspace is pinned to a region, events never leave it — not for ingestion, not for projection storage, not for backups.
+
+<Tabs>
+  <Tab title="United States" icon="pi pi-flag">
+    - Primary: us-east-1, us-west-2
+    - Replication: two zones, same region
+    - Available certifications: SOC 2 Type II, HIPAA, PCI DSS Level 1
+  </Tab>
+  <Tab title="European Union" icon="pi pi-globe">
+    - Primary: eu-west-1, eu-central-1
+    - Replication: two zones, same region
+    - Available certifications: SOC 2 Type II, ISO 27001, GDPR DPA on request
+  </Tab>
+  <Tab title="Asia Pacific" icon="pi pi-compass">
+    - Primary: ap-southeast-2, ap-northeast-1
+    - Replication: two zones, same region
+    - Available certifications: SOC 2 Type II, ISO 27001
+  </Tab>
+</Tabs>
+
+## Certifications
+
+| Standard | Scope | Renewal |
+|---|---|---|
+| SOC 2 Type II | All regions, production environment | Annual |
+| ISO 27001 | EU and APAC regions | Annual |
+| HIPAA | US region, BAA required | On signature |
+| PCI DSS Level 1 | US region | Annual |
+
+> [!INFO]
+> Audit reports are available under NDA from the dashboard's **Trust Center**. SOC 2 Type II and ISO 27001 reports refresh annually; the latest issue date is shown next to each document.
+
+## Tenant isolation
+
+<Accordion multiple={true}>
+  <AccordionTab title="How are workspaces isolated?">
+
+    Every workspace is assigned a dedicated cryptographic tenant key at creation. Events are encrypted with the workspace key before they hit the durable log, and projection storage is partitioned per workspace at the storage layer — not at the query layer.
+
+  </AccordionTab>
+
+  <AccordionTab title="What about cross-tenant queries inside a workspace?">
+
+    Within a workspace, `actor.tenant` is the multi-tenancy axis. Projections can be marked `tenant_scoped`, in which case the query API automatically filters rows to the caller's tenant — even if the caller writes raw SQL. This is enforced at the planner, not the application.
+
+  </AccordionTab>
+
+  <AccordionTab title="Can support engineers see my data?">
+
+    No. Production access requires a per-incident, time-boxed approval from a customer-side approver you nominate at onboarding. Every access window is logged and shown in your audit feed within five minutes.
+
+  </AccordionTab>
+</Accordion>
+
+## Encryption
+
+- **In transit:** TLS 1.3 only. Older protocols are refused at the load balancer.
+- **At rest:** AES-256, per-workspace key rotation every 90 days.
+- **Key custody:** AWS KMS by default. Bring-your-own-key (BYOK) via AWS, GCP, or Azure on enterprise plans.
+
+> [!WARNING]
+> If you enable BYOK and the upstream key becomes inaccessible, ingestion stalls and projections freeze until access is restored. Polaris will continue serving cached query results for up to 24 hours before failing closed.
+
+> [!DANGER]
+> Deleting a workspace cryptographically shreds the tenant key after a seven-day grace period. After shredding, data is unrecoverable — even by Polaris. If you might need the data back, export it before initiating deletion.

@@ -1,0 +1,33 @@
+<Endpoint method="GET" path="/tasks/roadmap" />
+
+## Authentication
+
+**API Key** (`BearerAuth`)
+- Header: `Authorization`
+
+## Responses
+
+<Response status="200">
+  OK
+</Response>
+
+**Example:**
+
+```json
+[
+  {
+    "assignee_ids": [
+      "string"
+    ],
+    "created_at": "string",
+    "description": "string",
+    "due_date": "string",
+    "has_voted": true,
+    "id": "string",
+    "position": 0,
+    "priority": "string",
+    "public": true,
+    "start_date": "string"
+  }
+]
+```

@@ -1,0 +1,26 @@
+<Endpoint method="GET" path="/tasks/ideas/config" />
+
+## Authentication
+
+**API Key** (`BearerAuth`)
+- Header: `Authorization`
+
+## Responses
+
+<Response status="200">
+  OK
+</Response>
+
+**Response Fields:**
+
+- `enabled` (boolean)
+- `status_id` (string)
+
+**Example:**
+
+```json
+{
+  "enabled": true,
+  "status_id": "string"
+}
+```

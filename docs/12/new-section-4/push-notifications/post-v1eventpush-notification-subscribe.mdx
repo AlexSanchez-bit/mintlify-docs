@@ -1,0 +1,80 @@
+<Endpoint method="POST" path="/v1/event/push-notification-subscribe" />
+
+## Authentication
+
+**API Key** (`BearerAuth`)
+- Header: `Authorization`
+
+## Request Body
+
+Push subscription data
+
+**Required**
+
+<ParamField path="endpoint" type="string" required>
+</ParamField>
+
+<ParamField path="keys" type="object" required>
+</ParamField>
+
+**Example:**
+
+```json
+{
+  "endpoint": "string",
+  "keys": {
+    "auth": "string",
+    "p256dh": "string"
+  }
+}
+```
+
+## Responses
+
+<Response status="201">
+  Created
+</Response>
+
+**Example:**
+
+```json
+{
+  "key": "value"
+}
+```
+
+<Response status="400">
+  Bad Request
+</Response>
+
+**Example:**
+
+```json
+{
+  "key": "value"
+}
+```
+
+<Response status="401">
+  Unauthorized
+</Response>
+
+**Example:**
+
+```json
+{
+  "key": "value"
+}
+```
+
+<Response status="500">
+  Internal Server Error
+</Response>
+
+**Example:**
+
+```json
+{
+  "key": "value"
+}
+```
