@@ -1,0 +1,117 @@
+Make your documentation feel like a natural extension of your product. You can easily customize colors, typography, navigation, and search engine settings to perfectly match your brand identity.
+
+<Card title="Quick Tip" icon="pi pi-star">
+  Changes to your theme and UI are applied globally across your documentation site. You can preview changes before making them live to your users.
+</Card>
+
+## Theme and Appearance
+
+Your documentation's visual style is controlled by a combination of theme presets, color modes, and typography settings. 
+
+### Choosing a Preset
+We offer several professionally designed theme presets out of the box. These presets automatically balance contrast and readability for both light and dark modes:
+* **Pearl**: Clean, bright, and minimalist.
+* **Jade**: Cool, professional greens.
+* **Slate**: Modern, muted blue-grays.
+* **Onyx**: High-contrast, sleek darks.
+* **Mist**: Soft, airy, and approachable.
+
+### Color Modes
+You can control how your users experience light and dark themes:
+* **Toggleable (Default)**: Supports both `["dark", "light"]` modes, allowing the user's operating system or manual toggle to decide.
+* **Forced Mode**: Restrict your site to strictly `["light"]` or `["dark"]` to enforce a specific brand aesthetic.
+
+### Typography
+Make the documentation truly yours by defining custom fonts. You can specify different fonts for your headings (`heading_font`) and your main body text (`font_family`). 
+
+> [!TIP]
+> Use standard web-safe fonts or popular Google Fonts to ensure your documentation loads quickly and looks consistent across all devices.
+
+## Layout and Navigation
+
+A well-structured layout helps users find answers faster. You can customize the core structural elements of your site.
+
+```mermaid
+flowchart TB
+    subgraph Documentation Layout
+        direction TB
+        N["Navbar (Logo & Custom Links)"]
+        subgraph Main Layout
+            direction LR
+            S["Sidebar (Navigation)"]
+            C["Main Content Area"]
+            A["AI Assistant Widget"]
+        end
+        F["Custom Footer"]
+        
+        N --> Main Layout
+        Main Layout --> F
+    end
+    
+    style N fill:#f9f9f9,stroke:#333,stroke-width:2px
+    style F fill:#f9f9f9,stroke:#333,stroke-width:2px
+```
+
+* **Navbar**: Add custom link buttons to direct users back to your main application, support portal, or community forum. You can also toggle whether your site's name is visible next to your logo.
+* **Favicon**: Upload a custom `favicon_url` so your brand icon appears in the user's browser tabs.
+* **Footer**: Add custom copyright text, social links, or secondary navigation to the bottom of every page.
+
+## SEO and Analytics
+
+Ensure your documentation is easily discoverable on search engines and track how users interact with your content.
+
+| Setting | Description |
+|---------|-------------|
+| **Site Title** | The base name of your documentation site (e.g., "Acme Docs"). |
+| **Title Template** | How page titles appear in browser tabs (e.g., `%s \| Acme Docs`). |
+| **Default Description** | The fallback meta description used by search engines if a specific page lacks one. |
+| **Default OG Image** | The preview image shown when your documentation is shared on social media (Twitter, LinkedIn, etc.). |
+| **Google Analytics ID** | Your `G-XXXXXXX` measurement ID to track page views and user behavior. |
+
+> [!NOTE]
+> Search engines may take a few days to index your new SEO settings after you publish them.
+
+## Customizing Your Site
+
+Follow these steps to update your documentation's appearance:
+
+<Steps>
+<Step title="Navigate to Settings">
+Open your project dashboard and click on **Settings**, then select **Customization**.
+</Step>
+<Step title="Configure Brand Assets">
+Upload your Favicon and set your Site Title. Choose whether to display the site name in the top navigation bar.
+</Step>
+<Step title="Select Theme & Fonts">
+Pick a theme preset (like Slate or Onyx), choose your supported color modes, and type in your preferred font families.
+</Step>
+<Step title="Add SEO & Analytics">
+Scroll down to the **SEO & Analytics** section. Paste your Google Analytics ID and set your default Open Graph (OG) image for social sharing.
+</Step>
+<Step title="Save and Publish">
+Click **Save Changes**. Your documentation site will automatically update with the new styles and configurations.
+</Step>
+</Steps>
+
+<Accordion>
+<AccordionTab title="Advanced: Updating via API">
+If you are managing your documentation programmatically, you can update all UI and theme settings by sending an `UpdateDocumentationConfigRequest` payload.
+
+```json
+{
+  "favicon_url": "https://acme.com/favicon.ico",
+  "theme": {
+    "preset": "slate",
+    "modes": ["dark", "light"],
+    "font_family": "Inter, sans-serif",
+    "heading_font": "Cal Sans, sans-serif",
+    "show_name": true
+  },
+  "seo": {
+    "site_title": "Acme Developers",
+    "google_analytics_id": "G-1234567890"
+  }
+}
+```
+</AccordionTab>
+</Accordion>

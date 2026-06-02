@@ -1,0 +1,30 @@
+<Endpoint method="POST" path="/internal/subscriptions/{organization_id}/toggle-active" />
+
+## Path Parameters
+
+<ParamField path="organization_id" type="string" required>
+  Organization ID
+</ParamField>
+
+## Request Body
+
+Active flag
+
+**Required**
+
+<ParamField path="active" type="boolean">
+</ParamField>
+
+**Example:**
+
+```json
+{
+  "active": true
+}
+```
+
+## Responses
+
+<Response status="204">
+  No Content
+</Response>

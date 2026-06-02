@@ -1,0 +1,97 @@
+<Endpoint method="POST" path="/v1/documentation/{organization_id}/{documentation_id}/version" />
+
+## Authentication
+
+**API Key** (`BearerAuth`)
+- Header: `Authorization`
+
+## Path Parameters
+
+<ParamField path="organization_id" type="string" required>
+  Organization ID
+</ParamField>
+
+<ParamField path="documentation_id" type="string" required>
+  Documentation ID
+</ParamField>
+
+## Request Body
+
+Version input
+
+**Required**
+
+<ParamField path="name" type="string" required>
+</ParamField>
+
+<ParamField path="slug" type="string" required>
+</ParamField>
+
+**Example:**
+
+```json
+{
+  "name": "string",
+  "slug": "string"
+}
+```
+
+## Responses
+
+<Response status="201">
+  Created
+</Response>
+
+**Response Fields:**
+
+- `created_at` (string)
+- `documentation_id` (string)
+- `id` (string)
+- `is_default` (boolean)
+- `is_deprecated` (boolean)
+- `is_latest` (boolean)
+- `name` (string)
+- `released_at` (string)
+- `slug` (string)
+- `updated_at` (string)
+
+**Example:**
+
+```json
+{
+  "created_at": "string",
+  "documentation_id": "string",
+  "id": "string",
+  "is_default": true,
+  "is_deprecated": true,
+  "is_latest": true,
+  "name": "string",
+  "released_at": "string",
+  "slug": "string",
+  "updated_at": "string"
+}
+```
+
+<Response status="400">
+  Bad Request
+</Response>
+
+**Example:**
+
+```json
+{
+  "key": "value"
+}
+```
+
+<Response status="500">
+  Internal Server Error
+</Response>
+
+**Example:**
+
+```json
+{
+  "key": "value"
+}
+```

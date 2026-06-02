@@ -1,0 +1,77 @@
+<Endpoint method="POST" path="/v1/documentation/{organization_id}/{documentation_id}/version/{version_id}/section/reorder" />
+
+## Authentication
+
+**API Key** (`BearerAuth`)
+- Header: `Authorization`
+
+## Path Parameters
+
+<ParamField path="organization_id" type="string" required>
+  Organization ID
+</ParamField>
+
+<ParamField path="documentation_id" type="string" required>
+  Documentation ID
+</ParamField>
+
+<ParamField path="version_id" type="string" required>
+  Version ID
+</ParamField>
+
+## Request Body
+
+Reorder input
+
+**Required**
+
+<ParamField path="section_ids" type="string[]" required>
+</ParamField>
+
+**Example:**
+
+```json
+{
+  "section_ids": [
+    "string"
+  ]
+}
+```
+
+## Responses
+
+<Response status="200">
+  OK
+</Response>
+
+**Example:**
+
+```json
+{
+  "key": "value"
+}
+```
+
+<Response status="400">
+  Bad Request
+</Response>
+
+**Example:**
+
+```json
+{
+  "key": "value"
+}
+```
+
+<Response status="500">
+  Internal Server Error
+</Response>
+
+**Example:**
+
+```json
+{
+  "key": "value"
+}
+```

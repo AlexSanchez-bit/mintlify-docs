@@ -1,0 +1,135 @@
+<Endpoint method="GET" path="/v1/organization/all" />
+
+## Authentication
+
+**API Key** (`BearerAuth`)
+- Header: `Authorization`
+
+## Query Parameters
+
+<ParamField path="page" type="integer">
+  Page number (default: 1)
+</ParamField>
+
+<ParamField path="page_size" type="integer">
+  Page size (default: 20, max: 100)
+</ParamField>
+
+<ParamField path="name" type="string">
+  Filter by name (contains)
+</ParamField>
+
+## Responses
+
+<Response status="200">
+  OK
+</Response>
+
+**Response Fields:**
+
+- `data` (object[])
+- `page_info` (object)
+
+**Example:**
+
+```json
+{
+  "data": [
+    {
+      "created_at": "string",
+      "documentations": [
+        {
+          "audience": "...",
+          "config": "...",
+          "created_at": "...",
+          "delete_at": "...",
+          "description": "...",
+          "id": "...",
+          "name": "...",
+          "organizationID": "...",
+          "publishCompletedAt": "...",
+          "publishError": "..."
+        }
+      ],
+      "id": "string",
+      "installations": [
+        {
+          "accessToken": "...",
+          "accountName": "...",
+          "accountType": "...",
+          "authMethod": "...",
+          "avatarURL": "...",
+          "created_at": "...",
+          "delete_at": "...",
+          "externalAccountID": "...",
+          "externalID": "...",
+          "id": "..."
+        }
+      ],
+      "logo_url": "string",
+      "my_role": "string",
+      "name": "string",
+      "onboarding_complete": true,
+      "repositories": [
+        {
+          "branches": "...",
+          "cloneURL": "...",
+          "created_at": "...",
+          "defaultBranch": "...",
+          "delete_at": "...",
+          "description": "...",
+          "externalID": "...",
+          "fullName": "...",
+          "id": "...",
+          "installationID": "..."
+        }
+      ],
+      "updated_at": "string"
+    }
+  ],
+  "page_info": {
+    "has_next": true,
+    "has_prev": true,
+    "page": 0,
+    "page_size": 0,
+    "total_items": 0,
+    "total_pages": 0
+  }
+}
+```
+
+<Response status="401">
+  Unauthorized
+</Response>
+
+**Example:**
+
+```json
+{
+  "key": "value"
+}
+```
+
+<Response status="403">
+  Forbidden
+</Response>
+
+**Example:**
+
+```json
+{
+  "key": "value"
+}
+```
+
+<Response status="500">
+  Internal Server Error
+</Response>
+
+**Example:**
+
+```json
+{
+  "key": "value"
+}
+```

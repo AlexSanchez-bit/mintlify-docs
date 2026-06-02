@@ -1,0 +1,82 @@
+<Endpoint method="GET" path="/v1/documentation/{organization_id}/{documentation_id}/backup" />
+
+## Authentication
+
+**API Key** (`BearerAuth`)
+- Header: `Authorization`
+
+## Path Parameters
+
+<ParamField path="organization_id" type="string" required>
+  Organization ID
+</ParamField>
+
+<ParamField path="documentation_id" type="string" required>
+  Documentation ID
+</ParamField>
+
+## Query Parameters
+
+<ParamField path="page" type="integer">
+  Page number (default 1)
+</ParamField>
+
+<ParamField path="page_size" type="integer">
+  Page size (default 20, max 100)
+</ParamField>
+
+## Responses
+
+<Response status="200">
+  OK
+</Response>
+
+**Response Fields:**
+
+- `items` (object[])
+- `page` (integer)
+- `page_size` (integer)
+- `total` (integer)
+- `total_pages` (integer)
+
+**Example:**
+
+```json
+{
+  "items": [
+    {
+      "branch": "string",
+      "commit_message": "string",
+      "commit_sha": "string",
+      "documentation_id": "string",
+      "id": "string",
+      "page_count": 0,
+      "path": "string",
+      "repository": {
+        "branches": [
+          "..."
+        ],
+        "created_at": "string",
+        "default_branch": "string",
+        "description": "string",
+        "external_id": "string",
+        "full_name": "string",
+        "id": "string",
+        "installation_id": "string",
+        "is_archived": true,
+        "is_fork": true
+      },
+      "section_count": 0,
+      "summary": {
+        "versions": [
+          "..."
+        ]
+      }
+    }
+  ],
+  "page": 0,
+  "page_size": 0,
+  "total": 0,
+  "total_pages": 0
+}
+```

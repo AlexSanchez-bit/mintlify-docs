@@ -1,0 +1,155 @@
+<Endpoint method="GET" path="/v1/organization/{organization_id}" />
+
+## Authentication
+
+**API Key** (`BearerAuth`)
+- Header: `Authorization`
+
+## Path Parameters
+
+<ParamField path="organization_id" type="string" required>
+  Organization ID
+</ParamField>
+
+## Responses
+
+<Response status="200">
+  OK
+</Response>
+
+**Response Fields:**
+
+- `created_at` (string)
+- `documentations` (object[])
+- `id` (string)
+- `installations` (object[])
+- `logo_url` (string)
+- `my_role` (string)
+- `name` (string)
+- `onboarding_complete` (boolean)
+- `repositories` (object[])
+- `updated_at` (string)
+
+**Example:**
+
+```json
+{
+  "created_at": "string",
+  "documentations": [
+    {
+      "audience": "public",
+      "config": {
+        "assistant": {
+          "enabled": "...",
+          "floating": "..."
+        },
+        "favicon_url": "string",
+        "footer": {
+          "copyright": "...",
+          "enabled": "...",
+          "links": "...",
+          "powered_by_gitdocai": "..."
+        },
+        "kb": {
+          "enabled": "...",
+          "hero_description": "...",
+          "hero_placeholder": "...",
+          "hero_title": "...",
+          "icon": "...",
+          "name": "...",
+          "popular_articles": "...",
+          "popular_title": "...",
+          "search_suggestions": "...",
+          "show_categories": "..."
+        },
+        "navbar": [
+          "..."
+        ],
+        "seo": {
+          "default_description": "...",
+          "default_og_image": "...",
+          "google_analytics_id": "...",
+          "site_title": "...",
+          "title_template": "..."
+        },
+        "theme": {
+          "dark": "...",
+          "default": "...",
+          "font_family": "...",
+          "heading_font": "...",
+          "light": "...",
+          "modes": "...",
+          "preset": "...",
+          "show_name": "..."
+        }
+      },
+      "created_at": "string",
+      "delete_at": "string",
+      "description": "string",
+      "id": "string",
+      "name": "string",
+      "organizationID": "string",
+      "publishCompletedAt": "string",
+      "publishError": "string"
+    }
+  ],
+  "id": "string",
+  "installations": [
+    {
+      "accessToken": "string",
+      "accountName": "string",
+      "accountType": "string",
+      "authMethod": "oauth",
+      "avatarURL": "string",
+      "created_at": "string",
+      "delete_at": "string",
+      "externalAccountID": "string",
+      "externalID": "string",
+      "id": "string"
+    }
+  ],
+  "logo_url": "string",
+  "my_role": "string",
+  "name": "string",
+  "onboarding_complete": true,
+  "repositories": [
+    {
+      "branches": "string",
+      "cloneURL": "string",
+      "created_at": "string",
+      "defaultBranch": "string",
+      "delete_at": "string",
+      "description": "string",
+      "externalID": "string",
+      "fullName": "string",
+      "id": "string",
+      "installationID": "string"
+    }
+  ],
+  "updated_at": "string"
+}
+```
+
+<Response status="400">
+  Bad Request
+</Response>
+
+**Example:**
+
+```json
+{
+  "key": "value"
+}
+```
+
+<Response status="404">
+  Not Found
+</Response>
+
+**Example:**
+
+```json
+{
+  "key": "value"
+}
+```

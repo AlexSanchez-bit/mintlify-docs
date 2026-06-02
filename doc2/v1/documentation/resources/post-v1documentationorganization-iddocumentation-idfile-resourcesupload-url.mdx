@@ -1,0 +1,60 @@
+<Endpoint method="POST" path="/v1/documentation/{organization_id}/{documentation_id}/file-resources/upload-url" />
+
+## Path Parameters
+
+<ParamField path="organization_id" type="string" required>
+  Organization ID
+</ParamField>
+
+<ParamField path="documentation_id" type="string" required>
+  Documentation ID
+</ParamField>
+
+## Request Body
+
+Upload metadata
+
+**Required**
+
+<ParamField path="content_type" type="string" required>
+</ParamField>
+
+<ParamField path="filename" type="string" required>
+</ParamField>
+
+<ParamField path="size" type="integer" required>
+</ParamField>
+
+**Example:**
+
+```json
+{
+  "content_type": "string",
+  "filename": "string",
+  "size": 1
+}
+```
+
+## Responses
+
+<Response status="200">
+  OK
+</Response>
+
+**Response Fields:**
+
+- `expires_at` (string)
+- `required_headers` (object)
+- `resource_id` (string)
+- `upload_url` (string)
+
+**Example:**
+
+```json
+{
+  "expires_at": "string",
+  "required_headers": {},
+  "resource_id": "string",
+  "upload_url": "string"
+}
+```

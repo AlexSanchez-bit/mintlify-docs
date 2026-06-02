@@ -1,0 +1,4265 @@
+{
+  "schema_version": "2",
+  "id": "b0a24b3f-6d16-4aca-a5c3-371c21162d3d",
+  "organization_id": "1fc45477-b4ba-4018-b6ed-6ad36bb89d4b",
+  "name": "ertety",
+  "audience": "public",
+  "status": "generated",
+  "config": {
+    "theme": {
+      "preset": "pearl",
+      "dark": {
+        "bg_color": "#0a0a0a",
+        "text_color": "#ededed",
+        "accent_color": "#3b82f6"
+      },
+      "light": {
+        "bg_color": "#fafafa",
+        "text_color": "#171717",
+        "accent_color": "#2563eb"
+      },
+      "modes": [
+        "dark",
+        "light"
+      ],
+      "default": "dark",
+      "font_family": "Inter"
+    },
+    "assistant": {
+      "enabled": true,
+      "floating": true
+    },
+    "seo": {
+      "title_template": "%s | Documentation"
+    },
+    "footer": {
+      "enabled": true,
+      "powered_by_gitdocai": true
+    },
+    "kb": {
+      "enabled": true,
+      "name": "Help Center",
+      "hero_title": "How can we help?",
+      "hero_description": "Ask our AI anything about these docs.",
+      "hero_placeholder": "Ask anything…",
+      "show_categories": false,
+      "show_popular_articles": false,
+      "popular_title": "Popular Articles"
+    }
+  },
+  "version_selector_enabled": true,
+  "version_selector_position": "navbar_right",
+  "versions": [
+    {
+      "id": "996675c8-ae4b-4211-8cf9-f0b1c5225dc7",
+      "name": "v2",
+      "slug": "v2",
+      "is_latest": false,
+      "is_default": false,
+      "is_deprecated": false,
+      "sections": [
+        {
+          "id": "1d4a0f72-b65b-4f6f-b0ab-8d7fe666a347",
+          "version_id": "996675c8-ae4b-4211-8cf9-f0b1c5225dc7",
+          "name": "Documentation",
+          "slug": "documentation",
+          "type": "product_documentation",
+          "order": 0,
+          "visible": true,
+          "pages": [
+            {
+              "id": "68afb8e3-93b5-47a8-ad0d-e54bb525d60e",
+              "section_id": "1d4a0f72-b65b-4f6f-b0ab-8d7fe666a347",
+              "title": "asasasas",
+              "slug": "asasasas",
+              "type": "page",
+              "order": 0,
+              "source_metadata": {},
+              "metadata": {},
+              "metadata_visibility": {
+                "show_author": true,
+                "show_reading_time": true,
+                "show_publish_date": true,
+                "show_update_date": true,
+                "show_tags": true
+              },
+              "content_path": "v2/documentation/asasasas.mdx"
+            },
+            {
+              "id": "810a438f-6516-4324-bc00-36e24aafc8d2",
+              "section_id": "1d4a0f72-b65b-4f6f-b0ab-8d7fe666a347",
+              "title": "Getting Started",
+              "slug": "getting-started",
+              "type": "folder",
+              "icon": "rocket",
+              "order": 0,
+              "source_metadata": {},
+              "metadata": {},
+              "metadata_visibility": {
+                "show_author": true,
+                "show_reading_time": true,
+                "show_publish_date": true,
+                "show_update_date": true,
+                "show_tags": true
+              },
+              "content_path": "v2/documentation/getting-started/index.mdx"
+            },
+            {
+              "id": "7d72e150-b491-42d4-97d7-767b9c229e85",
+              "section_id": "1d4a0f72-b65b-4f6f-b0ab-8d7fe666a347",
+              "parent_id": "810a438f-6516-4324-bc00-36e24aafc8d2",
+              "title": "Welcome to GitDocAI",
+              "slug": "welcome-to-gitdocai",
+              "type": "page",
+              "order": 0,
+              "source_metadata": {
+                "resources": [
+                  {
+                    "resource_id": "892f2e8c-18cc-4fc2-9505-ed7536a632bf",
+                    "resource_name": "docs.go",
+                    "resource_type": "file",
+                    "content_hash": "115219f73d868092b80814907a95b99f333b2cdfabe3a9dc95f5d0edc8cbd159"
+                  }
+                ],
+                "generated_at": "2026-06-01T21:08:07.708608+00:00"
+              },
+              "metadata": {},
+              "metadata_visibility": {
+                "show_author": true,
+                "show_reading_time": true,
+                "show_publish_date": true,
+                "show_update_date": true,
+                "show_tags": true
+              },
+              "content_path": "v2/documentation/getting-started/welcome-to-gitdocai.mdx"
+            },
+            {
+              "id": "80c10776-dba2-4321-9b4d-8889a74276aa",
+              "section_id": "1d4a0f72-b65b-4f6f-b0ab-8d7fe666a347",
+              "parent_id": "810a438f-6516-4324-bc00-36e24aafc8d2",
+              "title": "Using the Setup Wizard",
+              "slug": "using-the-setup-wizard",
+              "type": "page",
+              "order": 1,
+              "source_metadata": {
+                "resources": [
+                  {
+                    "resource_id": "892f2e8c-18cc-4fc2-9505-ed7536a632bf",
+                    "resource_name": "docs.go",
+                    "resource_type": "file",
+                    "content_hash": "115219f73d868092b80814907a95b99f333b2cdfabe3a9dc95f5d0edc8cbd159"
+                  }
+                ],
+                "generated_at": "2026-06-01T21:08:10.661166+00:00"
+              },
+              "metadata": {},
+              "metadata_visibility": {
+                "show_author": true,
+                "show_reading_time": true,
+                "show_publish_date": true,
+                "show_update_date": true,
+                "show_tags": true
+              },
+              "content_path": "v2/documentation/getting-started/using-the-setup-wizard.mdx"
+            },
+            {
+              "id": "f7782f7c-a1b4-44ed-b63a-02bfaf177bc4",
+              "section_id": "1d4a0f72-b65b-4f6f-b0ab-8d7fe666a347",
+              "parent_id": "810a438f-6516-4324-bc00-36e24aafc8d2",
+              "title": "Creating Your First Project",
+              "slug": "creating-your-first-project",
+              "type": "page",
+              "order": 2,
+              "source_metadata": {
+                "resources": [
+                  {
+                    "resource_id": "892f2e8c-18cc-4fc2-9505-ed7536a632bf",
+                    "resource_name": "docs.go",
+                    "resource_type": "file",
+                    "content_hash": "115219f73d868092b80814907a95b99f333b2cdfabe3a9dc95f5d0edc8cbd159"
+                  }
+                ],
+                "generated_at": "2026-06-01T21:08:14.727962+00:00"
+              },
+              "metadata": {},
+              "metadata_visibility": {
+                "show_author": true,
+                "show_reading_time": true,
+                "show_publish_date": true,
+                "show_update_date": true,
+                "show_tags": true
+              },
+              "content_path": "v2/documentation/getting-started/creating-your-first-project.mdx"
+            },
+            {
+              "id": "2e7bfa46-dc90-4f26-90d6-e7edb3d2518f",
+              "section_id": "1d4a0f72-b65b-4f6f-b0ab-8d7fe666a347",
+              "parent_id": "810a438f-6516-4324-bc00-36e24aafc8d2",
+              "title": "Generating Docs with AI",
+              "slug": "generating-docs-with-ai",
+              "type": "page",
+              "order": 3,
+              "source_metadata": {
+                "resources": [
+                  {
+                    "resource_id": "892f2e8c-18cc-4fc2-9505-ed7536a632bf",
+                    "resource_name": "docs.go",
+                    "resource_type": "file",
+                    "content_hash": "115219f73d868092b80814907a95b99f333b2cdfabe3a9dc95f5d0edc8cbd159"
+                  }
+                ],
+                "generated_at": "2026-06-01T21:08:08.242431+00:00"
+              },
+              "metadata": {},
+              "metadata_visibility": {
+                "show_author": true,
+                "show_reading_time": true,
+                "show_publish_date": true,
+                "show_update_date": true,
+                "show_tags": true
+              },
+              "content_path": "v2/documentation/getting-started/generating-docs-with-ai.mdx"
+            },
+            {
+              "id": "34b6fc50-6d47-4101-bc64-16a84a3f1430",
+              "section_id": "1d4a0f72-b65b-4f6f-b0ab-8d7fe666a347",
+              "title": "Connecting Data Sources",
+              "slug": "connecting-data-sources",
+              "type": "folder",
+              "icon": "plug",
+              "order": 1,
+              "source_metadata": {},
+              "metadata": {},
+              "metadata_visibility": {
+                "show_author": true,
+                "show_reading_time": true,
+                "show_publish_date": true,
+                "show_update_date": true,
+                "show_tags": true
+              },
+              "content_path": "v2/documentation/connecting-data-sources/index.mdx"
+            },
+            {
+              "id": "12f80ec3-2de1-43a4-87cf-f0cc874f5c41",
+              "section_id": "1d4a0f72-b65b-4f6f-b0ab-8d7fe666a347",
+              "parent_id": "34b6fc50-6d47-4101-bc64-16a84a3f1430",
+              "title": "Connecting Git Repositories",
+              "slug": "connecting-git-repositories",
+              "type": "page",
+              "order": 0,
+              "source_metadata": {
+                "resources": [
+                  {
+                    "resource_id": "892f2e8c-18cc-4fc2-9505-ed7536a632bf",
+                    "resource_name": "docs.go",
+                    "resource_type": "file",
+                    "content_hash": "115219f73d868092b80814907a95b99f333b2cdfabe3a9dc95f5d0edc8cbd159"
+                  }
+                ],
+                "generated_at": "2026-06-01T21:08:10.053426+00:00"
+              },
+              "metadata": {},
+              "metadata_visibility": {
+                "show_author": true,
+                "show_reading_time": true,
+                "show_publish_date": true,
+                "show_update_date": true,
+                "show_tags": true
+              },
+              "content_path": "v2/documentation/connecting-data-sources/connecting-git-repositories.mdx"
+            },
+            {
+              "id": "d97429e8-112d-4b47-88e7-dcc67fda8518",
+              "section_id": "1d4a0f72-b65b-4f6f-b0ab-8d7fe666a347",
+              "parent_id": "34b6fc50-6d47-4101-bc64-16a84a3f1430",
+              "title": "Syncing Repository Content",
+              "slug": "syncing-repository-content",
+              "type": "page",
+              "order": 1,
+              "source_metadata": {
+                "resources": [
+                  {
+                    "resource_id": "892f2e8c-18cc-4fc2-9505-ed7536a632bf",
+                    "resource_name": "docs.go",
+                    "resource_type": "file",
+                    "content_hash": "115219f73d868092b80814907a95b99f333b2cdfabe3a9dc95f5d0edc8cbd159"
+                  }
+                ],
+                "generated_at": "2026-06-01T21:08:08.478238+00:00"
+              },
+              "metadata": {},
+              "metadata_visibility": {
+                "show_author": true,
+                "show_reading_time": true,
+                "show_publish_date": true,
+                "show_update_date": true,
+                "show_tags": true
+              },
+              "content_path": "v2/documentation/connecting-data-sources/syncing-repository-content.mdx"
+            },
+            {
+              "id": "26b4feed-ccb3-4670-aac4-b72900e90973",
+              "section_id": "1d4a0f72-b65b-4f6f-b0ab-8d7fe666a347",
+              "parent_id": "34b6fc50-6d47-4101-bc64-16a84a3f1430",
+              "title": "Importing OpenAPI Specifications",
+              "slug": "importing-openapi-specifications",
+              "type": "page",
+              "order": 2,
+              "source_metadata": {
+                "resources": [
+                  {
+                    "resource_id": "892f2e8c-18cc-4fc2-9505-ed7536a632bf",
+                    "resource_name": "docs.go",
+                    "resource_type": "file",
+                    "content_hash": "115219f73d868092b80814907a95b99f333b2cdfabe3a9dc95f5d0edc8cbd159"
+                  }
+                ],
+                "generated_at": "2026-06-01T21:08:08.012425+00:00"
+              },
+              "metadata": {},
+              "metadata_visibility": {
+                "show_author": true,
+                "show_reading_time": true,
+                "show_publish_date": true,
+                "show_update_date": true,
+                "show_tags": true
+              },
+              "content_path": "v2/documentation/connecting-data-sources/importing-openapi-specifications.mdx"
+            },
+            {
+              "id": "3cce5c53-4f2e-49ca-8673-9cda5bc8f446",
+              "section_id": "1d4a0f72-b65b-4f6f-b0ab-8d7fe666a347",
+              "parent_id": "34b6fc50-6d47-4101-bc64-16a84a3f1430",
+              "title": "Importing from Websites and Files",
+              "slug": "importing-from-websites-and-files",
+              "type": "page",
+              "order": 3,
+              "source_metadata": {
+                "resources": [
+                  {
+                    "resource_id": "892f2e8c-18cc-4fc2-9505-ed7536a632bf",
+                    "resource_name": "docs.go",
+                    "resource_type": "file",
+                    "content_hash": "115219f73d868092b80814907a95b99f333b2cdfabe3a9dc95f5d0edc8cbd159"
+                  }
+                ],
+                "generated_at": "2026-06-01T21:08:20.716811+00:00"
+              },
+              "metadata": {},
+              "metadata_visibility": {
+                "show_author": true,
+                "show_reading_time": true,
+                "show_publish_date": true,
+                "show_update_date": true,
+                "show_tags": true
+              },
+              "content_path": "v2/documentation/connecting-data-sources/importing-from-websites-and-files.mdx"
+            },
+            {
+              "id": "cfa7d0cb-19cd-4094-85b4-134951ff30a1",
+              "section_id": "1d4a0f72-b65b-4f6f-b0ab-8d7fe666a347",
+              "title": "Managing Content \u0026 Structure",
+              "slug": "managing-content-structure",
+              "type": "folder",
+              "icon": "folder-open",
+              "order": 2,
+              "source_metadata": {},
+              "metadata": {},
+              "metadata_visibility": {
+                "show_author": true,
+                "show_reading_time": true,
+                "show_publish_date": true,
+                "show_update_date": true,
+                "show_tags": true
+              },
+              "content_path": "v2/documentation/managing-content-structure/index.mdx"
+            },
+            {
+              "id": "eac63d1e-4d27-4a1b-bc8b-8d528fcc228d",
+              "section_id": "1d4a0f72-b65b-4f6f-b0ab-8d7fe666a347",
+              "parent_id": "cfa7d0cb-19cd-4094-85b4-134951ff30a1",
+              "title": "Structuring Your Documentation",
+              "slug": "structuring-your-documentation",
+              "type": "page",
+              "order": 0,
+              "source_metadata": {
+                "resources": [
+                  {
+                    "resource_id": "892f2e8c-18cc-4fc2-9505-ed7536a632bf",
+                    "resource_name": "docs.go",
+                    "resource_type": "file",
+                    "content_hash": "115219f73d868092b80814907a95b99f333b2cdfabe3a9dc95f5d0edc8cbd159"
+                  }
+                ],
+                "generated_at": "2026-06-01T21:08:33.796298+00:00"
+              },
+              "metadata": {},
+              "metadata_visibility": {
+                "show_author": true,
+                "show_reading_time": true,
+                "show_publish_date": true,
+                "show_update_date": true,
+                "show_tags": true
+              },
+              "content_path": "v2/documentation/managing-content-structure/structuring-your-documentation.mdx"
+            },
+            {
+              "id": "fca3d3f9-4a2d-4993-8196-2095876f9f33",
+              "section_id": "1d4a0f72-b65b-4f6f-b0ab-8d7fe666a347",
+              "parent_id": "cfa7d0cb-19cd-4094-85b4-134951ff30a1",
+              "title": "Creating and Editing Pages",
+              "slug": "creating-and-editing-pages",
+              "type": "page",
+              "order": 1,
+              "source_metadata": {
+                "resources": [
+                  {
+                    "resource_id": "892f2e8c-18cc-4fc2-9505-ed7536a632bf",
+                    "resource_name": "docs.go",
+                    "resource_type": "file",
+                    "content_hash": "115219f73d868092b80814907a95b99f333b2cdfabe3a9dc95f5d0edc8cbd159"
+                  }
+                ],
+                "generated_at": "2026-06-01T21:08:43.683880+00:00"
+              },
+              "metadata": {},
+              "metadata_visibility": {
+                "show_author": true,
+                "show_reading_time": true,
+                "show_publish_date": true,
+                "show_update_date": true,
+                "show_tags": true
+              },
+              "content_path": "v2/documentation/managing-content-structure/creating-and-editing-pages.mdx"
+            },
+            {
+              "id": "0f0d0019-e1d2-406e-97f2-c89e46f1148c",
+              "section_id": "1d4a0f72-b65b-4f6f-b0ab-8d7fe666a347",
+              "parent_id": "cfa7d0cb-19cd-4094-85b4-134951ff30a1",
+              "title": "Using AI Content Tools",
+              "slug": "using-ai-content-tools",
+              "type": "page",
+              "order": 2,
+              "source_metadata": {
+                "resources": [
+                  {
+                    "resource_id": "892f2e8c-18cc-4fc2-9505-ed7536a632bf",
+                    "resource_name": "docs.go",
+                    "resource_type": "file",
+                    "content_hash": "115219f73d868092b80814907a95b99f333b2cdfabe3a9dc95f5d0edc8cbd159"
+                  }
+                ],
+                "generated_at": "2026-06-01T21:08:29.449944+00:00"
+              },
+              "metadata": {},
+              "metadata_visibility": {
+                "show_author": true,
+                "show_reading_time": true,
+                "show_publish_date": true,
+                "show_update_date": true,
+                "show_tags": true
+              },
+              "content_path": "v2/documentation/managing-content-structure/using-ai-content-tools.mdx"
+            },
+            {
+              "id": "d8569919-6c9b-4f56-99f7-70035a55ecd2",
+              "section_id": "1d4a0f72-b65b-4f6f-b0ab-8d7fe666a347",
+              "parent_id": "cfa7d0cb-19cd-4094-85b4-134951ff30a1",
+              "title": "Managing Images and Assets",
+              "slug": "managing-images-and-assets",
+              "type": "page",
+              "order": 3,
+              "source_metadata": {
+                "resources": [
+                  {
+                    "resource_id": "892f2e8c-18cc-4fc2-9505-ed7536a632bf",
+                    "resource_name": "docs.go",
+                    "resource_type": "file",
+                    "content_hash": "115219f73d868092b80814907a95b99f333b2cdfabe3a9dc95f5d0edc8cbd159"
+                  }
+                ],
+                "generated_at": "2026-06-01T21:08:32.394794+00:00"
+              },
+              "metadata": {},
+              "metadata_visibility": {
+                "show_author": true,
+                "show_reading_time": true,
+                "show_publish_date": true,
+                "show_update_date": true,
+                "show_tags": true
+              },
+              "content_path": "v2/documentation/managing-content-structure/managing-images-and-assets.mdx"
+            },
+            {
+              "id": "1594c7e5-5910-4d96-bb3f-78edea14f3f0",
+              "section_id": "1d4a0f72-b65b-4f6f-b0ab-8d7fe666a347",
+              "parent_id": "cfa7d0cb-19cd-4094-85b4-134951ff30a1",
+              "title": "Versioning Your Documentation",
+              "slug": "versioning-your-documentation",
+              "type": "page",
+              "order": 4,
+              "source_metadata": {
+                "resources": [
+                  {
+                    "resource_id": "892f2e8c-18cc-4fc2-9505-ed7536a632bf",
+                    "resource_name": "docs.go",
+                    "resource_type": "file",
+                    "content_hash": "115219f73d868092b80814907a95b99f333b2cdfabe3a9dc95f5d0edc8cbd159"
+                  }
+                ],
+                "generated_at": "2026-06-01T21:08:46.652325+00:00"
+              },
+              "metadata": {},
+              "metadata_visibility": {
+                "show_author": true,
+                "show_reading_time": true,
+                "show_publish_date": true,
+                "show_update_date": true,
+                "show_tags": true
+              },
+              "content_path": "v2/documentation/managing-content-structure/versioning-your-documentation.mdx"
+            },
+            {
+              "id": "667874bd-5ebd-4818-9359-9ad1cf30d76a",
+              "section_id": "1d4a0f72-b65b-4f6f-b0ab-8d7fe666a347",
+              "title": "Publishing \u0026 Customization",
+              "slug": "publishing-customization",
+              "type": "folder",
+              "icon": "globe",
+              "order": 3,
+              "source_metadata": {},
+              "metadata": {},
+              "metadata_visibility": {
+                "show_author": true,
+                "show_reading_time": true,
+                "show_publish_date": true,
+                "show_update_date": true,
+                "show_tags": true
+              },
+              "content_path": "v2/documentation/publishing-customization/index.mdx"
+            },
+            {
+              "id": "e5c988a6-79ac-40a0-8e2f-899822327d51",
+              "section_id": "1d4a0f72-b65b-4f6f-b0ab-8d7fe666a347",
+              "parent_id": "667874bd-5ebd-4818-9359-9ad1cf30d76a",
+              "title": "Customizing Themes and UI",
+              "slug": "customizing-themes-and-ui",
+              "type": "page",
+              "order": 0,
+              "source_metadata": {
+                "resources": [
+                  {
+                    "resource_id": "892f2e8c-18cc-4fc2-9505-ed7536a632bf",
+                    "resource_name": "docs.go",
+                    "resource_type": "file",
+                    "content_hash": "115219f73d868092b80814907a95b99f333b2cdfabe3a9dc95f5d0edc8cbd159"
+                  }
+                ],
+                "generated_at": "2026-06-01T21:08:34.547346+00:00"
+              },
+              "metadata": {},
+              "metadata_visibility": {
+                "show_author": true,
+                "show_reading_time": true,
+                "show_publish_date": true,
+                "show_update_date": true,
+                "show_tags": true
+              },
+              "content_path": "v2/documentation/publishing-customization/customizing-themes-and-ui.mdx"
+            },
+            {
+              "id": "c99ed63b-9782-4d46-a29b-5cf9f2443ad8",
+              "section_id": "1d4a0f72-b65b-4f6f-b0ab-8d7fe666a347",
+              "parent_id": "667874bd-5ebd-4818-9359-9ad1cf30d76a",
+              "title": "Configuring SEO Settings",
+              "slug": "configuring-seo-settings",
+              "type": "page",
+              "order": 1,
+              "source_metadata": {
+                "resources": [
+                  {
+                    "resource_id": "892f2e8c-18cc-4fc2-9505-ed7536a632bf",
+                    "resource_name": "docs.go",
+                    "resource_type": "file",
+                    "content_hash": "115219f73d868092b80814907a95b99f333b2cdfabe3a9dc95f5d0edc8cbd159"
+                  }
+                ],
+                "generated_at": "2026-06-01T21:08:35.424603+00:00"
+              },
+              "metadata": {},
+              "metadata_visibility": {
+                "show_author": true,
+                "show_reading_time": true,
+                "show_publish_date": true,
+                "show_update_date": true,
+                "show_tags": true
+              },
+              "content_path": "v2/documentation/publishing-customization/configuring-seo-settings.mdx"
+            },
+            {
+              "id": "c48032e8-2662-41c8-a522-50733d8e50fb",
+              "section_id": "1d4a0f72-b65b-4f6f-b0ab-8d7fe666a347",
+              "parent_id": "667874bd-5ebd-4818-9359-9ad1cf30d76a",
+              "title": "Publishing Your Documentation",
+              "slug": "publishing-your-documentation",
+              "type": "page",
+              "order": 2,
+              "source_metadata": {
+                "resources": [
+                  {
+                    "resource_id": "892f2e8c-18cc-4fc2-9505-ed7536a632bf",
+                    "resource_name": "docs.go",
+                    "resource_type": "file",
+                    "content_hash": "115219f73d868092b80814907a95b99f333b2cdfabe3a9dc95f5d0edc8cbd159"
+                  }
+                ],
+                "generated_at": "2026-06-01T21:08:41.243578+00:00"
+              },
+              "metadata": {},
+              "metadata_visibility": {
+                "show_author": true,
+                "show_reading_time": true,
+                "show_publish_date": true,
+                "show_update_date": true,
+                "show_tags": true
+              },
+              "content_path": "v2/documentation/publishing-customization/publishing-your-documentation.mdx"
+            },
+            {
+              "id": "c3310770-227e-4291-8fe9-b785f1bdf045",
+              "section_id": "1d4a0f72-b65b-4f6f-b0ab-8d7fe666a347",
+              "parent_id": "667874bd-5ebd-4818-9359-9ad1cf30d76a",
+              "title": "Backing Up and Restoring",
+              "slug": "backing-up-and-restoring",
+              "type": "page",
+              "order": 3,
+              "source_metadata": {
+                "resources": [
+                  {
+                    "resource_id": "892f2e8c-18cc-4fc2-9505-ed7536a632bf",
+                    "resource_name": "docs.go",
+                    "resource_type": "file",
+                    "content_hash": "115219f73d868092b80814907a95b99f333b2cdfabe3a9dc95f5d0edc8cbd159"
+                  }
+                ],
+                "generated_at": "2026-06-01T21:08:50.857269+00:00"
+              },
+              "metadata": {},
+              "metadata_visibility": {
+                "show_author": true,
+                "show_reading_time": true,
+                "show_publish_date": true,
+                "show_update_date": true,
+                "show_tags": true
+              },
+              "content_path": "v2/documentation/publishing-customization/backing-up-and-restoring.mdx"
+            },
+            {
+              "id": "e870e43d-5618-41af-8a32-485f4aa09515",
+              "section_id": "1d4a0f72-b65b-4f6f-b0ab-8d7fe666a347",
+              "title": "Administration \u0026 Team Management",
+              "slug": "administration-team-management",
+              "type": "folder",
+              "icon": "users",
+              "order": 4,
+              "source_metadata": {},
+              "metadata": {},
+              "metadata_visibility": {
+                "show_author": true,
+                "show_reading_time": true,
+                "show_publish_date": true,
+                "show_update_date": true,
+                "show_tags": true
+              },
+              "content_path": "v2/documentation/administration-team-management/index.mdx"
+            },
+            {
+              "id": "afcafe93-0da0-4f32-b9db-0c08ce1e9a1c",
+              "section_id": "1d4a0f72-b65b-4f6f-b0ab-8d7fe666a347",
+              "parent_id": "e870e43d-5618-41af-8a32-485f4aa09515",
+              "title": "Managing Your Organization",
+              "slug": "managing-your-organization",
+              "type": "page",
+              "order": 0,
+              "source_metadata": {
+                "resources": [
+                  {
+                    "resource_id": "892f2e8c-18cc-4fc2-9505-ed7536a632bf",
+                    "resource_name": "docs.go",
+                    "resource_type": "file",
+                    "content_hash": "115219f73d868092b80814907a95b99f333b2cdfabe3a9dc95f5d0edc8cbd159"
+                  }
+                ],
+                "generated_at": "2026-06-01T21:08:55.810655+00:00"
+              },
+              "metadata": {},
+              "metadata_visibility": {
+                "show_author": true,
+                "show_reading_time": true,
+                "show_publish_date": true,
+                "show_update_date": true,
+                "show_tags": true
+              },
+              "content_path": "v2/documentation/administration-team-management/managing-your-organization.mdx"
+            },
+            {
+              "id": "dc65aa72-2fe9-4559-83f8-ac497f8ce9b1",
+              "section_id": "1d4a0f72-b65b-4f6f-b0ab-8d7fe666a347",
+              "parent_id": "e870e43d-5618-41af-8a32-485f4aa09515",
+              "title": "User Roles and Permissions",
+              "slug": "user-roles-and-permissions",
+              "type": "page",
+              "order": 1,
+              "source_metadata": {
+                "resources": [
+                  {
+                    "resource_id": "892f2e8c-18cc-4fc2-9505-ed7536a632bf",
+                    "resource_name": "docs.go",
+                    "resource_type": "file",
+                    "content_hash": "115219f73d868092b80814907a95b99f333b2cdfabe3a9dc95f5d0edc8cbd159"
+                  }
+                ],
+                "generated_at": "2026-06-01T21:08:55.810971+00:00"
+              },
+              "metadata": {},
+              "metadata_visibility": {
+                "show_author": true,
+                "show_reading_time": true,
+                "show_publish_date": true,
+                "show_update_date": true,
+                "show_tags": true
+              },
+              "content_path": "v2/documentation/administration-team-management/user-roles-and-permissions.mdx"
+            },
+            {
+              "id": "1dde5e2e-f968-4664-8947-288815391f1d",
+              "section_id": "1d4a0f72-b65b-4f6f-b0ab-8d7fe666a347",
+              "parent_id": "e870e43d-5618-41af-8a32-485f4aa09515",
+              "title": "Managing Subscriptions",
+              "slug": "managing-subscriptions",
+              "type": "page",
+              "order": 2,
+              "source_metadata": {
+                "resources": [
+                  {
+                    "resource_id": "892f2e8c-18cc-4fc2-9505-ed7536a632bf",
+                    "resource_name": "docs.go",
+                    "resource_type": "file",
+                    "content_hash": "115219f73d868092b80814907a95b99f333b2cdfabe3a9dc95f5d0edc8cbd159"
+                  }
+                ],
+                "generated_at": "2026-06-01T21:09:07.937280+00:00"
+              },
+              "metadata": {},
+              "metadata_visibility": {
+                "show_author": true,
+                "show_reading_time": true,
+                "show_publish_date": true,
+                "show_update_date": true,
+                "show_tags": true
+              },
+              "content_path": "v2/documentation/administration-team-management/managing-subscriptions.mdx"
+            },
+            {
+              "id": "d2761159-d425-4ee3-91a1-16570c0d0cf2",
+              "section_id": "1d4a0f72-b65b-4f6f-b0ab-8d7fe666a347",
+              "parent_id": "e870e43d-5618-41af-8a32-485f4aa09515",
+              "title": "Account Preferences",
+              "slug": "account-preferences",
+              "type": "page",
+              "order": 3,
+              "source_metadata": {
+                "resources": [
+                  {
+                    "resource_id": "892f2e8c-18cc-4fc2-9505-ed7536a632bf",
+                    "resource_name": "docs.go",
+                    "resource_type": "file",
+                    "content_hash": "115219f73d868092b80814907a95b99f333b2cdfabe3a9dc95f5d0edc8cbd159"
+                  }
+                ],
+                "generated_at": "2026-06-01T21:09:03.739367+00:00"
+              },
+              "metadata": {},
+              "metadata_visibility": {
+                "show_author": true,
+                "show_reading_time": true,
+                "show_publish_date": true,
+                "show_update_date": true,
+                "show_tags": true
+              },
+              "content_path": "v2/documentation/administration-team-management/account-preferences.mdx"
+            },
+            {
+              "id": "d4cb3ba3-3fa7-4789-974c-b8bb08b52787",
+              "section_id": "1d4a0f72-b65b-4f6f-b0ab-8d7fe666a347",
+              "parent_id": "e870e43d-5618-41af-8a32-485f4aa09515",
+              "title": "Configuring Notifications",
+              "slug": "configuring-notifications",
+              "type": "page",
+              "order": 4,
+              "source_metadata": {
+                "resources": [
+                  {
+                    "resource_id": "892f2e8c-18cc-4fc2-9505-ed7536a632bf",
+                    "resource_name": "docs.go",
+                    "resource_type": "file",
+                    "content_hash": "115219f73d868092b80814907a95b99f333b2cdfabe3a9dc95f5d0edc8cbd159"
+                  }
+                ],
+                "generated_at": "2026-06-01T21:09:08.686170+00:00"
+              },
+              "metadata": {},
+              "metadata_visibility": {
+                "show_author": true,
+                "show_reading_time": true,
+                "show_publish_date": true,
+                "show_update_date": true,
+                "show_tags": true
+              },
+              "content_path": "v2/documentation/administration-team-management/configuring-notifications.mdx"
+            },
+            {
+              "id": "1d6a3082-9e23-4f0c-821d-337aed30f08d",
+              "section_id": "1d4a0f72-b65b-4f6f-b0ab-8d7fe666a347",
+              "parent_id": "e870e43d-5618-41af-8a32-485f4aa09515",
+              "title": "Getting Support and Submitting Feedback",
+              "slug": "getting-support-and-submitting-feedback",
+              "type": "page",
+              "order": 5,
+              "source_metadata": {
+                "resources": [
+                  {
+                    "resource_id": "892f2e8c-18cc-4fc2-9505-ed7536a632bf",
+                    "resource_name": "docs.go",
+                    "resource_type": "file",
+                    "content_hash": "115219f73d868092b80814907a95b99f333b2cdfabe3a9dc95f5d0edc8cbd159"
+                  }
+                ],
+                "generated_at": "2026-06-01T21:09:15.450419+00:00"
+              },
+              "metadata": {},
+              "metadata_visibility": {
+                "show_author": true,
+                "show_reading_time": true,
+                "show_publish_date": true,
+                "show_update_date": true,
+                "show_tags": true
+              },
+              "content_path": "v2/documentation/administration-team-management/getting-support-and-submitting-feedback.mdx"
+            },
+            {
+              "id": "06b82bc9-2a09-40d9-9b20-c96e5d1380f6",
+              "section_id": "1d4a0f72-b65b-4f6f-b0ab-8d7fe666a347",
+              "title": "Developer API Reference",
+              "slug": "developer-api-reference",
+              "type": "folder",
+              "icon": "code",
+              "order": 5,
+              "source_metadata": {},
+              "metadata": {},
+              "metadata_visibility": {
+                "show_author": true,
+                "show_reading_time": true,
+                "show_publish_date": true,
+                "show_update_date": true,
+                "show_tags": true
+              },
+              "content_path": "v2/documentation/developer-api-reference/index.mdx"
+            },
+            {
+              "id": "71529d4a-5452-43c1-99e5-8833b28b4619",
+              "section_id": "1d4a0f72-b65b-4f6f-b0ab-8d7fe666a347",
+              "parent_id": "06b82bc9-2a09-40d9-9b20-c96e5d1380f6",
+              "title": "API Authentication \u0026 Security",
+              "slug": "api-authentication-and-security",
+              "type": "page",
+              "order": 0,
+              "source_metadata": {
+                "resources": [
+                  {
+                    "resource_id": "892f2e8c-18cc-4fc2-9505-ed7536a632bf",
+                    "resource_name": "docs.go",
+                    "resource_type": "file",
+                    "content_hash": "115219f73d868092b80814907a95b99f333b2cdfabe3a9dc95f5d0edc8cbd159"
+                  }
+                ],
+                "generated_at": "2026-06-01T21:09:05.526219+00:00"
+              },
+              "metadata": {},
+              "metadata_visibility": {
+                "show_author": true,
+                "show_reading_time": true,
+                "show_publish_date": true,
+                "show_update_date": true,
+                "show_tags": true
+              },
+              "content_path": "v2/documentation/developer-api-reference/api-authentication-and-security.mdx"
+            },
+            {
+              "id": "3340963e-c05a-4524-9561-8dc9342edf89",
+              "section_id": "1d4a0f72-b65b-4f6f-b0ab-8d7fe666a347",
+              "parent_id": "06b82bc9-2a09-40d9-9b20-c96e5d1380f6",
+              "title": "Core Data Models \u0026 Schemas",
+              "slug": "core-data-models-and-schemas",
+              "type": "page",
+              "order": 1,
+              "source_metadata": {
+                "resources": [
+                  {
+                    "resource_id": "892f2e8c-18cc-4fc2-9505-ed7536a632bf",
+                    "resource_name": "docs.go",
+                    "resource_type": "file",
+                    "content_hash": "115219f73d868092b80814907a95b99f333b2cdfabe3a9dc95f5d0edc8cbd159"
+                  }
+                ],
+                "generated_at": "2026-06-01T21:09:14.376535+00:00"
+              },
+              "metadata": {},
+              "metadata_visibility": {
+                "show_author": true,
+                "show_reading_time": true,
+                "show_publish_date": true,
+                "show_update_date": true,
+                "show_tags": true
+              },
+              "content_path": "v2/documentation/developer-api-reference/core-data-models-and-schemas.mdx"
+            },
+            {
+              "id": "a10f8373-4a02-4e82-ad60-620417f247ea",
+              "section_id": "1d4a0f72-b65b-4f6f-b0ab-8d7fe666a347",
+              "parent_id": "06b82bc9-2a09-40d9-9b20-c96e5d1380f6",
+              "title": "Documentation Management API",
+              "slug": "documentation-management-api",
+              "type": "page",
+              "order": 2,
+              "source_metadata": {
+                "resources": [
+                  {
+                    "resource_id": "892f2e8c-18cc-4fc2-9505-ed7536a632bf",
+                    "resource_name": "docs.go",
+                    "resource_type": "file",
+                    "content_hash": "115219f73d868092b80814907a95b99f333b2cdfabe3a9dc95f5d0edc8cbd159"
+                  }
+                ],
+                "generated_at": "2026-06-01T21:09:23.753061+00:00"
+              },
+              "metadata": {},
+              "metadata_visibility": {
+                "show_author": true,
+                "show_reading_time": true,
+                "show_publish_date": true,
+                "show_update_date": true,
+                "show_tags": true
+              },
+              "content_path": "v2/documentation/developer-api-reference/documentation-management-api.mdx"
+            },
+            {
+              "id": "c6325fd8-e2d2-4d60-b657-85eaeacbf9b2",
+              "section_id": "1d4a0f72-b65b-4f6f-b0ab-8d7fe666a347",
+              "parent_id": "06b82bc9-2a09-40d9-9b20-c96e5d1380f6",
+              "title": "Handling API Responses \u0026 Pagination",
+              "slug": "handling-api-responses-and-pagination",
+              "type": "page",
+              "order": 3,
+              "source_metadata": {
+                "resources": [
+                  {
+                    "resource_id": "892f2e8c-18cc-4fc2-9505-ed7536a632bf",
+                    "resource_name": "docs.go",
+                    "resource_type": "file",
+                    "content_hash": "115219f73d868092b80814907a95b99f333b2cdfabe3a9dc95f5d0edc8cbd159"
+                  }
+                ],
+                "generated_at": "2026-06-01T21:09:28.665663+00:00"
+              },
+              "metadata": {},
+              "metadata_visibility": {
+                "show_author": true,
+                "show_reading_time": true,
+                "show_publish_date": true,
+                "show_update_date": true,
+                "show_tags": true
+              },
+              "content_path": "v2/documentation/developer-api-reference/handling-api-responses-and-pagination.mdx"
+            }
+          ]
+        },
+        {
+          "id": "70a976da-e53d-42ee-9e38-a11abfa3dc3b",
+          "version_id": "996675c8-ae4b-4211-8cf9-f0b1c5225dc7",
+          "name": "New Section 2",
+          "slug": "new-section-2",
+          "type": "product_documentation",
+          "order": 1,
+          "visible": true,
+          "pages": [
+            {
+              "id": "426ef2a4-7361-4c97-912f-88ad59c40b51",
+              "section_id": "70a976da-e53d-42ee-9e38-a11abfa3dc3b",
+              "title": "Motor Modeling",
+              "slug": "motor-modeling",
+              "type": "folder",
+              "icon": "cpu",
+              "order": 0,
+              "source_metadata": {},
+              "metadata": {},
+              "metadata_visibility": {
+                "show_author": true,
+                "show_reading_time": true,
+                "show_publish_date": true,
+                "show_update_date": true,
+                "show_tags": true
+              },
+              "content_path": "v2/new-section-2/motor-modeling/index.mdx"
+            },
+            {
+              "id": "52ea7c38-43a9-4eac-87f1-c4aebbb6e4fd",
+              "section_id": "70a976da-e53d-42ee-9e38-a11abfa3dc3b",
+              "parent_id": "426ef2a4-7361-4c97-912f-88ad59c40b51",
+              "title": "Estimating Current Consumption",
+              "slug": "estimating-current-consumption",
+              "type": "page",
+              "order": 0,
+              "source_metadata": {
+                "resources": [
+                  {
+                    "resource_id": "129d46ca-a794-4e03-90a6-00232190f4a9",
+                    "resource_name": "Estimacion-de-Corriente-en-Motor-DC.pptx",
+                    "resource_type": "file",
+                    "content_hash": "583c05849e836621ecbd1c63efcb71852e48850c942dca5925df1e9258f06f4f"
+                  }
+                ],
+                "generated_at": "2026-06-01T21:09:15.448150+00:00"
+              },
+              "metadata": {},
+              "metadata_visibility": {
+                "show_author": true,
+                "show_reading_time": true,
+                "show_publish_date": true,
+                "show_update_date": true,
+                "show_tags": true
+              },
+              "content_path": "v2/new-section-2/motor-modeling/estimating-current-consumption.mdx"
+            },
+            {
+              "id": "9a0b252b-47b3-4699-9aa1-ed56257d0315",
+              "section_id": "70a976da-e53d-42ee-9e38-a11abfa3dc3b",
+              "parent_id": "426ef2a4-7361-4c97-912f-88ad59c40b51",
+              "title": "Validating Model Results",
+              "slug": "validating-model-results",
+              "type": "page",
+              "order": 1,
+              "source_metadata": {
+                "resources": [
+                  {
+                    "resource_id": "129d46ca-a794-4e03-90a6-00232190f4a9",
+                    "resource_name": "Estimacion-de-Corriente-en-Motor-DC.pptx",
+                    "resource_type": "file",
+                    "content_hash": "583c05849e836621ecbd1c63efcb71852e48850c942dca5925df1e9258f06f4f"
+                  }
+                ],
+                "generated_at": "2026-06-01T21:09:23.017511+00:00"
+              },
+              "metadata": {},
+              "metadata_visibility": {
+                "show_author": true,
+                "show_reading_time": true,
+                "show_publish_date": true,
+                "show_update_date": true,
+                "show_tags": true
+              },
+              "content_path": "v2/new-section-2/motor-modeling/validating-model-results.mdx"
+            }
+          ]
+        },
+        {
+          "id": "469c6bef-3662-4927-8220-7aebe6d48f39",
+          "version_id": "996675c8-ae4b-4211-8cf9-f0b1c5225dc7",
+          "name": "New Section 3",
+          "slug": "new-section-3",
+          "type": "product_documentation",
+          "order": 2,
+          "visible": true,
+          "pages": [
+            {
+              "id": "a250dfeb-54b7-40f8-8914-6c01d1d3b0fa",
+              "section_id": "469c6bef-3662-4927-8220-7aebe6d48f39",
+              "title": "Getting Started",
+              "slug": "getting-started",
+              "type": "folder",
+              "icon": "play-circle",
+              "order": 0,
+              "source_metadata": {},
+              "metadata": {},
+              "metadata_visibility": {
+                "show_author": true,
+                "show_reading_time": true,
+                "show_publish_date": true,
+                "show_update_date": true,
+                "show_tags": true
+              },
+              "content_path": "v2/new-section-3/getting-started/index.mdx"
+            },
+            {
+              "id": "2fc54d09-600c-449d-9642-2b339c0b3978",
+              "section_id": "469c6bef-3662-4927-8220-7aebe6d48f39",
+              "parent_id": "a250dfeb-54b7-40f8-8914-6c01d1d3b0fa",
+              "title": "Introduction to Face Detection",
+              "slug": "introduction-to-face-detection",
+              "type": "page",
+              "order": 0,
+              "source_metadata": {
+                "resources": [
+                  {
+                    "resource_id": "9dccddae-d819-43a4-a30c-249e13785b24",
+                    "resource_name": "deteccion de caras con HOG.pdf",
+                    "resource_type": "file",
+                    "content_hash": "d6c17b3f32c50f88e9227d5f87d1abf076efb5719be833d27f578b2f1195755d"
+                  }
+                ],
+                "generated_at": "2026-06-01T21:15:00.207761+00:00"
+              },
+              "metadata": {},
+              "metadata_visibility": {
+                "show_author": true,
+                "show_reading_time": true,
+                "show_publish_date": true,
+                "show_update_date": true,
+                "show_tags": true
+              },
+              "content_path": "v2/new-section-3/getting-started/introduction-to-face-detection.mdx"
+            },
+            {
+              "id": "d794166a-df2a-42cc-80a4-a344f6406350",
+              "section_id": "469c6bef-3662-4927-8220-7aebe6d48f39",
+              "parent_id": "a250dfeb-54b7-40f8-8914-6c01d1d3b0fa",
+              "title": "Setting Up Your Hardware",
+              "slug": "setting-up-hardware",
+              "type": "page",
+              "order": 1,
+              "source_metadata": {
+                "resources": [
+                  {
+                    "resource_id": "9dccddae-d819-43a4-a30c-249e13785b24",
+                    "resource_name": "deteccion de caras con HOG.pdf",
+                    "resource_type": "file",
+                    "content_hash": "d6c17b3f32c50f88e9227d5f87d1abf076efb5719be833d27f578b2f1195755d"
+                  }
+                ],
+                "generated_at": "2026-06-01T21:14:59.269842+00:00"
+              },
+              "metadata": {},
+              "metadata_visibility": {
+                "show_author": true,
+                "show_reading_time": true,
+                "show_publish_date": true,
+                "show_update_date": true,
+                "show_tags": true
+              },
+              "content_path": "v2/new-section-3/getting-started/setting-up-hardware.mdx"
+            },
+            {
+              "id": "580952dd-5314-4281-bb3e-3689885e9417",
+              "section_id": "469c6bef-3662-4927-8220-7aebe6d48f39",
+              "title": "Core Concepts",
+              "slug": "core-concepts",
+              "type": "folder",
+              "icon": "book-open",
+              "order": 1,
+              "source_metadata": {},
+              "metadata": {},
+              "metadata_visibility": {
+                "show_author": true,
+                "show_reading_time": true,
+                "show_publish_date": true,
+                "show_update_date": true,
+                "show_tags": true
+              },
+              "content_path": "v2/new-section-3/core-concepts/index.mdx"
+            },
+            {
+              "id": "1e667f69-4ede-4f81-9a35-e73f97c3358b",
+              "section_id": "469c6bef-3662-4927-8220-7aebe6d48f39",
+              "parent_id": "580952dd-5314-4281-bb3e-3689885e9417",
+              "title": "Understanding Detection Techniques",
+              "slug": "understanding-detection-techniques",
+              "type": "page",
+              "order": 0,
+              "source_metadata": {
+                "resources": [
+                  {
+                    "resource_id": "9dccddae-d819-43a4-a30c-249e13785b24",
+                    "resource_name": "deteccion de caras con HOG.pdf",
+                    "resource_type": "file",
+                    "content_hash": "d6c17b3f32c50f88e9227d5f87d1abf076efb5719be833d27f578b2f1195755d"
+                  }
+                ],
+                "generated_at": "2026-06-01T21:15:06.416901+00:00"
+              },
+              "metadata": {},
+              "metadata_visibility": {
+                "show_author": true,
+                "show_reading_time": true,
+                "show_publish_date": true,
+                "show_update_date": true,
+                "show_tags": true
+              },
+              "content_path": "v2/new-section-3/core-concepts/understanding-detection-techniques.mdx"
+            },
+            {
+              "id": "91ae0125-e32f-4ed1-b789-827b99b65b03",
+              "section_id": "469c6bef-3662-4927-8220-7aebe6d48f39",
+              "parent_id": "580952dd-5314-4281-bb3e-3689885e9417",
+              "title": "Working with Classifiers and Descriptors",
+              "slug": "classifiers-and-descriptors",
+              "type": "page",
+              "order": 1,
+              "source_metadata": {
+                "resources": [
+                  {
+                    "resource_id": "9dccddae-d819-43a4-a30c-249e13785b24",
+                    "resource_name": "deteccion de caras con HOG.pdf",
+                    "resource_type": "file",
+                    "content_hash": "d6c17b3f32c50f88e9227d5f87d1abf076efb5719be833d27f578b2f1195755d"
+                  }
+                ],
+                "generated_at": "2026-06-01T21:14:57.234607+00:00"
+              },
+              "metadata": {},
+              "metadata_visibility": {
+                "show_author": true,
+                "show_reading_time": true,
+                "show_publish_date": true,
+                "show_update_date": true,
+                "show_tags": true
+              },
+              "content_path": "v2/new-section-3/core-concepts/classifiers-and-descriptors.mdx"
+            },
+            {
+              "id": "1d327f85-da38-4e07-9406-71b1e7e9e1a4",
+              "section_id": "469c6bef-3662-4927-8220-7aebe6d48f39",
+              "parent_id": "580952dd-5314-4281-bb3e-3689885e9417",
+              "title": "How HOG Descriptors Work",
+              "slug": "hog-descriptors-explained",
+              "type": "page",
+              "order": 2,
+              "source_metadata": {
+                "resources": [
+                  {
+                    "resource_id": "9dccddae-d819-43a4-a30c-249e13785b24",
+                    "resource_name": "deteccion de caras con HOG.pdf",
+                    "resource_type": "file",
+                    "content_hash": "d6c17b3f32c50f88e9227d5f87d1abf076efb5719be833d27f578b2f1195755d"
+                  }
+                ],
+                "generated_at": "2026-06-01T21:15:03.886350+00:00"
+              },
+              "metadata": {},
+              "metadata_visibility": {
+                "show_author": true,
+                "show_reading_time": true,
+                "show_publish_date": true,
+                "show_update_date": true,
+                "show_tags": true
+              },
+              "content_path": "v2/new-section-3/core-concepts/hog-descriptors-explained.mdx"
+            },
+            {
+              "id": "40f64de2-fa4b-4090-ada0-f23a565fa6c9",
+              "section_id": "469c6bef-3662-4927-8220-7aebe6d48f39",
+              "title": "Training and Evaluation",
+              "slug": "training-and-evaluation",
+              "type": "folder",
+              "icon": "cpu",
+              "order": 2,
+              "source_metadata": {},
+              "metadata": {},
+              "metadata_visibility": {
+                "show_author": true,
+                "show_reading_time": true,
+                "show_publish_date": true,
+                "show_update_date": true,
+                "show_tags": true
+              },
+              "content_path": "v2/new-section-3/training-and-evaluation/index.mdx"
+            },
+            {
+              "id": "f0e3b39e-f29d-4373-beb9-e0d93936a0ce",
+              "section_id": "469c6bef-3662-4927-8220-7aebe6d48f39",
+              "parent_id": "40f64de2-fa4b-4090-ada0-f23a565fa6c9",
+              "title": "Preparing Your Training Data",
+              "slug": "preparing-training-data",
+              "type": "page",
+              "order": 0,
+              "source_metadata": {
+                "resources": [
+                  {
+                    "resource_id": "9dccddae-d819-43a4-a30c-249e13785b24",
+                    "resource_name": "deteccion de caras con HOG.pdf",
+                    "resource_type": "file",
+                    "content_hash": "d6c17b3f32c50f88e9227d5f87d1abf076efb5719be833d27f578b2f1195755d"
+                  }
+                ],
+                "generated_at": "2026-06-01T21:15:06.857145+00:00"
+              },
+              "metadata": {},
+              "metadata_visibility": {
+                "show_author": true,
+                "show_reading_time": true,
+                "show_publish_date": true,
+                "show_update_date": true,
+                "show_tags": true
+              },
+              "content_path": "v2/new-section-3/training-and-evaluation/preparing-training-data.mdx"
+            },
+            {
+              "id": "5c33f3da-bc32-4914-9d86-866b48ef5445",
+              "section_id": "469c6bef-3662-4927-8220-7aebe6d48f39",
+              "parent_id": "40f64de2-fa4b-4090-ada0-f23a565fa6c9",
+              "title": "Training and Evaluating the Model",
+              "slug": "training-and-evaluating-model",
+              "type": "page",
+              "order": 1,
+              "source_metadata": {
+                "resources": [
+                  {
+                    "resource_id": "9dccddae-d819-43a4-a30c-249e13785b24",
+                    "resource_name": "deteccion de caras con HOG.pdf",
+                    "resource_type": "file",
+                    "content_hash": "d6c17b3f32c50f88e9227d5f87d1abf076efb5719be833d27f578b2f1195755d"
+                  }
+                ],
+                "generated_at": "2026-06-01T21:15:07.919625+00:00"
+              },
+              "metadata": {},
+              "metadata_visibility": {
+                "show_author": true,
+                "show_reading_time": true,
+                "show_publish_date": true,
+                "show_update_date": true,
+                "show_tags": true
+              },
+              "content_path": "v2/new-section-3/training-and-evaluation/training-and-evaluating-model.mdx"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "c5407797-601b-439f-b0c0-baa14d83f860",
+      "name": "v1",
+      "slug": "v1",
+      "is_latest": true,
+      "is_default": true,
+      "is_deprecated": false,
+      "sections": [
+        {
+          "id": "3aa543da-2485-48d1-a2d7-6c943b6f5793",
+          "version_id": "c5407797-601b-439f-b0c0-baa14d83f860",
+          "name": "Documentation",
+          "slug": "documentation",
+          "type": "api_reference",
+          "order": 0,
+          "visible": true,
+          "pages": [
+            {
+              "id": "9dc127aa-c152-4b17-8dac-0f1d3395cf4e",
+              "section_id": "3aa543da-2485-48d1-a2d7-6c943b6f5793",
+              "title": "Ai",
+              "slug": "ai",
+              "type": "folder",
+              "order": 0,
+              "source_metadata": {},
+              "metadata": {},
+              "metadata_visibility": {
+                "show_author": true,
+                "show_reading_time": true,
+                "show_publish_date": true,
+                "show_update_date": true,
+                "show_tags": true
+              },
+              "content_path": "v1/documentation/ai/index.mdx"
+            },
+            {
+              "id": "b3f314f5-ef4d-489c-b758-7d866c5e6302",
+              "section_id": "3aa543da-2485-48d1-a2d7-6c943b6f5793",
+              "parent_id": "9dc127aa-c152-4b17-8dac-0f1d3395cf4e",
+              "title": "Edit content using AI",
+              "slug": "post-documentationorganization-iddocumentation-idaiedit",
+              "type": "api_endpoint",
+              "order": 0,
+              "method": "POST",
+              "endpoint": "/documentation/{organization_id}/{documentation_id}/ai/edit",
+              "source_metadata": {},
+              "metadata": {},
+              "metadata_visibility": {
+                "show_author": true,
+                "show_reading_time": true,
+                "show_publish_date": true,
+                "show_update_date": true,
+                "show_tags": true
+              },
+              "content_path": "v1/documentation/ai/post-documentationorganization-iddocumentation-idaiedit.mdx"
+            },
+            {
+              "id": "03bffe95-98b7-4336-9151-f0beba35e135",
+              "section_id": "3aa543da-2485-48d1-a2d7-6c943b6f5793",
+              "parent_id": "9dc127aa-c152-4b17-8dac-0f1d3395cf4e",
+              "title": "Generate an image with AI and store it as an asset",
+              "slug": "post-documentationorganization-iddocumentation-idaigenerate-image",
+              "type": "api_endpoint",
+              "order": 1,
+              "method": "POST",
+              "endpoint": "/documentation/{organization_id}/{documentation_id}/ai/generate-image",
+              "source_metadata": {},
+              "metadata": {},
+              "metadata_visibility": {
+                "show_author": true,
+                "show_reading_time": true,
+                "show_publish_date": true,
+                "show_update_date": true,
+                "show_tags": true
+              },
+              "content_path": "v1/documentation/ai/post-documentationorganization-iddocumentation-idaigenerate-image.mdx"
+            },
+            {
+              "id": "33db9c9b-b269-4097-8d66-04e336e079cf",
+              "section_id": "3aa543da-2485-48d1-a2d7-6c943b6f5793",
+              "title": "Asset",
+              "slug": "asset",
+              "type": "folder",
+              "order": 1,
+              "source_metadata": {},
+              "metadata": {},
+              "metadata_visibility": {
+                "show_author": true,
+                "show_reading_time": true,
+                "show_publish_date": true,
+                "show_update_date": true,
+                "show_tags": true
+              },
+              "content_path": "v1/documentation/asset/index.mdx"
+            },
+            {
+              "id": "0cb1ddcf-41d4-4703-b447-a1153a2629b5",
+              "section_id": "3aa543da-2485-48d1-a2d7-6c943b6f5793",
+              "parent_id": "33db9c9b-b269-4097-8d66-04e336e079cf",
+              "title": "Get all assets for a documentation",
+              "slug": "get-v1documentationorganization-iddocumentation-idasset",
+              "type": "api_endpoint",
+              "order": 0,
+              "method": "GET",
+              "endpoint": "/v1/documentation/{organization_id}/{documentation_id}/asset",
+              "source_metadata": {},
+              "metadata": {},
+              "metadata_visibility": {
+                "show_author": true,
+                "show_reading_time": true,
+                "show_publish_date": true,
+                "show_update_date": true,
+                "show_tags": true
+              },
+              "content_path": "v1/documentation/asset/get-v1documentationorganization-iddocumentation-idasset.mdx"
+            },
+            {
+              "id": "5a853d88-9b3e-4ed2-a73c-a1778808788f",
+              "section_id": "3aa543da-2485-48d1-a2d7-6c943b6f5793",
+              "parent_id": "33db9c9b-b269-4097-8d66-04e336e079cf",
+              "title": "Upload an asset",
+              "slug": "post-v1documentationorganization-iddocumentation-idasset",
+              "type": "api_endpoint",
+              "order": 1,
+              "method": "POST",
+              "endpoint": "/v1/documentation/{organization_id}/{documentation_id}/asset",
+              "source_metadata": {},
+              "metadata": {},
+              "metadata_visibility": {
+                "show_author": true,
+                "show_reading_time": true,
+                "show_publish_date": true,
+                "show_update_date": true,
+                "show_tags": true
+              },
+              "content_path": "v1/documentation/asset/post-v1documentationorganization-iddocumentation-idasset.mdx"
+            },
+            {
+              "id": "0250ae76-af51-4abf-9646-df7d4553ee3b",
+              "section_id": "3aa543da-2485-48d1-a2d7-6c943b6f5793",
+              "parent_id": "33db9c9b-b269-4097-8d66-04e336e079cf",
+              "title": "Get asset by ID",
+              "slug": "get-v1documentationorganization-iddocumentation-idassetasset-id",
+              "type": "api_endpoint",
+              "order": 2,
+              "method": "GET",
+              "endpoint": "/v1/documentation/{organization_id}/{documentation_id}/asset/{asset_id}",
+              "source_metadata": {},
+              "metadata": {},
+              "metadata_visibility": {
+                "show_author": true,
+                "show_reading_time": true,
+                "show_publish_date": true,
+                "show_update_date": true,
+                "show_tags": true
+              },
+              "content_path": "v1/documentation/asset/get-v1documentationorganization-iddocumentation-idassetasset-id.mdx"
+            },
+            {
+              "id": "3c86af18-a5f9-49a5-b4aa-ec97409cb2c1",
+              "section_id": "3aa543da-2485-48d1-a2d7-6c943b6f5793",
+              "parent_id": "33db9c9b-b269-4097-8d66-04e336e079cf",
+              "title": "Update asset metadata",
+              "slug": "put-v1documentationorganization-iddocumentation-idassetasset-id",
+              "type": "api_endpoint",
+              "order": 3,
+              "method": "PUT",
+              "endpoint": "/v1/documentation/{organization_id}/{documentation_id}/asset/{asset_id}",
+              "source_metadata": {},
+              "metadata": {},
+              "metadata_visibility": {
+                "show_author": true,
+                "show_reading_time": true,
+                "show_publish_date": true,
+                "show_update_date": true,
+                "show_tags": true
+              },
+              "content_path": "v1/documentation/asset/put-v1documentationorganization-iddocumentation-idassetasset-id.mdx"
+            },
+            {
+              "id": "e5b0bab3-d7e3-4d00-bea5-94a772398c46",
+              "section_id": "3aa543da-2485-48d1-a2d7-6c943b6f5793",
+              "parent_id": "33db9c9b-b269-4097-8d66-04e336e079cf",
+              "title": "Delete an asset",
+              "slug": "delete-v1documentationorganization-iddocumentation-idassetasset-id",
+              "type": "api_endpoint",
+              "order": 4,
+              "method": "DELETE",
+              "endpoint": "/v1/documentation/{organization_id}/{documentation_id}/asset/{asset_id}",
+              "source_metadata": {},
+              "metadata": {},
+              "metadata_visibility": {
+                "show_author": true,
+                "show_reading_time": true,
+                "show_publish_date": true,
+                "show_update_date": true,
+                "show_tags": true
+              },
+              "content_path": "v1/documentation/asset/delete-v1documentationorganization-iddocumentation-idassetasset-id.mdx"
+            },
+            {
+              "id": "2f4d3726-0820-4b2c-b15c-405bffacdfb9",
+              "section_id": "3aa543da-2485-48d1-a2d7-6c943b6f5793",
+              "parent_id": "33db9c9b-b269-4097-8d66-04e336e079cf",
+              "title": "Serve asset file",
+              "slug": "get-v1documentationorganization-iddocumentation-idassetasset-idfile",
+              "type": "api_endpoint",
+              "order": 5,
+              "method": "GET",
+              "endpoint": "/v1/documentation/{organization_id}/{documentation_id}/asset/{asset_id}/file",
+              "source_metadata": {},
+              "metadata": {},
+              "metadata_visibility": {
+                "show_author": true,
+                "show_reading_time": true,
+                "show_publish_date": true,
+                "show_update_date": true,
+                "show_tags": true
+              },
+              "content_path": "v1/documentation/asset/get-v1documentationorganization-iddocumentation-idassetasset-idfile.mdx"
+            },
+            {
+              "id": "58868284-9f55-4790-93e1-5cc7af8c41f4",
+              "section_id": "3aa543da-2485-48d1-a2d7-6c943b6f5793",
+              "title": "Customer Admin",
+              "slug": "customer-admin",
+              "type": "folder",
+              "order": 2,
+              "source_metadata": {},
+              "metadata": {},
+              "metadata_visibility": {
+                "show_author": true,
+                "show_reading_time": true,
+                "show_publish_date": true,
+                "show_update_date": true,
+                "show_tags": true
+              },
+              "content_path": "v1/documentation/customer-admin/index.mdx"
+            },
+            {
+              "id": "27928dcd-e619-4091-8f97-4735e6a56c7b",
+              "section_id": "3aa543da-2485-48d1-a2d7-6c943b6f5793",
+              "parent_id": "58868284-9f55-4790-93e1-5cc7af8c41f4",
+              "title": "List all customers (admin)",
+              "slug": "get-v1admincustomers",
+              "type": "api_endpoint",
+              "order": 0,
+              "method": "GET",
+              "endpoint": "/v1/admin/customers",
+              "source_metadata": {},
+              "metadata": {},
+              "metadata_visibility": {
+                "show_author": true,
+                "show_reading_time": true,
+                "show_publish_date": true,
+                "show_update_date": true,
+                "show_tags": true
+              },
+              "content_path": "v1/documentation/customer-admin/get-v1admincustomers.mdx"
+            },
+            {
+              "id": "ed4974cf-abd8-4e9a-8246-f38b0558fb1b",
+              "section_id": "3aa543da-2485-48d1-a2d7-6c943b6f5793",
+              "parent_id": "58868284-9f55-4790-93e1-5cc7af8c41f4",
+              "title": "Export customers as CSV (admin)",
+              "slug": "get-v1admincustomersexport",
+              "type": "api_endpoint",
+              "order": 1,
+              "method": "GET",
+              "endpoint": "/v1/admin/customers/export",
+              "source_metadata": {},
+              "metadata": {},
+              "metadata_visibility": {
+                "show_author": true,
+                "show_reading_time": true,
+                "show_publish_date": true,
+                "show_update_date": true,
+                "show_tags": true
+              },
+              "content_path": "v1/documentation/customer-admin/get-v1admincustomersexport.mdx"
+            },
+            {
+              "id": "51728c9b-721e-4d39-971f-3670f2f09b33",
+              "section_id": "3aa543da-2485-48d1-a2d7-6c943b6f5793",
+              "parent_id": "58868284-9f55-4790-93e1-5cc7af8c41f4",
+              "title": "Get customer overview (admin)",
+              "slug": "get-v1admincustomersorganization-id",
+              "type": "api_endpoint",
+              "order": 2,
+              "method": "GET",
+              "endpoint": "/v1/admin/customers/{organization_id}",
+              "source_metadata": {},
+              "metadata": {},
+              "metadata_visibility": {
+                "show_author": true,
+                "show_reading_time": true,
+                "show_publish_date": true,
+                "show_update_date": true,
+                "show_tags": true
+              },
+              "content_path": "v1/documentation/customer-admin/get-v1admincustomersorganization-id.mdx"
+            },
+            {
+              "id": "0fd06192-9088-4ab5-be0f-2ed1540210d9",
+              "section_id": "3aa543da-2485-48d1-a2d7-6c943b6f5793",
+              "title": "Docentry",
+              "slug": "docentry",
+              "type": "folder",
+              "order": 3,
+              "source_metadata": {},
+              "metadata": {},
+              "metadata_visibility": {
+                "show_author": true,
+                "show_reading_time": true,
+                "show_publish_date": true,
+                "show_update_date": true,
+                "show_tags": true
+              },
+              "content_path": "v1/documentation/docentry/index.mdx"
+            },
+            {
+              "id": "d272e5fb-7581-43a9-aefb-b8b353d3c7de",
+              "section_id": "3aa543da-2485-48d1-a2d7-6c943b6f5793",
+              "parent_id": "0fd06192-9088-4ab5-be0f-2ed1540210d9",
+              "title": "Get all doc entries for a section",
+              "slug": "get-v1documentationorganization-iddocumentation-idversionversion-idsectionsection-identry",
+              "type": "api_endpoint",
+              "order": 0,
+              "method": "GET",
+              "endpoint": "/v1/documentation/{organization_id}/{documentation_id}/version/{version_id}/section/{section_id}/entry",
+              "source_metadata": {},
+              "metadata": {},
+              "metadata_visibility": {
+                "show_author": true,
+                "show_reading_time": true,
+                "show_publish_date": true,
+                "show_update_date": true,
+                "show_tags": true
+              },
+              "content_path": "v1/documentation/docentry/get-v1documentationorganization-iddocumentation-idversionversion-idsectionsection-identry.mdx"
+            },
+            {
+              "id": "6d432676-a2e2-4b51-93f9-12ab0e5b3721",
+              "section_id": "3aa543da-2485-48d1-a2d7-6c943b6f5793",
+              "parent_id": "0fd06192-9088-4ab5-be0f-2ed1540210d9",
+              "title": "Create a new doc entry",
+              "slug": "post-v1documentationorganization-iddocumentation-idversionversion-idsectionsection-identry",
+              "type": "api_endpoint",
+              "order": 1,
+              "method": "POST",
+              "endpoint": "/v1/documentation/{organization_id}/{documentation_id}/version/{version_id}/section/{section_id}/entry",
+              "source_metadata": {},
+              "metadata": {},
+              "metadata_visibility": {
+                "show_author": true,
+                "show_reading_time": true,
+                "show_publish_date": true,
+                "show_update_date": true,
+                "show_tags": true
+              },
+              "content_path": "v1/documentation/docentry/post-v1documentationorganization-iddocumentation-idversionversion-idsectionsection-identry.mdx"
+            },
+            {
+              "id": "479a6bae-ce57-4060-a729-7e2d42225ab0",
+              "section_id": "3aa543da-2485-48d1-a2d7-6c943b6f5793",
+              "parent_id": "0fd06192-9088-4ab5-be0f-2ed1540210d9",
+              "title": "Batch create doc entries",
+              "slug": "post-v1documentationorganization-iddocumentation-idversionversion-idsectionsection-identrybatch",
+              "type": "api_endpoint",
+              "order": 2,
+              "method": "POST",
+              "endpoint": "/v1/documentation/{organization_id}/{documentation_id}/version/{version_id}/section/{section_id}/entry/batch",
+              "source_metadata": {},
+              "metadata": {},
+              "metadata_visibility": {
+                "show_author": true,
+                "show_reading_time": true,
+                "show_publish_date": true,
+                "show_update_date": true,
+                "show_tags": true
+              },
+              "content_path": "v1/documentation/docentry/post-v1documentationorganization-iddocumentation-idversionversion-idsectionsection-identrybatch.mdx"
+            },
+            {
+              "id": "dc5b1f01-38cd-4fad-9232-4f045b5261ce",
+              "section_id": "3aa543da-2485-48d1-a2d7-6c943b6f5793",
+              "parent_id": "0fd06192-9088-4ab5-be0f-2ed1540210d9",
+              "title": "Reorder doc entries",
+              "slug": "post-v1documentationorganization-iddocumentation-idversionversion-idsectionsection-identryreorder",
+              "type": "api_endpoint",
+              "order": 3,
+              "method": "POST",
+              "endpoint": "/v1/documentation/{organization_id}/{documentation_id}/version/{version_id}/section/{section_id}/entry/reorder",
+              "source_metadata": {},
+              "metadata": {},
+              "metadata_visibility": {
+                "show_author": true,
+                "show_reading_time": true,
+                "show_publish_date": true,
+                "show_update_date": true,
+                "show_tags": true
+              },
+              "content_path": "v1/documentation/docentry/post-v1documentationorganization-iddocumentation-idversionversion-idsectionsection-identryreorder.mdx"
+            },
+            {
+              "id": "d9d86222-9b59-4398-95a6-b8354c20f068",
+              "section_id": "3aa543da-2485-48d1-a2d7-6c943b6f5793",
+              "parent_id": "0fd06192-9088-4ab5-be0f-2ed1540210d9",
+              "title": "Get doc entries tree for a section",
+              "slug": "get-v1documentationorganization-iddocumentation-idversionversion-idsectionsection-identrytree",
+              "type": "api_endpoint",
+              "order": 4,
+              "method": "GET",
+              "endpoint": "/v1/documentation/{organization_id}/{documentation_id}/version/{version_id}/section/{section_id}/entry/tree",
+              "source_metadata": {},
+              "metadata": {},
+              "metadata_visibility": {
+                "show_author": true,
+                "show_reading_time": true,
+                "show_publish_date": true,
+                "show_update_date": true,
+                "show_tags": true
+              },
+              "content_path": "v1/documentation/docentry/get-v1documentationorganization-iddocumentation-idversionversion-idsectionsection-identrytree.mdx"
+            },
+            {
+              "id": "ea144080-c41c-4974-83a4-9d816f7eeef5",
+              "section_id": "3aa543da-2485-48d1-a2d7-6c943b6f5793",
+              "parent_id": "0fd06192-9088-4ab5-be0f-2ed1540210d9",
+              "title": "Get doc entry by ID",
+              "slug": "get-v1documentationorganization-iddocumentation-idversionversion-idsectionsection-identryentry-id",
+              "type": "api_endpoint",
+              "order": 5,
+              "method": "GET",
+              "endpoint": "/v1/documentation/{organization_id}/{documentation_id}/version/{version_id}/section/{section_id}/entry/{entry_id}",
+              "source_metadata": {},
+              "metadata": {},
+              "metadata_visibility": {
+                "show_author": true,
+                "show_reading_time": true,
+                "show_publish_date": true,
+                "show_update_date": true,
+                "show_tags": true
+              },
+              "content_path": "v1/documentation/docentry/get-v1documentationorganization-iddocumentation-idversionversion-idsectionsection-identryentry-id.mdx"
+            },
+            {
+              "id": "4684f27e-169f-4489-86fb-c9b44c8ac18d",
+              "section_id": "3aa543da-2485-48d1-a2d7-6c943b6f5793",
+              "parent_id": "0fd06192-9088-4ab5-be0f-2ed1540210d9",
+              "title": "Update doc entry",
+              "slug": "put-v1documentationorganization-iddocumentation-idversionversion-idsectionsection-identryentry-id",
+              "type": "api_endpoint",
+              "order": 6,
+              "method": "PUT",
+              "endpoint": "/v1/documentation/{organization_id}/{documentation_id}/version/{version_id}/section/{section_id}/entry/{entry_id}",
+              "source_metadata": {},
+              "metadata": {},
+              "metadata_visibility": {
+                "show_author": true,
+                "show_reading_time": true,
+                "show_publish_date": true,
+                "show_update_date": true,
+                "show_tags": true
+              },
+              "content_path": "v1/documentation/docentry/put-v1documentationorganization-iddocumentation-idversionversion-idsectionsection-identryentry-id.mdx"
+            },
+            {
+              "id": "4d6dd592-074e-4bb8-a68f-7c9a87630ad0",
+              "section_id": "3aa543da-2485-48d1-a2d7-6c943b6f5793",
+              "parent_id": "0fd06192-9088-4ab5-be0f-2ed1540210d9",
+              "title": "Delete doc entry",
+              "slug": "delete-v1documentationorganization-iddocumentation-idversionversion-idsectionsection-identryentry-id",
+              "type": "api_endpoint",
+              "order": 7,
+              "method": "DELETE",
+              "endpoint": "/v1/documentation/{organization_id}/{documentation_id}/version/{version_id}/section/{section_id}/entry/{entry_id}",
+              "source_metadata": {},
+              "metadata": {},
+              "metadata_visibility": {
+                "show_author": true,
+                "show_reading_time": true,
+                "show_publish_date": true,
+                "show_update_date": true,
+                "show_tags": true
+              },
+              "content_path": "v1/documentation/docentry/delete-v1documentationorganization-iddocumentation-idversionversion-idsectionsection-identryentry-id.mdx"
+            },
+            {
+              "id": "7db1c11f-87d3-4077-92e5-0edfcaceb1d1",
+              "section_id": "3aa543da-2485-48d1-a2d7-6c943b6f5793",
+              "parent_id": "0fd06192-9088-4ab5-be0f-2ed1540210d9",
+              "title": "Move doc entry to a different parent or section",
+              "slug": "post-v1documentationorganization-iddocumentation-idversionversion-idsectionsection-identryentry-idmove",
+              "type": "api_endpoint",
+              "order": 8,
+              "method": "POST",
+              "endpoint": "/v1/documentation/{organization_id}/{documentation_id}/version/{version_id}/section/{section_id}/entry/{entry_id}/move",
+              "source_metadata": {},
+              "metadata": {},
+              "metadata_visibility": {
+                "show_author": true,
+                "show_reading_time": true,
+                "show_publish_date": true,
+                "show_update_date": true,
+                "show_tags": true
+              },
+              "content_path": "v1/documentation/docentry/post-v1documentationorganization-iddocumentation-idversionversion-idsectionsection-identryentry-idmove.mdx"
+            },
+            {
+              "id": "d179961a-0f78-4418-b9c0-37a8e213ba50",
+              "section_id": "3aa543da-2485-48d1-a2d7-6c943b6f5793",
+              "title": "Documentation",
+              "slug": "documentation",
+              "type": "folder",
+              "order": 4,
+              "source_metadata": {},
+              "metadata": {},
+              "metadata_visibility": {
+                "show_author": true,
+                "show_reading_time": true,
+                "show_publish_date": true,
+                "show_update_date": true,
+                "show_tags": true
+              },
+              "content_path": "v1/documentation/documentation/index.mdx"
+            },
+            {
+              "id": "0da35386-1ea3-45c3-bf37-d7bbb6bd24d5",
+              "section_id": "3aa543da-2485-48d1-a2d7-6c943b6f5793",
+              "parent_id": "d179961a-0f78-4418-b9c0-37a8e213ba50",
+              "title": "Create a new documentation",
+              "slug": "post-v1documentationorganization-id",
+              "type": "api_endpoint",
+              "order": 0,
+              "method": "POST",
+              "endpoint": "/v1/documentation/{organization_id}",
+              "source_metadata": {},
+              "metadata": {},
+              "metadata_visibility": {
+                "show_author": true,
+                "show_reading_time": true,
+                "show_publish_date": true,
+                "show_update_date": true,
+                "show_tags": true
+              },
+              "content_path": "v1/documentation/documentation/post-v1documentationorganization-id.mdx"
+            },
+            {
+              "id": "6f4ef96a-b334-44ec-9457-e1ffc476eb86",
+              "section_id": "3aa543da-2485-48d1-a2d7-6c943b6f5793",
+              "parent_id": "d179961a-0f78-4418-b9c0-37a8e213ba50",
+              "title": "Get all documentations for an organization",
+              "slug": "get-v1documentationorganization-idlist",
+              "type": "api_endpoint",
+              "order": 1,
+              "method": "GET",
+              "endpoint": "/v1/documentation/{organization_id}/list",
+              "source_metadata": {},
+              "metadata": {},
+              "metadata_visibility": {
+                "show_author": true,
+                "show_reading_time": true,
+                "show_publish_date": true,
+                "show_update_date": true,
+                "show_tags": true
+              },
+              "content_path": "v1/documentation/documentation/get-v1documentationorganization-idlist.mdx"
+            },
+            {
+              "id": "9e49420e-02ba-4c16-a986-67a36cefe69c",
+              "section_id": "3aa543da-2485-48d1-a2d7-6c943b6f5793",
+              "parent_id": "d179961a-0f78-4418-b9c0-37a8e213ba50",
+              "title": "Get documentation by ID",
+              "slug": "get-v1documentationorganization-iddocumentation-id",
+              "type": "api_endpoint",
+              "order": 2,
+              "method": "GET",
+              "endpoint": "/v1/documentation/{organization_id}/{documentation_id}",
+              "source_metadata": {},
+              "metadata": {},
+              "metadata_visibility": {
+                "show_author": true,
+                "show_reading_time": true,
+                "show_publish_date": true,
+                "show_update_date": true,
+                "show_tags": true
+              },
+              "content_path": "v1/documentation/documentation/get-v1documentationorganization-iddocumentation-id.mdx"
+            },
+            {
+              "id": "ee298f0a-2ea8-4e71-acd2-6e785a5954a4",
+              "section_id": "3aa543da-2485-48d1-a2d7-6c943b6f5793",
+              "parent_id": "d179961a-0f78-4418-b9c0-37a8e213ba50",
+              "title": "Update documentation",
+              "slug": "put-v1documentationorganization-iddocumentation-id",
+              "type": "api_endpoint",
+              "order": 3,
+              "method": "PUT",
+              "endpoint": "/v1/documentation/{organization_id}/{documentation_id}",
+              "source_metadata": {},
+              "metadata": {},
+              "metadata_visibility": {
+                "show_author": true,
+                "show_reading_time": true,
+                "show_publish_date": true,
+                "show_update_date": true,
+                "show_tags": true
+              },
+              "content_path": "v1/documentation/documentation/put-v1documentationorganization-iddocumentation-id.mdx"
+            },
+            {
+              "id": "2aa254d8-1b77-4bef-97bf-d844e28830fb",
+              "section_id": "3aa543da-2485-48d1-a2d7-6c943b6f5793",
+              "parent_id": "d179961a-0f78-4418-b9c0-37a8e213ba50",
+              "title": "Delete documentation",
+              "slug": "delete-v1documentationorganization-iddocumentation-id",
+              "type": "api_endpoint",
+              "order": 4,
+              "method": "DELETE",
+              "endpoint": "/v1/documentation/{organization_id}/{documentation_id}",
+              "source_metadata": {},
+              "metadata": {},
+              "metadata_visibility": {
+                "show_author": true,
+                "show_reading_time": true,
+                "show_publish_date": true,
+                "show_update_date": true,
+                "show_tags": true
+              },
+              "content_path": "v1/documentation/documentation/delete-v1documentationorganization-iddocumentation-id.mdx"
+            },
+            {
+              "id": "228bf1e7-f3c1-4807-876f-c5c9e8dce445",
+              "section_id": "3aa543da-2485-48d1-a2d7-6c943b6f5793",
+              "parent_id": "d179961a-0f78-4418-b9c0-37a8e213ba50",
+              "title": "Update documentation configuration",
+              "slug": "put-v1documentationorganization-iddocumentation-idconfig",
+              "type": "api_endpoint",
+              "order": 5,
+              "method": "PUT",
+              "endpoint": "/v1/documentation/{organization_id}/{documentation_id}/config",
+              "source_metadata": {},
+              "metadata": {},
+              "metadata_visibility": {
+                "show_author": true,
+                "show_reading_time": true,
+                "show_publish_date": true,
+                "show_update_date": true,
+                "show_tags": true
+              },
+              "content_path": "v1/documentation/documentation/put-v1documentationorganization-iddocumentation-idconfig.mdx"
+            },
+            {
+              "id": "75fbb5dd-56da-4f82-bcc4-18cdcd378922",
+              "section_id": "3aa543da-2485-48d1-a2d7-6c943b6f5793",
+              "parent_id": "d179961a-0f78-4418-b9c0-37a8e213ba50",
+              "title": "Initialize a pending documentation with a default scaffold",
+              "slug": "post-v1documentationorganization-iddocumentation-idinitialize-blank",
+              "type": "api_endpoint",
+              "order": 6,
+              "method": "POST",
+              "endpoint": "/v1/documentation/{organization_id}/{documentation_id}/initialize-blank",
+              "source_metadata": {},
+              "metadata": {},
+              "metadata_visibility": {
+                "show_author": true,
+                "show_reading_time": true,
+                "show_publish_date": true,
+                "show_update_date": true,
+                "show_tags": true
+              },
+              "content_path": "v1/documentation/documentation/post-v1documentationorganization-iddocumentation-idinitialize-blank.mdx"
+            },
+            {
+              "id": "48dee167-f7e1-4ad4-bfd9-373b83561880",
+              "section_id": "3aa543da-2485-48d1-a2d7-6c943b6f5793",
+              "parent_id": "d179961a-0f78-4418-b9c0-37a8e213ba50",
+              "title": "Initialize a pending documentation from an AI prompt",
+              "slug": "post-v1documentationorganization-iddocumentation-idinitialize-from-ai",
+              "type": "api_endpoint",
+              "order": 7,
+              "method": "POST",
+              "endpoint": "/v1/documentation/{organization_id}/{documentation_id}/initialize-from-ai",
+              "source_metadata": {},
+              "metadata": {},
+              "metadata_visibility": {
+                "show_author": true,
+                "show_reading_time": true,
+                "show_publish_date": true,
+                "show_update_date": true,
+                "show_tags": true
+              },
+              "content_path": "v1/documentation/documentation/post-v1documentationorganization-iddocumentation-idinitialize-from-ai.mdx"
+            },
+            {
+              "id": "a172351b-a83c-416a-9b0d-99898f61970d",
+              "section_id": "3aa543da-2485-48d1-a2d7-6c943b6f5793",
+              "parent_id": "d179961a-0f78-4418-b9c0-37a8e213ba50",
+              "title": "Initialize a pending documentation by importing files",
+              "slug": "post-v1documentationorganization-iddocumentation-idinitialize-from-file",
+              "type": "api_endpoint",
+              "order": 8,
+              "method": "POST",
+              "endpoint": "/v1/documentation/{organization_id}/{documentation_id}/initialize-from-file",
+              "source_metadata": {},
+              "metadata": {},
+              "metadata_visibility": {
+                "show_author": true,
+                "show_reading_time": true,
+                "show_publish_date": true,
+                "show_update_date": true,
+                "show_tags": true
+              },
+              "content_path": "v1/documentation/documentation/post-v1documentationorganization-iddocumentation-idinitialize-from-file.mdx"
+            },
+            {
+              "id": "8ddf2408-b752-4ab7-b8f2-62e7fee7c2e7",
+              "section_id": "3aa543da-2485-48d1-a2d7-6c943b6f5793",
+              "parent_id": "d179961a-0f78-4418-b9c0-37a8e213ba50",
+              "title": "Initialize a pending documentation by importing an OpenAPI/Swagger spec",
+              "slug": "post-v1documentationorganization-iddocumentation-idinitialize-from-openapi",
+              "type": "api_endpoint",
+              "order": 9,
+              "method": "POST",
+              "endpoint": "/v1/documentation/{organization_id}/{documentation_id}/initialize-from-openapi",
+              "source_metadata": {},
+              "metadata": {},
+              "metadata_visibility": {
+                "show_author": true,
+                "show_reading_time": true,
+                "show_publish_date": true,
+                "show_update_date": true,
+                "show_tags": true
+              },
+              "content_path": "v1/documentation/documentation/post-v1documentationorganization-iddocumentation-idinitialize-from-openapi.mdx"
+            },
+            {
+              "id": "efab90fc-400f-4d37-83d4-3c15d9d196bc",
+              "section_id": "3aa543da-2485-48d1-a2d7-6c943b6f5793",
+              "parent_id": "d179961a-0f78-4418-b9c0-37a8e213ba50",
+              "title": "Initialize a pending documentation from a GitHub repository",
+              "slug": "post-v1documentationorganization-iddocumentation-idinitialize-from-repository",
+              "type": "api_endpoint",
+              "order": 10,
+              "method": "POST",
+              "endpoint": "/v1/documentation/{organization_id}/{documentation_id}/initialize-from-repository",
+              "source_metadata": {},
+              "metadata": {},
+              "metadata_visibility": {
+                "show_author": true,
+                "show_reading_time": true,
+                "show_publish_date": true,
+                "show_update_date": true,
+                "show_tags": true
+              },
+              "content_path": "v1/documentation/documentation/post-v1documentationorganization-iddocumentation-idinitialize-from-repository.mdx"
+            },
+            {
+              "id": "d373cc27-dbbd-43bd-9f1f-03d66df3642c",
+              "section_id": "3aa543da-2485-48d1-a2d7-6c943b6f5793",
+              "parent_id": "d179961a-0f78-4418-b9c0-37a8e213ba50",
+              "title": "Initialize a pending documentation with a preset template",
+              "slug": "post-v1documentationorganization-iddocumentation-idinitialize-from-template",
+              "type": "api_endpoint",
+              "order": 11,
+              "method": "POST",
+              "endpoint": "/v1/documentation/{organization_id}/{documentation_id}/initialize-from-template",
+              "source_metadata": {},
+              "metadata": {},
+              "metadata_visibility": {
+                "show_author": true,
+                "show_reading_time": true,
+                "show_publish_date": true,
+                "show_update_date": true,
+                "show_tags": true
+              },
+              "content_path": "v1/documentation/documentation/post-v1documentationorganization-iddocumentation-idinitialize-from-template.mdx"
+            },
+            {
+              "id": "5b3cf694-9832-4bf5-9477-ae8b6c93e78e",
+              "section_id": "3aa543da-2485-48d1-a2d7-6c943b6f5793",
+              "parent_id": "d179961a-0f78-4418-b9c0-37a8e213ba50",
+              "title": "Initialize a pending documentation by importing a website",
+              "slug": "post-v1documentationorganization-iddocumentation-idinitialize-from-website",
+              "type": "api_endpoint",
+              "order": 12,
+              "method": "POST",
+              "endpoint": "/v1/documentation/{organization_id}/{documentation_id}/initialize-from-website",
+              "source_metadata": {},
+              "metadata": {},
+              "metadata_visibility": {
+                "show_author": true,
+                "show_reading_time": true,
+                "show_publish_date": true,
+                "show_update_date": true,
+                "show_tags": true
+              },
+              "content_path": "v1/documentation/documentation/post-v1documentationorganization-iddocumentation-idinitialize-from-website.mdx"
+            },
+            {
+              "id": "6041081b-b4ce-4124-bb76-17eafd8639df",
+              "section_id": "3aa543da-2485-48d1-a2d7-6c943b6f5793",
+              "title": "Documentation Backup",
+              "slug": "documentation-backup",
+              "type": "folder",
+              "order": 5,
+              "source_metadata": {},
+              "metadata": {},
+              "metadata_visibility": {
+                "show_author": true,
+                "show_reading_time": true,
+                "show_publish_date": true,
+                "show_update_date": true,
+                "show_tags": true
+              },
+              "content_path": "v1/documentation/documentation-backup/index.mdx"
+            },
+            {
+              "id": "30ca4318-018a-4886-984a-7a41f1454834",
+              "section_id": "3aa543da-2485-48d1-a2d7-6c943b6f5793",
+              "parent_id": "6041081b-b4ce-4124-bb76-17eafd8639df",
+              "title": "List all backups for a documentation",
+              "slug": "get-v1documentationorganization-iddocumentation-idbackup",
+              "type": "api_endpoint",
+              "order": 0,
+              "method": "GET",
+              "endpoint": "/v1/documentation/{organization_id}/{documentation_id}/backup",
+              "source_metadata": {},
+              "metadata": {},
+              "metadata_visibility": {
+                "show_author": true,
+                "show_reading_time": true,
+                "show_publish_date": true,
+                "show_update_date": true,
+                "show_tags": true
+              },
+              "content_path": "v1/documentation/documentation-backup/get-v1documentationorganization-iddocumentation-idbackup.mdx"
+            },
+            {
+              "id": "976e5d81-efe9-489a-80b4-10925a7cec97",
+              "section_id": "3aa543da-2485-48d1-a2d7-6c943b6f5793",
+              "parent_id": "6041081b-b4ce-4124-bb76-17eafd8639df",
+              "title": "Make a backup of a documentation",
+              "slug": "post-v1documentationorganization-iddocumentation-idbackup",
+              "type": "api_endpoint",
+              "order": 1,
+              "method": "POST",
+              "endpoint": "/v1/documentation/{organization_id}/{documentation_id}/backup",
+              "source_metadata": {},
+              "metadata": {},
+              "metadata_visibility": {
+                "show_author": true,
+                "show_reading_time": true,
+                "show_publish_date": true,
+                "show_update_date": true,
+                "show_tags": true
+              },
+              "content_path": "v1/documentation/documentation-backup/post-v1documentationorganization-iddocumentation-idbackup.mdx"
+            },
+            {
+              "id": "2d3ca2d6-ef0f-4bb8-9491-07719d0f5fef",
+              "section_id": "3aa543da-2485-48d1-a2d7-6c943b6f5793",
+              "parent_id": "6041081b-b4ce-4124-bb76-17eafd8639df",
+              "title": "Get the configured backup repository for a documentation",
+              "slug": "get-v1documentationorganization-iddocumentation-idbackuprepository",
+              "type": "api_endpoint",
+              "order": 2,
+              "method": "GET",
+              "endpoint": "/v1/documentation/{organization_id}/{documentation_id}/backup/repository",
+              "source_metadata": {},
+              "metadata": {},
+              "metadata_visibility": {
+                "show_author": true,
+                "show_reading_time": true,
+                "show_publish_date": true,
+                "show_update_date": true,
+                "show_tags": true
+              },
+              "content_path": "v1/documentation/documentation-backup/get-v1documentationorganization-iddocumentation-idbackuprepository.mdx"
+            },
+            {
+              "id": "f05f7bf3-9f0a-460f-82ed-f9d76c84afac",
+              "section_id": "3aa543da-2485-48d1-a2d7-6c943b6f5793",
+              "parent_id": "6041081b-b4ce-4124-bb76-17eafd8639df",
+              "title": "Set the backup repository for a documentation",
+              "slug": "put-v1documentationorganization-iddocumentation-idbackuprepository",
+              "type": "api_endpoint",
+              "order": 3,
+              "method": "PUT",
+              "endpoint": "/v1/documentation/{organization_id}/{documentation_id}/backup/repository",
+              "source_metadata": {},
+              "metadata": {},
+              "metadata_visibility": {
+                "show_author": true,
+                "show_reading_time": true,
+                "show_publish_date": true,
+                "show_update_date": true,
+                "show_tags": true
+              },
+              "content_path": "v1/documentation/documentation-backup/put-v1documentationorganization-iddocumentation-idbackuprepository.mdx"
+            },
+            {
+              "id": "c97e1ed3-247a-4063-8287-3b55323b8ab8",
+              "section_id": "3aa543da-2485-48d1-a2d7-6c943b6f5793",
+              "parent_id": "6041081b-b4ce-4124-bb76-17eafd8639df",
+              "title": "Restore a documentation from a previous backup",
+              "slug": "post-v1documentationorganization-iddocumentation-idbackuprestore",
+              "type": "api_endpoint",
+              "order": 4,
+              "method": "POST",
+              "endpoint": "/v1/documentation/{organization_id}/{documentation_id}/backup/restore",
+              "source_metadata": {},
+              "metadata": {},
+              "metadata_visibility": {
+                "show_author": true,
+                "show_reading_time": true,
+                "show_publish_date": true,
+                "show_update_date": true,
+                "show_tags": true
+              },
+              "content_path": "v1/documentation/documentation-backup/post-v1documentationorganization-iddocumentation-idbackuprestore.mdx"
+            },
+            {
+              "id": "744e3aad-cd7b-4ddf-8aa8-4a0fe210f7ad",
+              "section_id": "3aa543da-2485-48d1-a2d7-6c943b6f5793",
+              "title": "Events",
+              "slug": "events",
+              "type": "folder",
+              "order": 6,
+              "source_metadata": {},
+              "metadata": {},
+              "metadata_visibility": {
+                "show_author": true,
+                "show_reading_time": true,
+                "show_publish_date": true,
+                "show_update_date": true,
+                "show_tags": true
+              },
+              "content_path": "v1/documentation/events/index.mdx"
+            },
+            {
+              "id": "f4b13d22-2a76-4bbc-bbf3-a8f5924afc88",
+              "section_id": "3aa543da-2485-48d1-a2d7-6c943b6f5793",
+              "parent_id": "744e3aad-cd7b-4ddf-8aa8-4a0fe210f7ad",
+              "title": "Delete an event (simplified endpoint)",
+              "slug": "delete-v1event",
+              "type": "api_endpoint",
+              "order": 0,
+              "method": "DELETE",
+              "endpoint": "/v1/event",
+              "source_metadata": {},
+              "metadata": {},
+              "metadata_visibility": {
+                "show_author": true,
+                "show_reading_time": true,
+                "show_publish_date": true,
+                "show_update_date": true,
+                "show_tags": true
+              },
+              "content_path": "v1/documentation/events/delete-v1event.mdx"
+            },
+            {
+              "id": "8393e1ab-e1b7-44a3-b6e3-718edca71084",
+              "section_id": "3aa543da-2485-48d1-a2d7-6c943b6f5793",
+              "parent_id": "744e3aad-cd7b-4ddf-8aa8-4a0fe210f7ad",
+              "title": "List events for a project (simplified endpoint)",
+              "slug": "post-v1eventlist",
+              "type": "api_endpoint",
+              "order": 1,
+              "method": "POST",
+              "endpoint": "/v1/event/list",
+              "source_metadata": {},
+              "metadata": {},
+              "metadata_visibility": {
+                "show_author": true,
+                "show_reading_time": true,
+                "show_publish_date": true,
+                "show_update_date": true,
+                "show_tags": true
+              },
+              "content_path": "v1/documentation/events/post-v1eventlist.mdx"
+            },
+            {
+              "id": "a294afa7-9a46-4a8a-b558-6e9057bb127a",
+              "section_id": "3aa543da-2485-48d1-a2d7-6c943b6f5793",
+              "parent_id": "744e3aad-cd7b-4ddf-8aa8-4a0fe210f7ad",
+              "title": "Get VAPID public key",
+              "slug": "get-v1eventvapid-public-key",
+              "type": "api_endpoint",
+              "order": 2,
+              "method": "GET",
+              "endpoint": "/v1/event/vapid-public-key",
+              "source_metadata": {},
+              "metadata": {},
+              "metadata_visibility": {
+                "show_author": true,
+                "show_reading_time": true,
+                "show_publish_date": true,
+                "show_update_date": true,
+                "show_tags": true
+              },
+              "content_path": "v1/documentation/events/get-v1eventvapid-public-key.mdx"
+            },
+            {
+              "id": "3f9d767e-9822-4010-981d-b85690c6953e",
+              "section_id": "3aa543da-2485-48d1-a2d7-6c943b6f5793",
+              "parent_id": "744e3aad-cd7b-4ddf-8aa8-4a0fe210f7ad",
+              "title": "List events for a project",
+              "slug": "get-v1organizationsorganization-idprojectsproject-idevents",
+              "type": "api_endpoint",
+              "order": 3,
+              "method": "GET",
+              "endpoint": "/v1/organizations/{organization_id}/projects/{project_id}/events",
+              "source_metadata": {},
+              "metadata": {},
+              "metadata_visibility": {
+                "show_author": true,
+                "show_reading_time": true,
+                "show_publish_date": true,
+                "show_update_date": true,
+                "show_tags": true
+              },
+              "content_path": "v1/documentation/events/get-v1organizationsorganization-idprojectsproject-idevents.mdx"
+            },
+            {
+              "id": "88539f3b-cc9b-458f-ba04-37f748d0766a",
+              "section_id": "3aa543da-2485-48d1-a2d7-6c943b6f5793",
+              "parent_id": "744e3aad-cd7b-4ddf-8aa8-4a0fe210f7ad",
+              "title": "Create a new event",
+              "slug": "post-v1organizationsorganization-idprojectsproject-idevents",
+              "type": "api_endpoint",
+              "order": 4,
+              "method": "POST",
+              "endpoint": "/v1/organizations/{organization_id}/projects/{project_id}/events",
+              "source_metadata": {},
+              "metadata": {},
+              "metadata_visibility": {
+                "show_author": true,
+                "show_reading_time": true,
+                "show_publish_date": true,
+                "show_update_date": true,
+                "show_tags": true
+              },
+              "content_path": "v1/documentation/events/post-v1organizationsorganization-idprojectsproject-idevents.mdx"
+            },
+            {
+              "id": "06be3978-ccb8-416f-bb34-5c7823820ac2",
+              "section_id": "3aa543da-2485-48d1-a2d7-6c943b6f5793",
+              "parent_id": "744e3aad-cd7b-4ddf-8aa8-4a0fe210f7ad",
+              "title": "Delete an event",
+              "slug": "delete-v1organizationsorganization-idprojectsproject-ideventsevent-id",
+              "type": "api_endpoint",
+              "order": 5,
+              "method": "DELETE",
+              "endpoint": "/v1/organizations/{organization_id}/projects/{project_id}/events/{event_id}",
+              "source_metadata": {},
+              "metadata": {},
+              "metadata_visibility": {
+                "show_author": true,
+                "show_reading_time": true,
+                "show_publish_date": true,
+                "show_update_date": true,
+                "show_tags": true
+              },
+              "content_path": "v1/documentation/events/delete-v1organizationsorganization-idprojectsproject-ideventsevent-id.mdx"
+            },
+            {
+              "id": "aef90f27-f98c-44ce-923a-86a699d70ae2",
+              "section_id": "3aa543da-2485-48d1-a2d7-6c943b6f5793",
+              "title": "Git Provider",
+              "slug": "git-provider",
+              "type": "folder",
+              "order": 7,
+              "source_metadata": {},
+              "metadata": {},
+              "metadata_visibility": {
+                "show_author": true,
+                "show_reading_time": true,
+                "show_publish_date": true,
+                "show_update_date": true,
+                "show_tags": true
+              },
+              "content_path": "v1/documentation/git-provider/index.mdx"
+            },
+            {
+              "id": "3574e73f-daae-43d7-990e-a78677b0492a",
+              "section_id": "3aa543da-2485-48d1-a2d7-6c943b6f5793",
+              "parent_id": "aef90f27-f98c-44ce-923a-86a699d70ae2",
+              "title": "Handle OAuth callback from git provider",
+              "slug": "post-v1organizationsorganization-idgit-providercallback",
+              "type": "api_endpoint",
+              "order": 0,
+              "method": "POST",
+              "endpoint": "/v1/organizations/{organization_id}/git-provider/callback",
+              "source_metadata": {},
+              "metadata": {},
+              "metadata_visibility": {
+                "show_author": true,
+                "show_reading_time": true,
+                "show_publish_date": true,
+                "show_update_date": true,
+                "show_tags": true
+              },
+              "content_path": "v1/documentation/git-provider/post-v1organizationsorganization-idgit-providercallback.mdx"
+            },
+            {
+              "id": "f890bbf2-c588-4f19-a023-7f780737c333",
+              "section_id": "3aa543da-2485-48d1-a2d7-6c943b6f5793",
+              "parent_id": "aef90f27-f98c-44ce-923a-86a699d70ae2",
+              "title": "Get git provider installation URL",
+              "slug": "get-v1organizationsorganization-idgit-providerinstall-url",
+              "type": "api_endpoint",
+              "order": 1,
+              "method": "GET",
+              "endpoint": "/v1/organizations/{organization_id}/git-provider/install-url",
+              "source_metadata": {},
+              "metadata": {},
+              "metadata_visibility": {
+                "show_author": true,
+                "show_reading_time": true,
+                "show_publish_date": true,
+                "show_update_date": true,
+                "show_tags": true
+              },
+              "content_path": "v1/documentation/git-provider/get-v1organizationsorganization-idgit-providerinstall-url.mdx"
+            },
+            {
+              "id": "63cd8aa4-ce4e-47c6-8b09-6b0df37c2866",
+              "section_id": "3aa543da-2485-48d1-a2d7-6c943b6f5793",
+              "parent_id": "aef90f27-f98c-44ce-923a-86a699d70ae2",
+              "title": "List git provider installations",
+              "slug": "get-v1organizationsorganization-idgit-providerinstallations",
+              "type": "api_endpoint",
+              "order": 2,
+              "method": "GET",
+              "endpoint": "/v1/organizations/{organization_id}/git-provider/installations",
+              "source_metadata": {},
+              "metadata": {},
+              "metadata_visibility": {
+                "show_author": true,
+                "show_reading_time": true,
+                "show_publish_date": true,
+                "show_update_date": true,
+                "show_tags": true
+              },
+              "content_path": "v1/documentation/git-provider/get-v1organizationsorganization-idgit-providerinstallations.mdx"
+            },
+            {
+              "id": "6ac4147b-6fcb-4910-b881-d4b1171cf66b",
+              "section_id": "3aa543da-2485-48d1-a2d7-6c943b6f5793",
+              "parent_id": "aef90f27-f98c-44ce-923a-86a699d70ae2",
+              "title": "Get git provider installation by ID",
+              "slug": "get-v1organizationsorganization-idgit-providerinstallationsinstallation-id",
+              "type": "api_endpoint",
+              "order": 3,
+              "method": "GET",
+              "endpoint": "/v1/organizations/{organization_id}/git-provider/installations/{installation_id}",
+              "source_metadata": {},
+              "metadata": {},
+              "metadata_visibility": {
+                "show_author": true,
+                "show_reading_time": true,
+                "show_publish_date": true,
+                "show_update_date": true,
+                "show_tags": true
+              },
+              "content_path": "v1/documentation/git-provider/get-v1organizationsorganization-idgit-providerinstallationsinstallation-id.mdx"
+            },
+            {
+              "id": "a9edb356-2bbb-47c0-8a6a-45b172093745",
+              "section_id": "3aa543da-2485-48d1-a2d7-6c943b6f5793",
+              "parent_id": "aef90f27-f98c-44ce-923a-86a699d70ae2",
+              "title": "Delete git provider installation",
+              "slug": "delete-v1organizationsorganization-idgit-providerinstallationsinstallation-id",
+              "type": "api_endpoint",
+              "order": 4,
+              "method": "DELETE",
+              "endpoint": "/v1/organizations/{organization_id}/git-provider/installations/{installation_id}",
+              "source_metadata": {},
+              "metadata": {},
+              "metadata_visibility": {
+                "show_author": true,
+                "show_reading_time": true,
+                "show_publish_date": true,
+                "show_update_date": true,
+                "show_tags": true
+              },
+              "content_path": "v1/documentation/git-provider/delete-v1organizationsorganization-idgit-providerinstallationsinstallation-id.mdx"
+            },
+            {
+              "id": "c5f55bb1-794e-4088-b00c-13160f3a4ab2",
+              "section_id": "3aa543da-2485-48d1-a2d7-6c943b6f5793",
+              "parent_id": "aef90f27-f98c-44ce-923a-86a699d70ae2",
+              "title": "List repositories from git providers",
+              "slug": "get-v1organizationsorganization-idgit-providerrepositories",
+              "type": "api_endpoint",
+              "order": 5,
+              "method": "GET",
+              "endpoint": "/v1/organizations/{organization_id}/git-provider/repositories",
+              "source_metadata": {},
+              "metadata": {},
+              "metadata_visibility": {
+                "show_author": true,
+                "show_reading_time": true,
+                "show_publish_date": true,
+                "show_update_date": true,
+                "show_tags": true
+              },
+              "content_path": "v1/documentation/git-provider/get-v1organizationsorganization-idgit-providerrepositories.mdx"
+            },
+            {
+              "id": "c864ae35-e658-4540-ac77-66c9fea15d37",
+              "section_id": "3aa543da-2485-48d1-a2d7-6c943b6f5793",
+              "parent_id": "aef90f27-f98c-44ce-923a-86a699d70ae2",
+              "title": "Sync repositories from git provider",
+              "slug": "post-v1organizationsorganization-idgit-providerrepositoriessync",
+              "type": "api_endpoint",
+              "order": 6,
+              "method": "POST",
+              "endpoint": "/v1/organizations/{organization_id}/git-provider/repositories/sync",
+              "source_metadata": {},
+              "metadata": {},
+              "metadata_visibility": {
+                "show_author": true,
+                "show_reading_time": true,
+                "show_publish_date": true,
+                "show_update_date": true,
+                "show_tags": true
+              },
+              "content_path": "v1/documentation/git-provider/post-v1organizationsorganization-idgit-providerrepositoriessync.mdx"
+            },
+            {
+              "id": "abee2cfa-8758-4a24-9e78-da6e13a3be98",
+              "section_id": "3aa543da-2485-48d1-a2d7-6c943b6f5793",
+              "parent_id": "aef90f27-f98c-44ce-923a-86a699d70ae2",
+              "title": "Get repository by ID",
+              "slug": "get-v1organizationsorganization-idgit-providerrepositoriesrepository-id",
+              "type": "api_endpoint",
+              "order": 7,
+              "method": "GET",
+              "endpoint": "/v1/organizations/{organization_id}/git-provider/repositories/{repository_id}",
+              "source_metadata": {},
+              "metadata": {},
+              "metadata_visibility": {
+                "show_author": true,
+                "show_reading_time": true,
+                "show_publish_date": true,
+                "show_update_date": true,
+                "show_tags": true
+              },
+              "content_path": "v1/documentation/git-provider/get-v1organizationsorganization-idgit-providerrepositoriesrepository-id.mdx"
+            },
+            {
+              "id": "596f7062-1307-4f31-99e9-493eafe89134",
+              "section_id": "3aa543da-2485-48d1-a2d7-6c943b6f5793",
+              "parent_id": "aef90f27-f98c-44ce-923a-86a699d70ae2",
+              "title": "Get file content from repository",
+              "slug": "get-v1organizationsorganization-idgit-providerrepositoriesrepository-idcontent",
+              "type": "api_endpoint",
+              "order": 8,
+              "method": "GET",
+              "endpoint": "/v1/organizations/{organization_id}/git-provider/repositories/{repository_id}/content",
+              "source_metadata": {},
+              "metadata": {},
+              "metadata_visibility": {
+                "show_author": true,
+                "show_reading_time": true,
+                "show_publish_date": true,
+                "show_update_date": true,
+                "show_tags": true
+              },
+              "content_path": "v1/documentation/git-provider/get-v1organizationsorganization-idgit-providerrepositoriesrepository-idcontent.mdx"
+            },
+            {
+              "id": "f724a4ef-81bf-48bd-a2c1-da2d9597757b",
+              "section_id": "3aa543da-2485-48d1-a2d7-6c943b6f5793",
+              "parent_id": "aef90f27-f98c-44ce-923a-86a699d70ae2",
+              "title": "Get repository file tree",
+              "slug": "get-v1organizationsorganization-idgit-providerrepositoriesrepository-idtree",
+              "type": "api_endpoint",
+              "order": 9,
+              "method": "GET",
+              "endpoint": "/v1/organizations/{organization_id}/git-provider/repositories/{repository_id}/tree",
+              "source_metadata": {},
+              "metadata": {},
+              "metadata_visibility": {
+                "show_author": true,
+                "show_reading_time": true,
+                "show_publish_date": true,
+                "show_update_date": true,
+                "show_tags": true
+              },
+              "content_path": "v1/documentation/git-provider/get-v1organizationsorganization-idgit-providerrepositoriesrepository-idtree.mdx"
+            },
+            {
+              "id": "bde553e2-3356-45ac-850e-8af742b3cf2a",
+              "section_id": "3aa543da-2485-48d1-a2d7-6c943b6f5793",
+              "title": "Internal",
+              "slug": "internal",
+              "type": "folder",
+              "order": 8,
+              "source_metadata": {},
+              "metadata": {},
+              "metadata_visibility": {
+                "show_author": true,
+                "show_reading_time": true,
+                "show_publish_date": true,
+                "show_update_date": true,
+                "show_tags": true
+              },
+              "content_path": "v1/documentation/internal/index.mdx"
+            },
+            {
+              "id": "1bba0762-8241-4b13-aeb1-e8e26f6fb310",
+              "section_id": "3aa543da-2485-48d1-a2d7-6c943b6f5793",
+              "parent_id": "bde553e2-3356-45ac-850e-8af742b3cf2a",
+              "title": "Toggle documentations active for an org (S2S)",
+              "slug": "post-internalsubscriptionsorganization-idtoggle-active",
+              "type": "api_endpoint",
+              "order": 0,
+              "method": "POST",
+              "endpoint": "/internal/subscriptions/{organization_id}/toggle-active",
+              "source_metadata": {},
+              "metadata": {},
+              "metadata_visibility": {
+                "show_author": true,
+                "show_reading_time": true,
+                "show_publish_date": true,
+                "show_update_date": true,
+                "show_tags": true
+              },
+              "content_path": "v1/documentation/internal/post-internalsubscriptionsorganization-idtoggle-active.mdx"
+            },
+            {
+              "id": "6dc4f46d-a0e5-409a-a0cd-82cf938e467e",
+              "section_id": "3aa543da-2485-48d1-a2d7-6c943b6f5793",
+              "title": "Organization",
+              "slug": "organization",
+              "type": "folder",
+              "order": 9,
+              "source_metadata": {},
+              "metadata": {},
+              "metadata_visibility": {
+                "show_author": true,
+                "show_reading_time": true,
+                "show_publish_date": true,
+                "show_update_date": true,
+                "show_tags": true
+              },
+              "content_path": "v1/documentation/organization/index.mdx"
+            },
+            {
+              "id": "bcbdba9e-b53e-4bac-96c1-3f1c5dedc329",
+              "section_id": "3aa543da-2485-48d1-a2d7-6c943b6f5793",
+              "parent_id": "6dc4f46d-a0e5-409a-a0cd-82cf938e467e",
+              "title": "Get all organizations for current user",
+              "slug": "get-v1organization",
+              "type": "api_endpoint",
+              "order": 0,
+              "method": "GET",
+              "endpoint": "/v1/organization",
+              "source_metadata": {},
+              "metadata": {},
+              "metadata_visibility": {
+                "show_author": true,
+                "show_reading_time": true,
+                "show_publish_date": true,
+                "show_update_date": true,
+                "show_tags": true
+              },
+              "content_path": "v1/documentation/organization/get-v1organization.mdx"
+            },
+            {
+              "id": "e4aed60c-5f04-4781-96c3-93faa6fd4c80",
+              "section_id": "3aa543da-2485-48d1-a2d7-6c943b6f5793",
+              "parent_id": "6dc4f46d-a0e5-409a-a0cd-82cf938e467e",
+              "title": "Create a new organization",
+              "slug": "post-v1organization",
+              "type": "api_endpoint",
+              "order": 1,
+              "method": "POST",
+              "endpoint": "/v1/organization",
+              "source_metadata": {},
+              "metadata": {},
+              "metadata_visibility": {
+                "show_author": true,
+                "show_reading_time": true,
+                "show_publish_date": true,
+                "show_update_date": true,
+                "show_tags": true
+              },
+              "content_path": "v1/documentation/organization/post-v1organization.mdx"
+            },
+            {
+              "id": "6c56be75-a189-4936-a5cb-836d2da194bd",
+              "section_id": "3aa543da-2485-48d1-a2d7-6c943b6f5793",
+              "parent_id": "6dc4f46d-a0e5-409a-a0cd-82cf938e467e",
+              "title": "List all organizations (admin only)",
+              "slug": "get-v1organizationall",
+              "type": "api_endpoint",
+              "order": 2,
+              "method": "GET",
+              "endpoint": "/v1/organization/all",
+              "source_metadata": {},
+              "metadata": {},
+              "metadata_visibility": {
+                "show_author": true,
+                "show_reading_time": true,
+                "show_publish_date": true,
+                "show_update_date": true,
+                "show_tags": true
+              },
+              "content_path": "v1/documentation/organization/get-v1organizationall.mdx"
+            },
+            {
+              "id": "792528d4-985f-41ef-9f1c-79ceb9e40831",
+              "section_id": "3aa543da-2485-48d1-a2d7-6c943b6f5793",
+              "parent_id": "6dc4f46d-a0e5-409a-a0cd-82cf938e467e",
+              "title": "Get organization by ID",
+              "slug": "get-v1organizationorganization-id",
+              "type": "api_endpoint",
+              "order": 3,
+              "method": "GET",
+              "endpoint": "/v1/organization/{organization_id}",
+              "source_metadata": {},
+              "metadata": {},
+              "metadata_visibility": {
+                "show_author": true,
+                "show_reading_time": true,
+                "show_publish_date": true,
+                "show_update_date": true,
+                "show_tags": true
+              },
+              "content_path": "v1/documentation/organization/get-v1organizationorganization-id.mdx"
+            },
+            {
+              "id": "5354f7b1-e28f-4664-b752-404cb884d362",
+              "section_id": "3aa543da-2485-48d1-a2d7-6c943b6f5793",
+              "parent_id": "6dc4f46d-a0e5-409a-a0cd-82cf938e467e",
+              "title": "Update organization",
+              "slug": "put-v1organizationorganization-id",
+              "type": "api_endpoint",
+              "order": 4,
+              "method": "PUT",
+              "endpoint": "/v1/organization/{organization_id}",
+              "source_metadata": {},
+              "metadata": {},
+              "metadata_visibility": {
+                "show_author": true,
+                "show_reading_time": true,
+                "show_publish_date": true,
+                "show_update_date": true,
+                "show_tags": true
+              },
+              "content_path": "v1/documentation/organization/put-v1organizationorganization-id.mdx"
+            },
+            {
+              "id": "d52a5d31-a133-40ba-9aa2-64e52a53fb72",
+              "section_id": "3aa543da-2485-48d1-a2d7-6c943b6f5793",
+              "parent_id": "6dc4f46d-a0e5-409a-a0cd-82cf938e467e",
+              "title": "Delete organization",
+              "slug": "delete-v1organizationorganization-id",
+              "type": "api_endpoint",
+              "order": 5,
+              "method": "DELETE",
+              "endpoint": "/v1/organization/{organization_id}",
+              "source_metadata": {},
+              "metadata": {},
+              "metadata_visibility": {
+                "show_author": true,
+                "show_reading_time": true,
+                "show_publish_date": true,
+                "show_update_date": true,
+                "show_tags": true
+              },
+              "content_path": "v1/documentation/organization/delete-v1organizationorganization-id.mdx"
+            },
+            {
+              "id": "2fa4cbd0-d2a3-4f29-b0b8-ff0da6d6c1ed",
+              "section_id": "3aa543da-2485-48d1-a2d7-6c943b6f5793",
+              "parent_id": "6dc4f46d-a0e5-409a-a0cd-82cf938e467e",
+              "title": "Complete onboarding for organization",
+              "slug": "post-v1organizationorganization-idcomplete-onboarding",
+              "type": "api_endpoint",
+              "order": 6,
+              "method": "POST",
+              "endpoint": "/v1/organization/{organization_id}/complete-onboarding",
+              "source_metadata": {},
+              "metadata": {},
+              "metadata_visibility": {
+                "show_author": true,
+                "show_reading_time": true,
+                "show_publish_date": true,
+                "show_update_date": true,
+                "show_tags": true
+              },
+              "content_path": "v1/documentation/organization/post-v1organizationorganization-idcomplete-onboarding.mdx"
+            },
+            {
+              "id": "a18483f5-b8da-43af-b7a4-f2f5b85e2dea",
+              "section_id": "3aa543da-2485-48d1-a2d7-6c943b6f5793",
+              "parent_id": "6dc4f46d-a0e5-409a-a0cd-82cf938e467e",
+              "title": "Upload organization logo",
+              "slug": "post-v1organizationorganization-idupload-logo",
+              "type": "api_endpoint",
+              "order": 7,
+              "method": "POST",
+              "endpoint": "/v1/organization/{organization_id}/upload-logo",
+              "source_metadata": {},
+              "metadata": {},
+              "metadata_visibility": {
+                "show_author": true,
+                "show_reading_time": true,
+                "show_publish_date": true,
+                "show_update_date": true,
+                "show_tags": true
+              },
+              "content_path": "v1/documentation/organization/post-v1organizationorganization-idupload-logo.mdx"
+            },
+            {
+              "id": "ba53b245-a80d-4882-ba2d-f467f2a2a0d3",
+              "section_id": "3aa543da-2485-48d1-a2d7-6c943b6f5793",
+              "title": "Organization Users",
+              "slug": "organization-users",
+              "type": "folder",
+              "order": 10,
+              "source_metadata": {},
+              "metadata": {},
+              "metadata_visibility": {
+                "show_author": true,
+                "show_reading_time": true,
+                "show_publish_date": true,
+                "show_update_date": true,
+                "show_tags": true
+              },
+              "content_path": "v1/documentation/organization-users/index.mdx"
+            },
+            {
+              "id": "c6c470a0-29f7-40c6-a85e-828691c03d6a",
+              "section_id": "3aa543da-2485-48d1-a2d7-6c943b6f5793",
+              "parent_id": "ba53b245-a80d-4882-ba2d-f467f2a2a0d3",
+              "title": "List my pending invitations",
+              "slug": "get-v1invitations",
+              "type": "api_endpoint",
+              "order": 0,
+              "method": "GET",
+              "endpoint": "/v1/invitations",
+              "source_metadata": {},
+              "metadata": {},
+              "metadata_visibility": {
+                "show_author": true,
+                "show_reading_time": true,
+                "show_publish_date": true,
+                "show_update_date": true,
+                "show_tags": true
+              },
+              "content_path": "v1/documentation/organization-users/get-v1invitations.mdx"
+            },
+            {
+              "id": "86441289-b42c-4bfe-b919-a17ea33f3789",
+              "section_id": "3aa543da-2485-48d1-a2d7-6c943b6f5793",
+              "parent_id": "ba53b245-a80d-4882-ba2d-f467f2a2a0d3",
+              "title": "Accept my invitation",
+              "slug": "post-v1invitationsinvitation-idaccept",
+              "type": "api_endpoint",
+              "order": 1,
+              "method": "POST",
+              "endpoint": "/v1/invitations/{invitation_id}/accept",
+              "source_metadata": {},
+              "metadata": {},
+              "metadata_visibility": {
+                "show_author": true,
+                "show_reading_time": true,
+                "show_publish_date": true,
+                "show_update_date": true,
+                "show_tags": true
+              },
+              "content_path": "v1/documentation/organization-users/post-v1invitationsinvitation-idaccept.mdx"
+            },
+            {
+              "id": "6a87333a-03f0-4cb4-9ef0-807e5d269a27",
+              "section_id": "3aa543da-2485-48d1-a2d7-6c943b6f5793",
+              "parent_id": "ba53b245-a80d-4882-ba2d-f467f2a2a0d3",
+              "title": "Get all users in organization",
+              "slug": "get-v1organizationorganization-iduser",
+              "type": "api_endpoint",
+              "order": 2,
+              "method": "GET",
+              "endpoint": "/v1/organization/{organization_id}/user",
+              "source_metadata": {},
+              "metadata": {},
+              "metadata_visibility": {
+                "show_author": true,
+                "show_reading_time": true,
+                "show_publish_date": true,
+                "show_update_date": true,
+                "show_tags": true
+              },
+              "content_path": "v1/documentation/organization-users/get-v1organizationorganization-iduser.mdx"
+            },
+            {
+              "id": "4bb0abba-8cc8-4dc7-aa4c-8a82beaad6a4",
+              "section_id": "3aa543da-2485-48d1-a2d7-6c943b6f5793",
+              "parent_id": "ba53b245-a80d-4882-ba2d-f467f2a2a0d3",
+              "title": "Get active users in organization",
+              "slug": "get-v1organizationorganization-iduseractive",
+              "type": "api_endpoint",
+              "order": 3,
+              "method": "GET",
+              "endpoint": "/v1/organization/{organization_id}/user/active",
+              "source_metadata": {},
+              "metadata": {},
+              "metadata_visibility": {
+                "show_author": true,
+                "show_reading_time": true,
+                "show_publish_date": true,
+                "show_update_date": true,
+                "show_tags": true
+              },
+              "content_path": "v1/documentation/organization-users/get-v1organizationorganization-iduseractive.mdx"
+            },
+            {
+              "id": "1b7b23e3-4bf6-47d3-bc69-1ffe9dbc0652",
+              "section_id": "3aa543da-2485-48d1-a2d7-6c943b6f5793",
+              "parent_id": "ba53b245-a80d-4882-ba2d-f467f2a2a0d3",
+              "title": "Invite user to organization",
+              "slug": "post-v1organizationorganization-iduserinvite",
+              "type": "api_endpoint",
+              "order": 4,
+              "method": "POST",
+              "endpoint": "/v1/organization/{organization_id}/user/invite",
+              "source_metadata": {},
+              "metadata": {},
+              "metadata_visibility": {
+                "show_author": true,
+                "show_reading_time": true,
+                "show_publish_date": true,
+                "show_update_date": true,
+                "show_tags": true
+              },
+              "content_path": "v1/documentation/organization-users/post-v1organizationorganization-iduserinvite.mdx"
+            },
+            {
+              "id": "abfe49ba-033c-442f-b8d6-1a8ebb84cf6e",
+              "section_id": "3aa543da-2485-48d1-a2d7-6c943b6f5793",
+              "parent_id": "ba53b245-a80d-4882-ba2d-f467f2a2a0d3",
+              "title": "Get pending invites in organization",
+              "slug": "get-v1organizationorganization-iduserpending",
+              "type": "api_endpoint",
+              "order": 5,
+              "method": "GET",
+              "endpoint": "/v1/organization/{organization_id}/user/pending",
+              "source_metadata": {},
+              "metadata": {},
+              "metadata_visibility": {
+                "show_author": true,
+                "show_reading_time": true,
+                "show_publish_date": true,
+                "show_update_date": true,
+                "show_tags": true
+              },
+              "content_path": "v1/documentation/organization-users/get-v1organizationorganization-iduserpending.mdx"
+            },
+            {
+              "id": "6ddfced5-3e56-4e6b-b583-48cd43dd12f2",
+              "section_id": "3aa543da-2485-48d1-a2d7-6c943b6f5793",
+              "parent_id": "ba53b245-a80d-4882-ba2d-f467f2a2a0d3",
+              "title": "Remove user from organization",
+              "slug": "delete-v1organizationorganization-iduseruser-id",
+              "type": "api_endpoint",
+              "order": 6,
+              "method": "DELETE",
+              "endpoint": "/v1/organization/{organization_id}/user/{user_id}",
+              "source_metadata": {},
+              "metadata": {},
+              "metadata_visibility": {
+                "show_author": true,
+                "show_reading_time": true,
+                "show_publish_date": true,
+                "show_update_date": true,
+                "show_tags": true
+              },
+              "content_path": "v1/documentation/organization-users/delete-v1organizationorganization-iduseruser-id.mdx"
+            },
+            {
+              "id": "02f250d6-5340-41c8-b929-8e8a599aafeb",
+              "section_id": "3aa543da-2485-48d1-a2d7-6c943b6f5793",
+              "parent_id": "ba53b245-a80d-4882-ba2d-f467f2a2a0d3",
+              "title": "Update user role in organization",
+              "slug": "patch-v1organizationorganization-iduseruser-idrole",
+              "type": "api_endpoint",
+              "order": 7,
+              "method": "PATCH",
+              "endpoint": "/v1/organization/{organization_id}/user/{user_id}/role",
+              "source_metadata": {},
+              "metadata": {},
+              "metadata_visibility": {
+                "show_author": true,
+                "show_reading_time": true,
+                "show_publish_date": true,
+                "show_update_date": true,
+                "show_tags": true
+              },
+              "content_path": "v1/documentation/organization-users/patch-v1organizationorganization-iduseruser-idrole.mdx"
+            },
+            {
+              "id": "fabd9d65-a6e6-4695-a1dc-a870b7d9885d",
+              "section_id": "3aa543da-2485-48d1-a2d7-6c943b6f5793",
+              "parent_id": "ba53b245-a80d-4882-ba2d-f467f2a2a0d3",
+              "title": "Add/remove doc grants on a member (readers only for now)",
+              "slug": "patch-v1organizationorganization-idusersuser-iddocumentations",
+              "type": "api_endpoint",
+              "order": 8,
+              "method": "PATCH",
+              "endpoint": "/v1/organization/{organization_id}/users/{user_id}/documentations",
+              "source_metadata": {},
+              "metadata": {},
+              "metadata_visibility": {
+                "show_author": true,
+                "show_reading_time": true,
+                "show_publish_date": true,
+                "show_update_date": true,
+                "show_tags": true
+              },
+              "content_path": "v1/documentation/organization-users/patch-v1organizationorganization-idusersuser-iddocumentations.mdx"
+            },
+            {
+              "id": "6e0838f0-cff9-4a89-8b9a-e4d4289e4e15",
+              "section_id": "3aa543da-2485-48d1-a2d7-6c943b6f5793",
+              "title": "Publish",
+              "slug": "publish",
+              "type": "folder",
+              "order": 11,
+              "source_metadata": {},
+              "metadata": {},
+              "metadata_visibility": {
+                "show_author": true,
+                "show_reading_time": true,
+                "show_publish_date": true,
+                "show_update_date": true,
+                "show_tags": true
+              },
+              "content_path": "v1/documentation/publish/index.mdx"
+            },
+            {
+              "id": "9f3915ec-87c7-46b3-9a3c-f5eb62eec464",
+              "section_id": "3aa543da-2485-48d1-a2d7-6c943b6f5793",
+              "parent_id": "6e0838f0-cff9-4a89-8b9a-e4d4289e4e15",
+              "title": "Start a publish job",
+              "slug": "post-documentationsdocumentation-idpublish",
+              "type": "api_endpoint",
+              "order": 0,
+              "method": "POST",
+              "endpoint": "/documentations/{documentation_id}/publish",
+              "source_metadata": {},
+              "metadata": {},
+              "metadata_visibility": {
+                "show_author": true,
+                "show_reading_time": true,
+                "show_publish_date": true,
+                "show_update_date": true,
+                "show_tags": true
+              },
+              "content_path": "v1/documentation/publish/post-documentationsdocumentation-idpublish.mdx"
+            },
+            {
+              "id": "701c7e95-c640-476b-97cd-570fb94d6eab",
+              "section_id": "3aa543da-2485-48d1-a2d7-6c943b6f5793",
+              "parent_id": "6e0838f0-cff9-4a89-8b9a-e4d4289e4e15",
+              "title": "Get publish history",
+              "slug": "get-documentationsdocumentation-idpublishhistory",
+              "type": "api_endpoint",
+              "order": 1,
+              "method": "GET",
+              "endpoint": "/documentations/{documentation_id}/publish/history",
+              "source_metadata": {},
+              "metadata": {},
+              "metadata_visibility": {
+                "show_author": true,
+                "show_reading_time": true,
+                "show_publish_date": true,
+                "show_update_date": true,
+                "show_tags": true
+              },
+              "content_path": "v1/documentation/publish/get-documentationsdocumentation-idpublishhistory.mdx"
+            },
+            {
+              "id": "7a40c768-61b6-49f8-ab52-d3a894800581",
+              "section_id": "3aa543da-2485-48d1-a2d7-6c943b6f5793",
+              "parent_id": "6e0838f0-cff9-4a89-8b9a-e4d4289e4e15",
+              "title": "Get latest publish",
+              "slug": "get-documentationsdocumentation-idpublishlatest",
+              "type": "api_endpoint",
+              "order": 2,
+              "method": "GET",
+              "endpoint": "/documentations/{documentation_id}/publish/latest",
+              "source_metadata": {},
+              "metadata": {},
+              "metadata_visibility": {
+                "show_author": true,
+                "show_reading_time": true,
+                "show_publish_date": true,
+                "show_update_date": true,
+                "show_tags": true
+              },
+              "content_path": "v1/documentation/publish/get-documentationsdocumentation-idpublishlatest.mdx"
+            },
+            {
+              "id": "57be213a-9446-4b98-96eb-b789621be92b",
+              "section_id": "3aa543da-2485-48d1-a2d7-6c943b6f5793",
+              "parent_id": "6e0838f0-cff9-4a89-8b9a-e4d4289e4e15",
+              "title": "Get publish job status",
+              "slug": "get-documentationsdocumentation-idpublishstatus",
+              "type": "api_endpoint",
+              "order": 3,
+              "method": "GET",
+              "endpoint": "/documentations/{documentation_id}/publish/status",
+              "source_metadata": {},
+              "metadata": {},
+              "metadata_visibility": {
+                "show_author": true,
+                "show_reading_time": true,
+                "show_publish_date": true,
+                "show_update_date": true,
+                "show_tags": true
+              },
+              "content_path": "v1/documentation/publish/get-documentationsdocumentation-idpublishstatus.mdx"
+            },
+            {
+              "id": "564969a3-bfa6-4c57-ae50-29b915c70eae",
+              "section_id": "3aa543da-2485-48d1-a2d7-6c943b6f5793",
+              "parent_id": "6e0838f0-cff9-4a89-8b9a-e4d4289e4e15",
+              "title": "Search a documentation",
+              "slug": "post-documentationsorganization-iddocumentation-idsearch",
+              "type": "api_endpoint",
+              "order": 4,
+              "method": "POST",
+              "endpoint": "/documentations/{organization_id}/{documentation_id}/search",
+              "source_metadata": {},
+              "metadata": {},
+              "metadata_visibility": {
+                "show_author": true,
+                "show_reading_time": true,
+                "show_publish_date": true,
+                "show_update_date": true,
+                "show_tags": true
+              },
+              "content_path": "v1/documentation/publish/post-documentationsorganization-iddocumentation-idsearch.mdx"
+            },
+            {
+              "id": "47fa8215-6a68-4254-857f-c1b22573f6b9",
+              "section_id": "3aa543da-2485-48d1-a2d7-6c943b6f5793",
+              "title": "Push Notifications",
+              "slug": "push-notifications",
+              "type": "folder",
+              "order": 12,
+              "source_metadata": {},
+              "metadata": {},
+              "metadata_visibility": {
+                "show_author": true,
+                "show_reading_time": true,
+                "show_publish_date": true,
+                "show_update_date": true,
+                "show_tags": true
+              },
+              "content_path": "v1/documentation/push-notifications/index.mdx"
+            },
+            {
+              "id": "b89c70a0-14ae-4726-979a-504712a94616",
+              "section_id": "3aa543da-2485-48d1-a2d7-6c943b6f5793",
+              "parent_id": "47fa8215-6a68-4254-857f-c1b22573f6b9",
+              "title": "Subscribe to push notifications (simplified endpoint)",
+              "slug": "post-v1eventpush-notification-subscribe",
+              "type": "api_endpoint",
+              "order": 0,
+              "method": "POST",
+              "endpoint": "/v1/event/push-notification-subscribe",
+              "source_metadata": {},
+              "metadata": {},
+              "metadata_visibility": {
+                "show_author": true,
+                "show_reading_time": true,
+                "show_publish_date": true,
+                "show_update_date": true,
+                "show_tags": true
+              },
+              "content_path": "v1/documentation/push-notifications/post-v1eventpush-notification-subscribe.mdx"
+            },
+            {
+              "id": "45cfa77e-c97e-4b94-a6e8-9fa3f8d4701e",
+              "section_id": "3aa543da-2485-48d1-a2d7-6c943b6f5793",
+              "parent_id": "47fa8215-6a68-4254-857f-c1b22573f6b9",
+              "title": "Subscribe to push notifications",
+              "slug": "post-v1organizationsorganization-idpushsubscribe",
+              "type": "api_endpoint",
+              "order": 1,
+              "method": "POST",
+              "endpoint": "/v1/organizations/{organization_id}/push/subscribe",
+              "source_metadata": {},
+              "metadata": {},
+              "metadata_visibility": {
+                "show_author": true,
+                "show_reading_time": true,
+                "show_publish_date": true,
+                "show_update_date": true,
+                "show_tags": true
+              },
+              "content_path": "v1/documentation/push-notifications/post-v1organizationsorganization-idpushsubscribe.mdx"
+            },
+            {
+              "id": "d7eccab9-50d8-4491-aa79-7ceb13e83031",
+              "section_id": "3aa543da-2485-48d1-a2d7-6c943b6f5793",
+              "title": "Resources",
+              "slug": "resources",
+              "type": "folder",
+              "order": 13,
+              "source_metadata": {},
+              "metadata": {},
+              "metadata_visibility": {
+                "show_author": true,
+                "show_reading_time": true,
+                "show_publish_date": true,
+                "show_update_date": true,
+                "show_tags": true
+              },
+              "content_path": "v1/documentation/resources/index.mdx"
+            },
+            {
+              "id": "d47af799-e0f5-49f4-a98f-4c8d7dc463bf",
+              "section_id": "3aa543da-2485-48d1-a2d7-6c943b6f5793",
+              "parent_id": "d7eccab9-50d8-4491-aa79-7ceb13e83031",
+              "title": "Finalize a direct upload",
+              "slug": "post-v1documentationorganization-iddocumentation-idfile-resourcesfinalize",
+              "type": "api_endpoint",
+              "order": 0,
+              "method": "POST",
+              "endpoint": "/v1/documentation/{organization_id}/{documentation_id}/file-resources/finalize",
+              "source_metadata": {},
+              "metadata": {},
+              "metadata_visibility": {
+                "show_author": true,
+                "show_reading_time": true,
+                "show_publish_date": true,
+                "show_update_date": true,
+                "show_tags": true
+              },
+              "content_path": "v1/documentation/resources/post-v1documentationorganization-iddocumentation-idfile-resourcesfinalize.mdx"
+            },
+            {
+              "id": "741f02bd-55fc-4f56-af29-9d4669cc1e2e",
+              "section_id": "3aa543da-2485-48d1-a2d7-6c943b6f5793",
+              "parent_id": "d7eccab9-50d8-4491-aa79-7ceb13e83031",
+              "title": "Request a signed upload URL for a file resource",
+              "slug": "post-v1documentationorganization-iddocumentation-idfile-resourcesupload-url",
+              "type": "api_endpoint",
+              "order": 1,
+              "method": "POST",
+              "endpoint": "/v1/documentation/{organization_id}/{documentation_id}/file-resources/upload-url",
+              "source_metadata": {},
+              "metadata": {},
+              "metadata_visibility": {
+                "show_author": true,
+                "show_reading_time": true,
+                "show_publish_date": true,
+                "show_update_date": true,
+                "show_tags": true
+              },
+              "content_path": "v1/documentation/resources/post-v1documentationorganization-iddocumentation-idfile-resourcesupload-url.mdx"
+            },
+            {
+              "id": "120d838b-087c-4c59-b441-67408645d90d",
+              "section_id": "3aa543da-2485-48d1-a2d7-6c943b6f5793",
+              "title": "Section",
+              "slug": "section",
+              "type": "folder",
+              "order": 14,
+              "source_metadata": {},
+              "metadata": {},
+              "metadata_visibility": {
+                "show_author": true,
+                "show_reading_time": true,
+                "show_publish_date": true,
+                "show_update_date": true,
+                "show_tags": true
+              },
+              "content_path": "v1/documentation/section/index.mdx"
+            },
+            {
+              "id": "aeb3ac3d-8be1-41db-9c0c-67fe78268832",
+              "section_id": "3aa543da-2485-48d1-a2d7-6c943b6f5793",
+              "parent_id": "120d838b-087c-4c59-b441-67408645d90d",
+              "title": "Get all sections for a version",
+              "slug": "get-v1documentationorganization-iddocumentation-idversionversion-idsection",
+              "type": "api_endpoint",
+              "order": 0,
+              "method": "GET",
+              "endpoint": "/v1/documentation/{organization_id}/{documentation_id}/version/{version_id}/section",
+              "source_metadata": {},
+              "metadata": {},
+              "metadata_visibility": {
+                "show_author": true,
+                "show_reading_time": true,
+                "show_publish_date": true,
+                "show_update_date": true,
+                "show_tags": true
+              },
+              "content_path": "v1/documentation/section/get-v1documentationorganization-iddocumentation-idversionversion-idsection.mdx"
+            },
+            {
+              "id": "4b35f06b-9799-4d16-8cb6-d6990565b6d0",
+              "section_id": "3aa543da-2485-48d1-a2d7-6c943b6f5793",
+              "parent_id": "120d838b-087c-4c59-b441-67408645d90d",
+              "title": "Create a new section",
+              "slug": "post-v1documentationorganization-iddocumentation-idversionversion-idsection",
+              "type": "api_endpoint",
+              "order": 1,
+              "method": "POST",
+              "endpoint": "/v1/documentation/{organization_id}/{documentation_id}/version/{version_id}/section",
+              "source_metadata": {},
+              "metadata": {},
+              "metadata_visibility": {
+                "show_author": true,
+                "show_reading_time": true,
+                "show_publish_date": true,
+                "show_update_date": true,
+                "show_tags": true
+              },
+              "content_path": "v1/documentation/section/post-v1documentationorganization-iddocumentation-idversionversion-idsection.mdx"
+            },
+            {
+              "id": "43804678-f5f2-4048-aa09-2c46aac8f83c",
+              "section_id": "3aa543da-2485-48d1-a2d7-6c943b6f5793",
+              "parent_id": "120d838b-087c-4c59-b441-67408645d90d",
+              "title": "Reorder sections",
+              "slug": "post-v1documentationorganization-iddocumentation-idversionversion-idsectionreorder",
+              "type": "api_endpoint",
+              "order": 2,
+              "method": "POST",
+              "endpoint": "/v1/documentation/{organization_id}/{documentation_id}/version/{version_id}/section/reorder",
+              "source_metadata": {},
+              "metadata": {},
+              "metadata_visibility": {
+                "show_author": true,
+                "show_reading_time": true,
+                "show_publish_date": true,
+                "show_update_date": true,
+                "show_tags": true
+              },
+              "content_path": "v1/documentation/section/post-v1documentationorganization-iddocumentation-idversionversion-idsectionreorder.mdx"
+            },
+            {
+              "id": "e4c3e39a-d1a9-43fd-809d-76c3a1ed84ea",
+              "section_id": "3aa543da-2485-48d1-a2d7-6c943b6f5793",
+              "parent_id": "120d838b-087c-4c59-b441-67408645d90d",
+              "title": "Get section by ID",
+              "slug": "get-v1documentationorganization-iddocumentation-idversionversion-idsectionsection-id",
+              "type": "api_endpoint",
+              "order": 3,
+              "method": "GET",
+              "endpoint": "/v1/documentation/{organization_id}/{documentation_id}/version/{version_id}/section/{section_id}",
+              "source_metadata": {},
+              "metadata": {},
+              "metadata_visibility": {
+                "show_author": true,
+                "show_reading_time": true,
+                "show_publish_date": true,
+                "show_update_date": true,
+                "show_tags": true
+              },
+              "content_path": "v1/documentation/section/get-v1documentationorganization-iddocumentation-idversionversion-idsectionsection-id.mdx"
+            },
+            {
+              "id": "aaf0c94b-728a-41c9-aefd-96ecf8f0ce10",
+              "section_id": "3aa543da-2485-48d1-a2d7-6c943b6f5793",
+              "parent_id": "120d838b-087c-4c59-b441-67408645d90d",
+              "title": "Update section",
+              "slug": "put-v1documentationorganization-iddocumentation-idversionversion-idsectionsection-id",
+              "type": "api_endpoint",
+              "order": 4,
+              "method": "PUT",
+              "endpoint": "/v1/documentation/{organization_id}/{documentation_id}/version/{version_id}/section/{section_id}",
+              "source_metadata": {},
+              "metadata": {},
+              "metadata_visibility": {
+                "show_author": true,
+                "show_reading_time": true,
+                "show_publish_date": true,
+                "show_update_date": true,
+                "show_tags": true
+              },
+              "content_path": "v1/documentation/section/put-v1documentationorganization-iddocumentation-idversionversion-idsectionsection-id.mdx"
+            },
+            {
+              "id": "5a51c75b-adfb-4c6a-b419-64a0e73bf64f",
+              "section_id": "3aa543da-2485-48d1-a2d7-6c943b6f5793",
+              "parent_id": "120d838b-087c-4c59-b441-67408645d90d",
+              "title": "Delete section",
+              "slug": "delete-v1documentationorganization-iddocumentation-idversionversion-idsectionsection-id",
+              "type": "api_endpoint",
+              "order": 5,
+              "method": "DELETE",
+              "endpoint": "/v1/documentation/{organization_id}/{documentation_id}/version/{version_id}/section/{section_id}",
+              "source_metadata": {},
+              "metadata": {},
+              "metadata_visibility": {
+                "show_author": true,
+                "show_reading_time": true,
+                "show_publish_date": true,
+                "show_update_date": true,
+                "show_tags": true
+              },
+              "content_path": "v1/documentation/section/delete-v1documentationorganization-iddocumentation-idversionversion-idsectionsection-id.mdx"
+            },
+            {
+              "id": "bb2e2e2e-78ed-4767-888b-37dd0b169dfc",
+              "section_id": "3aa543da-2485-48d1-a2d7-6c943b6f5793",
+              "parent_id": "120d838b-087c-4c59-b441-67408645d90d",
+              "title": "Get a section's source-of-truth summary",
+              "slug": "get-v1documentationorganization-iddocumentation-idversionversion-idsectionsection-idsource",
+              "type": "api_endpoint",
+              "order": 6,
+              "method": "GET",
+              "endpoint": "/v1/documentation/{organization_id}/{documentation_id}/version/{version_id}/section/{section_id}/source",
+              "source_metadata": {},
+              "metadata": {},
+              "metadata_visibility": {
+                "show_author": true,
+                "show_reading_time": true,
+                "show_publish_date": true,
+                "show_update_date": true,
+                "show_tags": true
+              },
+              "content_path": "v1/documentation/section/get-v1documentationorganization-iddocumentation-idversionversion-idsectionsection-idsource.mdx"
+            },
+            {
+              "id": "1fbe889c-74c7-4372-9fdf-049b90e5931a",
+              "section_id": "3aa543da-2485-48d1-a2d7-6c943b6f5793",
+              "title": "Subscription",
+              "slug": "subscription",
+              "type": "folder",
+              "order": 15,
+              "source_metadata": {},
+              "metadata": {},
+              "metadata_visibility": {
+                "show_author": true,
+                "show_reading_time": true,
+                "show_publish_date": true,
+                "show_update_date": true,
+                "show_tags": true
+              },
+              "content_path": "v1/documentation/subscription/index.mdx"
+            },
+            {
+              "id": "fdb7672a-9e0a-43c3-bc09-1132788d6fa8",
+              "section_id": "3aa543da-2485-48d1-a2d7-6c943b6f5793",
+              "parent_id": "1fbe889c-74c7-4372-9fdf-049b90e5931a",
+              "title": "Get feature value",
+              "slug": "get-organizationorganization-idsubscriptionfeature-value",
+              "type": "api_endpoint",
+              "order": 0,
+              "method": "GET",
+              "endpoint": "/organization/{organization_id}/subscription/feature-value",
+              "source_metadata": {},
+              "metadata": {},
+              "metadata_visibility": {
+                "show_author": true,
+                "show_reading_time": true,
+                "show_publish_date": true,
+                "show_update_date": true,
+                "show_tags": true
+              },
+              "content_path": "v1/documentation/subscription/get-organizationorganization-idsubscriptionfeature-value.mdx"
+            },
+            {
+              "id": "b8e854b0-b98e-4dc9-afc2-52877c8b91bf",
+              "section_id": "3aa543da-2485-48d1-a2d7-6c943b6f5793",
+              "parent_id": "1fbe889c-74c7-4372-9fdf-049b90e5931a",
+              "title": "Validate if a feature is enabled",
+              "slug": "get-organizationorganization-idsubscriptionvalidate-feature",
+              "type": "api_endpoint",
+              "order": 1,
+              "method": "GET",
+              "endpoint": "/organization/{organization_id}/subscription/validate-feature",
+              "source_metadata": {},
+              "metadata": {},
+              "metadata_visibility": {
+                "show_author": true,
+                "show_reading_time": true,
+                "show_publish_date": true,
+                "show_update_date": true,
+                "show_tags": true
+              },
+              "content_path": "v1/documentation/subscription/get-organizationorganization-idsubscriptionvalidate-feature.mdx"
+            },
+            {
+              "id": "984566c5-da7f-4aff-9bcb-1419a57eb6ed",
+              "section_id": "3aa543da-2485-48d1-a2d7-6c943b6f5793",
+              "parent_id": "1fbe889c-74c7-4372-9fdf-049b90e5931a",
+              "title": "Validate if a feature limit allows more usage",
+              "slug": "get-organizationorganization-idsubscriptionvalidate-limit",
+              "type": "api_endpoint",
+              "order": 2,
+              "method": "GET",
+              "endpoint": "/organization/{organization_id}/subscription/validate-limit",
+              "source_metadata": {},
+              "metadata": {},
+              "metadata_visibility": {
+                "show_author": true,
+                "show_reading_time": true,
+                "show_publish_date": true,
+                "show_update_date": true,
+                "show_tags": true
+              },
+              "content_path": "v1/documentation/subscription/get-organizationorganization-idsubscriptionvalidate-limit.mdx"
+            },
+            {
+              "id": "5ca7ff80-7113-43dc-b58c-4272e4bfffb3",
+              "section_id": "3aa543da-2485-48d1-a2d7-6c943b6f5793",
+              "title": "Support",
+              "slug": "support",
+              "type": "folder",
+              "order": 16,
+              "source_metadata": {},
+              "metadata": {},
+              "metadata_visibility": {
+                "show_author": true,
+                "show_reading_time": true,
+                "show_publish_date": true,
+                "show_update_date": true,
+                "show_tags": true
+              },
+              "content_path": "v1/documentation/support/index.mdx"
+            },
+            {
+              "id": "e15503d8-fbb2-4268-a4e6-1063b476cb9b",
+              "section_id": "3aa543da-2485-48d1-a2d7-6c943b6f5793",
+              "parent_id": "5ca7ff80-7113-43dc-b58c-4272e4bfffb3",
+              "title": "List support tickets",
+              "slug": "get-organizationorganization-idsupporttickets",
+              "type": "api_endpoint",
+              "order": 0,
+              "method": "GET",
+              "endpoint": "/organization/{organization_id}/support/tickets",
+              "source_metadata": {},
+              "metadata": {},
+              "metadata_visibility": {
+                "show_author": true,
+                "show_reading_time": true,
+                "show_publish_date": true,
+                "show_update_date": true,
+                "show_tags": true
+              },
+              "content_path": "v1/documentation/support/get-organizationorganization-idsupporttickets.mdx"
+            },
+            {
+              "id": "d333e9be-8d42-4958-a279-5c782a4ddf81",
+              "section_id": "3aa543da-2485-48d1-a2d7-6c943b6f5793",
+              "parent_id": "5ca7ff80-7113-43dc-b58c-4272e4bfffb3",
+              "title": "Create support ticket",
+              "slug": "post-organizationorganization-idsupporttickets",
+              "type": "api_endpoint",
+              "order": 1,
+              "method": "POST",
+              "endpoint": "/organization/{organization_id}/support/tickets",
+              "source_metadata": {},
+              "metadata": {},
+              "metadata_visibility": {
+                "show_author": true,
+                "show_reading_time": true,
+                "show_publish_date": true,
+                "show_update_date": true,
+                "show_tags": true
+              },
+              "content_path": "v1/documentation/support/post-organizationorganization-idsupporttickets.mdx"
+            },
+            {
+              "id": "221ed7ae-adb0-4a6d-9b1b-5a3f37f40f28",
+              "section_id": "3aa543da-2485-48d1-a2d7-6c943b6f5793",
+              "parent_id": "5ca7ff80-7113-43dc-b58c-4272e4bfffb3",
+              "title": "Get support ticket",
+              "slug": "get-organizationorganization-idsupportticketsticket-id",
+              "type": "api_endpoint",
+              "order": 2,
+              "method": "GET",
+              "endpoint": "/organization/{organization_id}/support/tickets/{ticket_id}",
+              "source_metadata": {},
+              "metadata": {},
+              "metadata_visibility": {
+                "show_author": true,
+                "show_reading_time": true,
+                "show_publish_date": true,
+                "show_update_date": true,
+                "show_tags": true
+              },
+              "content_path": "v1/documentation/support/get-organizationorganization-idsupportticketsticket-id.mdx"
+            },
+            {
+              "id": "a9dd5464-679a-44ae-8115-a330b425e89f",
+              "section_id": "3aa543da-2485-48d1-a2d7-6c943b6f5793",
+              "parent_id": "5ca7ff80-7113-43dc-b58c-4272e4bfffb3",
+              "title": "Add message to ticket",
+              "slug": "post-organizationorganization-idsupportticketsticket-idmessages",
+              "type": "api_endpoint",
+              "order": 3,
+              "method": "POST",
+              "endpoint": "/organization/{organization_id}/support/tickets/{ticket_id}/messages",
+              "source_metadata": {},
+              "metadata": {},
+              "metadata_visibility": {
+                "show_author": true,
+                "show_reading_time": true,
+                "show_publish_date": true,
+                "show_update_date": true,
+                "show_tags": true
+              },
+              "content_path": "v1/documentation/support/post-organizationorganization-idsupportticketsticket-idmessages.mdx"
+            },
+            {
+              "id": "23431d9d-da56-46ca-b795-4229e18d4358",
+              "section_id": "3aa543da-2485-48d1-a2d7-6c943b6f5793",
+              "title": "Tasks",
+              "slug": "tasks",
+              "type": "folder",
+              "order": 17,
+              "source_metadata": {},
+              "metadata": {},
+              "metadata_visibility": {
+                "show_author": true,
+                "show_reading_time": true,
+                "show_publish_date": true,
+                "show_update_date": true,
+                "show_tags": true
+              },
+              "content_path": "v1/documentation/tasks/index.mdx"
+            },
+            {
+              "id": "4a514a48-b58b-4389-9dfe-bf0ee85059f5",
+              "section_id": "3aa543da-2485-48d1-a2d7-6c943b6f5793",
+              "parent_id": "23431d9d-da56-46ca-b795-4229e18d4358",
+              "title": "Get changelogs",
+              "slug": "get-taskschangelogs",
+              "type": "api_endpoint",
+              "order": 0,
+              "method": "GET",
+              "endpoint": "/tasks/changelogs",
+              "source_metadata": {},
+              "metadata": {},
+              "metadata_visibility": {
+                "show_author": true,
+                "show_reading_time": true,
+                "show_publish_date": true,
+                "show_update_date": true,
+                "show_tags": true
+              },
+              "content_path": "v1/documentation/tasks/get-taskschangelogs.mdx"
+            },
+            {
+              "id": "b5c12860-cf5a-4fa2-a6e7-4cee321a1f88",
+              "section_id": "3aa543da-2485-48d1-a2d7-6c943b6f5793",
+              "parent_id": "23431d9d-da56-46ca-b795-4229e18d4358",
+              "title": "Get changelog by version",
+              "slug": "get-taskschangelogsversionversion-id",
+              "type": "api_endpoint",
+              "order": 1,
+              "method": "GET",
+              "endpoint": "/tasks/changelogs/version/{version_id}",
+              "source_metadata": {},
+              "metadata": {},
+              "metadata_visibility": {
+                "show_author": true,
+                "show_reading_time": true,
+                "show_publish_date": true,
+                "show_update_date": true,
+                "show_tags": true
+              },
+              "content_path": "v1/documentation/tasks/get-taskschangelogsversionversion-id.mdx"
+            },
+            {
+              "id": "ae84a1d5-81d0-41f1-9460-e86ae4a3af79",
+              "section_id": "3aa543da-2485-48d1-a2d7-6c943b6f5793",
+              "parent_id": "23431d9d-da56-46ca-b795-4229e18d4358",
+              "title": "Create a customer idea",
+              "slug": "post-tasksideas",
+              "type": "api_endpoint",
+              "order": 2,
+              "method": "POST",
+              "endpoint": "/tasks/ideas",
+              "source_metadata": {},
+              "metadata": {},
+              "metadata_visibility": {
+                "show_author": true,
+                "show_reading_time": true,
+                "show_publish_date": true,
+                "show_update_date": true,
+                "show_tags": true
+              },
+              "content_path": "v1/documentation/tasks/post-tasksideas.mdx"
+            },
+            {
+              "id": "c9292e71-066b-46f1-a98f-7a21943178e7",
+              "section_id": "3aa543da-2485-48d1-a2d7-6c943b6f5793",
+              "parent_id": "23431d9d-da56-46ca-b795-4229e18d4358",
+              "title": "Get ideas configuration",
+              "slug": "get-tasksideasconfig",
+              "type": "api_endpoint",
+              "order": 3,
+              "method": "GET",
+              "endpoint": "/tasks/ideas/config",
+              "source_metadata": {},
+              "metadata": {},
+              "metadata_visibility": {
+                "show_author": true,
+                "show_reading_time": true,
+                "show_publish_date": true,
+                "show_update_date": true,
+                "show_tags": true
+              },
+              "content_path": "v1/documentation/tasks/get-tasksideasconfig.mdx"
+            },
+            {
+              "id": "f7d0afc8-bf96-4aee-99bc-0cd3788f798f",
+              "section_id": "3aa543da-2485-48d1-a2d7-6c943b6f5793",
+              "parent_id": "23431d9d-da56-46ca-b795-4229e18d4358",
+              "title": "Vote for a roadmap item",
+              "slug": "post-tasksitemsitem-idvote",
+              "type": "api_endpoint",
+              "order": 4,
+              "method": "POST",
+              "endpoint": "/tasks/items/{item_id}/vote",
+              "source_metadata": {},
+              "metadata": {},
+              "metadata_visibility": {
+                "show_author": true,
+                "show_reading_time": true,
+                "show_publish_date": true,
+                "show_update_date": true,
+                "show_tags": true
+              },
+              "content_path": "v1/documentation/tasks/post-tasksitemsitem-idvote.mdx"
+            },
+            {
+              "id": "1959be18-4167-482a-819f-c084d19c6faa",
+              "section_id": "3aa543da-2485-48d1-a2d7-6c943b6f5793",
+              "parent_id": "23431d9d-da56-46ca-b795-4229e18d4358",
+              "title": "Remove vote from a roadmap item",
+              "slug": "delete-tasksitemsitem-idvote",
+              "type": "api_endpoint",
+              "order": 5,
+              "method": "DELETE",
+              "endpoint": "/tasks/items/{item_id}/vote",
+              "source_metadata": {},
+              "metadata": {},
+              "metadata_visibility": {
+                "show_author": true,
+                "show_reading_time": true,
+                "show_publish_date": true,
+                "show_update_date": true,
+                "show_tags": true
+              },
+              "content_path": "v1/documentation/tasks/delete-tasksitemsitem-idvote.mdx"
+            },
+            {
+              "id": "fe7f8397-88f7-49e5-aeb3-9aa1eb86ab1d",
+              "section_id": "3aa543da-2485-48d1-a2d7-6c943b6f5793",
+              "parent_id": "23431d9d-da56-46ca-b795-4229e18d4358",
+              "title": "Get public roadmap items",
+              "slug": "get-tasksroadmap",
+              "type": "api_endpoint",
+              "order": 6,
+              "method": "GET",
+              "endpoint": "/tasks/roadmap",
+              "source_metadata": {},
+              "metadata": {},
+              "metadata_visibility": {
+                "show_author": true,
+                "show_reading_time": true,
+                "show_publish_date": true,
+                "show_update_date": true,
+                "show_tags": true
+              },
+              "content_path": "v1/documentation/tasks/get-tasksroadmap.mdx"
+            },
+            {
+              "id": "07ccd186-2dcc-40e2-a679-278140eeedd2",
+              "section_id": "3aa543da-2485-48d1-a2d7-6c943b6f5793",
+              "parent_id": "23431d9d-da56-46ca-b795-4229e18d4358",
+              "title": "Get public statuses",
+              "slug": "get-tasksstatuses",
+              "type": "api_endpoint",
+              "order": 7,
+              "method": "GET",
+              "endpoint": "/tasks/statuses",
+              "source_metadata": {},
+              "metadata": {},
+              "metadata_visibility": {
+                "show_author": true,
+                "show_reading_time": true,
+                "show_publish_date": true,
+                "show_update_date": true,
+                "show_tags": true
+              },
+              "content_path": "v1/documentation/tasks/get-tasksstatuses.mdx"
+            },
+            {
+              "id": "1852494d-c8d1-4a75-b674-1dabe3026500",
+              "section_id": "3aa543da-2485-48d1-a2d7-6c943b6f5793",
+              "title": "Version",
+              "slug": "version",
+              "type": "folder",
+              "order": 18,
+              "source_metadata": {},
+              "metadata": {},
+              "metadata_visibility": {
+                "show_author": true,
+                "show_reading_time": true,
+                "show_publish_date": true,
+                "show_update_date": true,
+                "show_tags": true
+              },
+              "content_path": "v1/documentation/version/index.mdx"
+            },
+            {
+              "id": "20bb0295-addf-4471-b9b7-7af1ace691f9",
+              "section_id": "3aa543da-2485-48d1-a2d7-6c943b6f5793",
+              "parent_id": "1852494d-c8d1-4a75-b674-1dabe3026500",
+              "title": "Get all versions for a documentation",
+              "slug": "get-v1documentationorganization-iddocumentation-idversion",
+              "type": "api_endpoint",
+              "order": 0,
+              "method": "GET",
+              "endpoint": "/v1/documentation/{organization_id}/{documentation_id}/version",
+              "source_metadata": {},
+              "metadata": {},
+              "metadata_visibility": {
+                "show_author": true,
+                "show_reading_time": true,
+                "show_publish_date": true,
+                "show_update_date": true,
+                "show_tags": true
+              },
+              "content_path": "v1/documentation/version/get-v1documentationorganization-iddocumentation-idversion.mdx"
+            },
+            {
+              "id": "3026bed5-ab93-450c-977e-a170fed1eece",
+              "section_id": "3aa543da-2485-48d1-a2d7-6c943b6f5793",
+              "parent_id": "1852494d-c8d1-4a75-b674-1dabe3026500",
+              "title": "Create a new version",
+              "slug": "post-v1documentationorganization-iddocumentation-idversion",
+              "type": "api_endpoint",
+              "order": 1,
+              "method": "POST",
+              "endpoint": "/v1/documentation/{organization_id}/{documentation_id}/version",
+              "source_metadata": {},
+              "metadata": {},
+              "metadata_visibility": {
+                "show_author": true,
+                "show_reading_time": true,
+                "show_publish_date": true,
+                "show_update_date": true,
+                "show_tags": true
+              },
+              "content_path": "v1/documentation/version/post-v1documentationorganization-iddocumentation-idversion.mdx"
+            },
+            {
+              "id": "54c412c8-fb48-4583-8b5a-f8066700b7e0",
+              "section_id": "3aa543da-2485-48d1-a2d7-6c943b6f5793",
+              "parent_id": "1852494d-c8d1-4a75-b674-1dabe3026500",
+              "title": "Get version by ID",
+              "slug": "get-v1documentationorganization-iddocumentation-idversionversion-id",
+              "type": "api_endpoint",
+              "order": 2,
+              "method": "GET",
+              "endpoint": "/v1/documentation/{organization_id}/{documentation_id}/version/{version_id}",
+              "source_metadata": {},
+              "metadata": {},
+              "metadata_visibility": {
+                "show_author": true,
+                "show_reading_time": true,
+                "show_publish_date": true,
+                "show_update_date": true,
+                "show_tags": true
+              },
+              "content_path": "v1/documentation/version/get-v1documentationorganization-iddocumentation-idversionversion-id.mdx"
+            },
+            {
+              "id": "80900698-2b1f-4248-b509-0d41bebf301f",
+              "section_id": "3aa543da-2485-48d1-a2d7-6c943b6f5793",
+              "parent_id": "1852494d-c8d1-4a75-b674-1dabe3026500",
+              "title": "Update version",
+              "slug": "put-v1documentationorganization-iddocumentation-idversionversion-id",
+              "type": "api_endpoint",
+              "order": 3,
+              "method": "PUT",
+              "endpoint": "/v1/documentation/{organization_id}/{documentation_id}/version/{version_id}",
+              "source_metadata": {},
+              "metadata": {},
+              "metadata_visibility": {
+                "show_author": true,
+                "show_reading_time": true,
+                "show_publish_date": true,
+                "show_update_date": true,
+                "show_tags": true
+              },
+              "content_path": "v1/documentation/version/put-v1documentationorganization-iddocumentation-idversionversion-id.mdx"
+            },
+            {
+              "id": "68ee2028-d62b-4058-8c68-b4d3e16ab7de",
+              "section_id": "3aa543da-2485-48d1-a2d7-6c943b6f5793",
+              "parent_id": "1852494d-c8d1-4a75-b674-1dabe3026500",
+              "title": "Delete version",
+              "slug": "delete-v1documentationorganization-iddocumentation-idversionversion-id",
+              "type": "api_endpoint",
+              "order": 4,
+              "method": "DELETE",
+              "endpoint": "/v1/documentation/{organization_id}/{documentation_id}/version/{version_id}",
+              "source_metadata": {},
+              "metadata": {},
+              "metadata_visibility": {
+                "show_author": true,
+                "show_reading_time": true,
+                "show_publish_date": true,
+                "show_update_date": true,
+                "show_tags": true
+              },
+              "content_path": "v1/documentation/version/delete-v1documentationorganization-iddocumentation-idversionversion-id.mdx"
+            },
+            {
+              "id": "daec4192-5039-4b1e-8561-f57794072597",
+              "section_id": "3aa543da-2485-48d1-a2d7-6c943b6f5793",
+              "parent_id": "1852494d-c8d1-4a75-b674-1dabe3026500",
+              "title": "Set version as default",
+              "slug": "post-v1documentationorganization-iddocumentation-idversionversion-idset-default",
+              "type": "api_endpoint",
+              "order": 5,
+              "method": "POST",
+              "endpoint": "/v1/documentation/{organization_id}/{documentation_id}/version/{version_id}/set-default",
+              "source_metadata": {},
+              "metadata": {},
+              "metadata_visibility": {
+                "show_author": true,
+                "show_reading_time": true,
+                "show_publish_date": true,
+                "show_update_date": true,
+                "show_tags": true
+              },
+              "content_path": "v1/documentation/version/post-v1documentationorganization-iddocumentation-idversionversion-idset-default.mdx"
+            },
+            {
+              "id": "2821f522-8998-4355-935c-c7108f7df591",
+              "section_id": "3aa543da-2485-48d1-a2d7-6c943b6f5793",
+              "parent_id": "1852494d-c8d1-4a75-b674-1dabe3026500",
+              "title": "Set version deprecated status",
+              "slug": "post-v1documentationorganization-iddocumentation-idversionversion-idset-deprecated",
+              "type": "api_endpoint",
+              "order": 6,
+              "method": "POST",
+              "endpoint": "/v1/documentation/{organization_id}/{documentation_id}/version/{version_id}/set-deprecated",
+              "source_metadata": {},
+              "metadata": {},
+              "metadata_visibility": {
+                "show_author": true,
+                "show_reading_time": true,
+                "show_publish_date": true,
+                "show_update_date": true,
+                "show_tags": true
+              },
+              "content_path": "v1/documentation/version/post-v1documentationorganization-iddocumentation-idversionversion-idset-deprecated.mdx"
+            },
+            {
+              "id": "e6bcf3d6-426a-4355-9a58-d673f8d6f374",
+              "section_id": "3aa543da-2485-48d1-a2d7-6c943b6f5793",
+              "parent_id": "1852494d-c8d1-4a75-b674-1dabe3026500",
+              "title": "Set version as latest",
+              "slug": "post-v1documentationorganization-iddocumentation-idversionversion-idset-latest",
+              "type": "api_endpoint",
+              "order": 7,
+              "method": "POST",
+              "endpoint": "/v1/documentation/{organization_id}/{documentation_id}/version/{version_id}/set-latest",
+              "source_metadata": {},
+              "metadata": {},
+              "metadata_visibility": {
+                "show_author": true,
+                "show_reading_time": true,
+                "show_publish_date": true,
+                "show_update_date": true,
+                "show_tags": true
+              },
+              "content_path": "v1/documentation/version/post-v1documentationorganization-iddocumentation-idversionversion-idset-latest.mdx"
+            },
+            {
+              "id": "602389c7-8169-4f92-b07b-7bfae3d41a80",
+              "section_id": "3aa543da-2485-48d1-a2d7-6c943b6f5793",
+              "title": "Wizardprogress",
+              "slug": "wizardprogress",
+              "type": "folder",
+              "order": 19,
+              "source_metadata": {},
+              "metadata": {},
+              "metadata_visibility": {
+                "show_author": true,
+                "show_reading_time": true,
+                "show_publish_date": true,
+                "show_update_date": true,
+                "show_tags": true
+              },
+              "content_path": "v1/documentation/wizardprogress/index.mdx"
+            },
+            {
+              "id": "44a5bf55-8fcd-40cd-8722-9a8e63f08842",
+              "section_id": "3aa543da-2485-48d1-a2d7-6c943b6f5793",
+              "parent_id": "602389c7-8169-4f92-b07b-7bfae3d41a80",
+              "title": "Get wizard progress for a documentation",
+              "slug": "get-v1organizationorganization-idwizard-progressdocumentation-id",
+              "type": "api_endpoint",
+              "order": 0,
+              "method": "GET",
+              "endpoint": "/v1/organization/{organization_id}/wizard-progress/{documentation_id}",
+              "source_metadata": {},
+              "metadata": {},
+              "metadata_visibility": {
+                "show_author": true,
+                "show_reading_time": true,
+                "show_publish_date": true,
+                "show_update_date": true,
+                "show_tags": true
+              },
+              "content_path": "v1/documentation/wizardprogress/get-v1organizationorganization-idwizard-progressdocumentation-id.mdx"
+            },
+            {
+              "id": "b32ca891-f468-4666-b2bf-192a17812ce7",
+              "section_id": "3aa543da-2485-48d1-a2d7-6c943b6f5793",
+              "parent_id": "602389c7-8169-4f92-b07b-7bfae3d41a80",
+              "title": "Upsert wizard progress",
+              "slug": "post-v1organizationorganization-idwizard-progressdocumentation-id",
+              "type": "api_endpoint",
+              "order": 1,
+              "method": "POST",
+              "endpoint": "/v1/organization/{organization_id}/wizard-progress/{documentation_id}",
+              "source_metadata": {},
+              "metadata": {},
+              "metadata_visibility": {
+                "show_author": true,
+                "show_reading_time": true,
+                "show_publish_date": true,
+                "show_update_date": true,
+                "show_tags": true
+              },
+              "content_path": "v1/documentation/wizardprogress/post-v1organizationorganization-idwizard-progressdocumentation-id.mdx"
+            },
+            {
+              "id": "8475cb97-9d52-4229-8713-87647a73578c",
+              "section_id": "3aa543da-2485-48d1-a2d7-6c943b6f5793",
+              "parent_id": "602389c7-8169-4f92-b07b-7bfae3d41a80",
+              "title": "Delete wizard progress",
+              "slug": "delete-v1organizationorganization-idwizard-progressdocumentation-id",
+              "type": "api_endpoint",
+              "order": 2,
+              "method": "DELETE",
+              "endpoint": "/v1/organization/{organization_id}/wizard-progress/{documentation_id}",
+              "source_metadata": {},
+              "metadata": {},
+              "metadata_visibility": {
+                "show_author": true,
+                "show_reading_time": true,
+                "show_publish_date": true,
+                "show_update_date": true,
+                "show_tags": true
+              },
+              "content_path": "v1/documentation/wizardprogress/delete-v1organizationorganization-idwizard-progressdocumentation-id.mdx"
+            },
+            {
+              "id": "2eb35915-a48c-4674-83ff-4075e02a1fa8",
+              "section_id": "3aa543da-2485-48d1-a2d7-6c943b6f5793",
+              "title": "Default",
+              "slug": "default",
+              "type": "folder",
+              "order": 20,
+              "source_metadata": {},
+              "metadata": {},
+              "metadata_visibility": {
+                "show_author": true,
+                "show_reading_time": true,
+                "show_publish_date": true,
+                "show_update_date": true,
+                "show_tags": true
+              },
+              "content_path": "v1/documentation/default/index.mdx"
+            },
+            {
+              "id": "8d12437a-e952-4754-8a2e-ec3418563dd9",
+              "section_id": "3aa543da-2485-48d1-a2d7-6c943b6f5793",
+              "parent_id": "2eb35915-a48c-4674-83ff-4075e02a1fa8",
+              "title": "Import an asset from a URL",
+              "slug": "post-v1documentationorganization-iddocumentation-idassetimport",
+              "type": "api_endpoint",
+              "order": 0,
+              "method": "POST",
+              "endpoint": "/v1/documentation/{organization_id}/{documentation_id}/asset/import",
+              "source_metadata": {},
+              "metadata": {},
+              "metadata_visibility": {
+                "show_author": true,
+                "show_reading_time": true,
+                "show_publish_date": true,
+                "show_update_date": true,
+                "show_tags": true
+              },
+              "content_path": "v1/documentation/default/post-v1documentationorganization-iddocumentation-idassetimport.mdx"
+            },
+            {
+              "id": "73d8eb5b-c995-4c56-8f40-6b4ed4a350e7",
+              "section_id": "3aa543da-2485-48d1-a2d7-6c943b6f5793",
+              "title": "Preferences",
+              "slug": "preferences",
+              "type": "folder",
+              "order": 21,
+              "source_metadata": {},
+              "metadata": {},
+              "metadata_visibility": {
+                "show_author": true,
+                "show_reading_time": true,
+                "show_publish_date": true,
+                "show_update_date": true,
+                "show_tags": true
+              },
+              "content_path": "v1/documentation/preferences/index.mdx"
+            },
+            {
+              "id": "e41cebf6-c9fd-4041-87a2-3dfdfcb2a0d5",
+              "section_id": "3aa543da-2485-48d1-a2d7-6c943b6f5793",
+              "parent_id": "73d8eb5b-c995-4c56-8f40-6b4ed4a350e7",
+              "title": "Get a user preference",
+              "slug": "get-preference",
+              "type": "api_endpoint",
+              "order": 0,
+              "method": "GET",
+              "endpoint": "/preference",
+              "source_metadata": {},
+              "metadata": {},
+              "metadata_visibility": {
+                "show_author": true,
+                "show_reading_time": true,
+                "show_publish_date": true,
+                "show_update_date": true,
+                "show_tags": true
+              },
+              "content_path": "v1/documentation/preferences/get-preference.mdx"
+            },
+            {
+              "id": "0f1248bb-9365-470d-b9db-ed3288cd82fd",
+              "section_id": "3aa543da-2485-48d1-a2d7-6c943b6f5793",
+              "parent_id": "73d8eb5b-c995-4c56-8f40-6b4ed4a350e7",
+              "title": "Set a user preference",
+              "slug": "put-preference",
+              "type": "api_endpoint",
+              "order": 1,
+              "method": "PUT",
+              "endpoint": "/preference",
+              "source_metadata": {},
+              "metadata": {},
+              "metadata_visibility": {
+                "show_author": true,
+                "show_reading_time": true,
+                "show_publish_date": true,
+                "show_update_date": true,
+                "show_tags": true
+              },
+              "content_path": "v1/documentation/preferences/put-preference.mdx"
+            },
+            {
+              "id": "4967b7e5-a9a7-4d4f-a632-8eb5d9d82958",
+              "section_id": "3aa543da-2485-48d1-a2d7-6c943b6f5793",
+              "parent_id": "73d8eb5b-c995-4c56-8f40-6b4ed4a350e7",
+              "title": "Delete a user preference",
+              "slug": "delete-preference",
+              "type": "api_endpoint",
+              "order": 2,
+              "method": "DELETE",
+              "endpoint": "/preference",
+              "source_metadata": {},
+              "metadata": {},
+              "metadata_visibility": {
+                "show_author": true,
+                "show_reading_time": true,
+                "show_publish_date": true,
+                "show_update_date": true,
+                "show_tags": true
+              },
+              "content_path": "v1/documentation/preferences/delete-preference.mdx"
+            },
+            {
+              "id": "2a1f3358-1838-4955-9c1c-2f82771b2335",
+              "section_id": "3aa543da-2485-48d1-a2d7-6c943b6f5793",
+              "parent_id": "73d8eb5b-c995-4c56-8f40-6b4ed4a350e7",
+              "title": "List all user preferences",
+              "slug": "get-preferences",
+              "type": "api_endpoint",
+              "order": 3,
+              "method": "GET",
+              "endpoint": "/preferences",
+              "source_metadata": {},
+              "metadata": {},
+              "metadata_visibility": {
+                "show_author": true,
+                "show_reading_time": true,
+                "show_publish_date": true,
+                "show_update_date": true,
+                "show_tags": true
+              },
+              "content_path": "v1/documentation/preferences/get-preferences.mdx"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

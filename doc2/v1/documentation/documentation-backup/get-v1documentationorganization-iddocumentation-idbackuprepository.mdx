@@ -1,0 +1,65 @@
+<Endpoint method="GET" path="/v1/documentation/{organization_id}/{documentation_id}/backup/repository" />
+
+## Authentication
+
+**API Key** (`BearerAuth`)
+- Header: `Authorization`
+
+## Path Parameters
+
+<ParamField path="organization_id" type="string" required>
+  Organization ID
+</ParamField>
+
+<ParamField path="documentation_id" type="string" required>
+  Documentation ID
+</ParamField>
+
+## Responses
+
+<Response status="200">
+  OK
+</Response>
+
+**Response Fields:**
+
+- `branch` (string)
+- `documentation_id` (string)
+- `path` (string)
+- `repository` (object)
+
+**Example:**
+
+```json
+{
+  "branch": "string",
+  "documentation_id": "string",
+  "path": "string",
+  "repository": {
+    "branches": [
+      "string"
+    ],
+    "created_at": "string",
+    "default_branch": "string",
+    "description": "string",
+    "external_id": "string",
+    "full_name": "string",
+    "id": "string",
+    "installation_id": "string",
+    "is_archived": true,
+    "is_fork": true
+  }
+}
+```
+
+<Response status="404">
+  Not Found
+</Response>
+
+**Example:**
+
+```json
+{
+  "key": "value"
+}
+```

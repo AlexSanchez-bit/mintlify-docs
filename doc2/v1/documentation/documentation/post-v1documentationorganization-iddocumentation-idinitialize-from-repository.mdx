@@ -1,0 +1,193 @@
+Seeds a pending doc with a default version + a product_documentation section, persists a repository resource, and kicks off the GenerateFromRepository pipeline. docgen pulls the repo via the GitHub installation token resolved server-side.
+
+<Endpoint method="POST" path="/v1/documentation/{organization_id}/{documentation_id}/initialize-from-repository" />
+
+## Authentication
+
+**API Key** (`BearerAuth`)
+- Header: `Authorization`
+
+## Path Parameters
+
+<ParamField path="organization_id" type="string" required>
+  Organization ID
+</ParamField>
+
+<ParamField path="documentation_id" type="string" required>
+  Documentation ID
+</ParamField>
+
+## Request Body
+
+Repository import input
+
+**Required**
+
+<ParamField path="branch" type="string">
+</ParamField>
+
+<ParamField path="installation_id" type="string" required>
+</ParamField>
+
+<ParamField path="path" type="string">
+</ParamField>
+
+<ParamField path="path_type" type="string">
+  full_repo | folder | file
+</ParamField>
+
+<ParamField path="repository_id" type="string" required>
+</ParamField>
+
+<ParamField path="section_name" type="string">
+</ParamField>
+
+**Example:**
+
+```json
+{
+  "branch": "string",
+  "installation_id": "string",
+  "path": "string",
+  "path_type": "string",
+  "repository_id": "string",
+  "section_name": "string"
+}
+```
+
+## Responses
+
+<Response status="200">
+  OK
+</Response>
+
+**Response Fields:**
+
+- `documentation` (object)
+- `progress` (object)
+- `section_id` (string)
+- `version_id` (string)
+
+**Example:**
+
+```json
+{
+  "documentation": {
+    "audience": "public",
+    "config": {
+      "assistant": {
+        "enabled": true,
+        "floating": true
+      },
+      "favicon_url": "string",
+      "footer": {
+        "copyright": "string",
+        "enabled": true,
+        "links": [
+          "..."
+        ],
+        "powered_by_gitdocai": true
+      },
+      "kb": {
+        "enabled": true,
+        "hero_description": "string",
+        "hero_placeholder": "string",
+        "hero_title": "string",
+        "icon": "string",
+        "name": "string",
+        "popular_articles": [
+          "..."
+        ],
+        "popular_title": "string",
+        "search_suggestions": [
+          "..."
+        ],
+        "show_categories": true
+      },
+      "navbar": [
+        {
+          "icon": "...",
+          "label": "...",
+          "style": "...",
+          "url": "..."
+        }
+      ],
+      "seo": {
+        "default_description": "string",
+        "default_og_image": "string",
+        "google_analytics_id": "string",
+        "site_title": "string",
+        "title_template": "string"
+      },
+      "theme": {
+        "dark": {
+          "accent_color": "...",
+          "bg_color": "...",
+          "logo_url": "...",
+          "text_color": "..."
+        },
+        "default": {},
+        "font_family": "string",
+        "heading_font": "string",
+        "light": {
+          "accent_color": "...",
+          "bg_color": "...",
+          "logo_url": "...",
+          "text_color": "..."
+        },
+        "modes": [
+          "..."
+        ],
+        "preset": {},
+        "show_name": true
+      }
+    },
+    "created_at": "string",
+    "description": "string",
+    "has_pending_changes": true,
+    "id": "string",
+    "name": "string",
+    "organization_id": "string",
+    "published_at": "string",
+    "slug": "string"
+  },
+  "progress": {
+    "completed_at": "string",
+    "completed_pages": 0,
+    "created_at": "string",
+    "current_page": "string",
+    "current_phase": "loading",
+    "documentation_id": "string",
+    "error_message": "string",
+    "failed_resources": "string",
+    "id": "string",
+    "message": "string"
+  },
+  "section_id": "string",
+  "version_id": "string"
+}
+```
+
+<Response status="400">
+  Bad Request
+</Response>
+
+**Example:**
+
+```json
+{
+  "key": "value"
+}
+```
+
+<Response status="500">
+  Internal Server Error
+</Response>
+
+**Example:**
+
+```json
+{
+  "key": "value"
+}
+```

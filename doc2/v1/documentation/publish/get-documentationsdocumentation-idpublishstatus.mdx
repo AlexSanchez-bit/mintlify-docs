@@ -1,0 +1,76 @@
+Returns the current publish state. Dashboards poll this endpoint while a publish job is in progress.
+
+<Endpoint method="GET" path="/documentations/{documentation_id}/publish/status" />
+
+## Authentication
+
+**API Key** (`BearerAuth`)
+- Header: `Authorization`
+
+## Path Parameters
+
+<ParamField path="documentation_id" type="string" required>
+  Documentation ID
+</ParamField>
+
+## Responses
+
+<Response status="200">
+  Current publish state
+</Response>
+
+**Response Fields:**
+
+- `completed_at` (string)
+- `error` (string)
+- `last_published_at` (string)
+- `started_at` (string)
+- `state` (string): "idle" | "in_progress" | "succeeded" | "failed"
+
+**Example:**
+
+```json
+{
+  "completed_at": "string",
+  "error": "string",
+  "last_published_at": "string",
+  "started_at": "string",
+  "state": "string"
+}
+```
+
+<Response status="400">
+  Bad request
+</Response>
+
+**Example:**
+
+```json
+{
+  "key": "value"
+}
+```
+
+<Response status="404">
+  Documentation not found
+</Response>
+
+**Example:**
+
+```json
+{
+  "key": "value"
+}
+```
+
+<Response status="500">
+  Internal server error
+</Response>
+
+**Example:**
+
+```json
+{
+  "key": "value"
+}
+```
