@@ -1,30 +1,25 @@
-# hello wasaaaaaa
 Takes markdown content and a prompt, returns modified content with diff
+
+<Video src="https://www.youtube.com/watch?v=EqafUcDSekc" provider="youtube" />
 
 <Endpoint method="POST" path="/documentation/{organization_id}/{documentation_id}/ai/edit" />
 
 ## Path Parameters
 
-<ParamField path="organization_id" type="string" required>
+<Param path="organization_id" type="string" required>
   Organization ID
-</ParamField>
-
-<ParamField path="documentation_id" type="string" required>
+</Param>
+<Param path="documentation_id" type="string" required>
   Documentation ID
-</ParamField>
-
+</Param>
 ## Request Body
 
 Edit request
 
 **Required**
 
-<ParamField path="content" type="string">
-</ParamField>
-
-<ParamField path="prompt" type="string" required>
-</ParamField>
-
+<Param path="content" type="string" />
+<Param path="prompt" type="string" required />
 **Example:**
 
 ```json

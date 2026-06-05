@@ -9,12 +9,12 @@
     "theme": {
       "preset": "pearl",
       "dark": {
-        "bg_color": "#fafafa",
+        "bg_color": "#0a0a0a",
         "text_color": "#ededed",
         "accent_color": "#3b82f6"
       },
       "light": {
-        "bg_color": "#0a0a0a",
+        "bg_color": "#fafafa",
         "text_color": "#171717",
         "accent_color": "#2563eb"
       },
