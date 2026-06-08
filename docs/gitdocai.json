@@ -24,7 +24,7 @@
         "light"
       ],
       "default": "dark",
-      "font_family": "Inter",
+      "font_family": "Lato",
       "heading_font": "Source Serif Pro",
       "show_name": false
     },
